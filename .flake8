@@ -1,0 +1,8 @@
+[flake8]
+exclude =
+    .git,
+    __pycache__,
+    migrations,
+    main/settings/override.py,
+    node_modules,
+max-line-length = 119

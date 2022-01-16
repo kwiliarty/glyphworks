@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+
+  python:
+    image: &image kwiliarty/glyphworks:main-dev
+    stdin_open: true
+    tty: true
+    environment:
+      - DJANGO_SETTINGS_MODULE=main.settings.dev
+    ports:
+      - "${GW_PYTHON_PORT}:8000"
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      &volumes
+      - type: bind
+        source: ./../
+        target: /usr/src/app
+
+  webpack:
+    image: *image
+    restart: always
+    command: ['/node_modules/webpack/bin/webpack.js', '--config', 'webpack.config.js', '--watch', '--mode', 'development']
+    networks:
+      - django
+    volumes:
+      *volumes
+
+  styleguidist:
+    image: *image
+    restart: always
+    command: ['yarn', 'styleguidist', 'server']
+    ports:
+      - '6060:6060'
+    networks:
+      - django
+    volumes:
+      *volumes

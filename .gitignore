@@ -1,0 +1,55 @@
+# shell history
+.ash_history
+.bash_history
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+
+# SQLite database
+python/db.sqlite3
+
+# static files
+/static/
+
+# code coverage
+.coverage
+/htmlcov/
+
+# shell environment
+override.env
+
+# Temporary settings
+/main/settings/override.py
+
+# SSL certs
+/docker/nginx/ssl/server.*
+/docker/nginx/test/ssl/server.*
+
+# Certbot
+docker/certbot/conf/*
+!docker/certbot/conf/README.md
+docker/certbot/www/*
+!docker/certbot/www/README.md
+
+# Auto-generated documentation
+/docs/_build/
+
+# Static style guide
+/styleguide/styleguide/
+
+# Node modules
+yarn-error.log
+/node_modules/
+.cache
+.node_repl_history
+
+# webpack
+/main/assets/bundles/
+/main/webpack-stats.json
+
+# jest test coverage reports
+/coverage/
+
+# cypress testing
+/cypress/screenshots/
+/cypress/videos/

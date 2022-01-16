@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pywatchman = "*"
+
+[packages]
+django = "==4.0.1"
+django-webpack-loader = "*"
+django-extensions = "*"
+daphne = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.9.10"

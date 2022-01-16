@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+
+  cypress:
+    image: cypress/included:7.1.0
+    working_dir: /usr/src/app
+    environment:
+      - CYPRESS_BASE_URL=http://python:8001
+    entrypoint: tail -f /dev/null
+    networks:
+      - django

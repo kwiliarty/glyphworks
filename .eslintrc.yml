@@ -1,0 +1,45 @@
+env:
+  browser: true
+  es6: true
+extends: 
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  React: readonly
+  ReactDOM: readonly
+  describe: readonly
+  it: readonly
+  test: readonly
+  jest: readonly
+  expect: readonly
+  module: readonly
+parser: 'babel-eslint'
+plugins:
+  - 'react'
+  - 'react-hooks'
+settings:
+  react:
+    version: detect
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+rules:
+  #  indent:
+  #    - error
+  #    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  react-hooks/rules-of-hooks:
+    - error
+  react-hooks/exhaustive-deps:
+    - warn
+  'react/jsx-uses-react': 1

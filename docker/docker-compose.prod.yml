@@ -1,0 +1,70 @@
+version: "3.8"
+
+services:
+
+  python:
+    image: &image kwiliarty/glyphworks:main
+    restart: always
+    environment:
+      - DJANGO_SETTINGS_MODULE=main.settings.prod
+    expose:
+      - '8000'
+    command: ['daphne', '-b', '0.0.0.0', '-p', '8000', 'main.asgi:application']
+    # command: ['gunicorn', 'main.wsgi:application', '--bind', '0.0.0.0:8000']
+    volumes:
+      &volumes
+      - static_volume:/usr/src/app/static
+
+  nginx:
+    image: nginx:1.20.2-alpine
+    # Reloads nginx every six hours to pick up any new certs
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+    ports:
+      - "${GW_PYTHON_PORT}:80"
+      - '443:443'
+    volumes:
+      - static_volume:/usr/src/app/static
+      - type: bind
+        source: ./nginx/conf.d/
+        target: /etc/nginx/conf.d/
+      - type: bind
+        source: ./certbot/conf
+        target: /etc/letsencrypt
+      - type: bind
+        source: ./certbot/www
+        target: /var/www/certbot
+    depends_on:
+      - python
+    restart: 'on-failure'
+    networks:
+      - django
+
+  certbot:
+    image: certbot/certbot
+    # Checks cert renewal every twelve hours as recommended by LetsEncrypt
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+    volumes:
+      - type: bind
+        source: ./certbot/conf
+        target: /etc/letsencrypt
+      - type: bind
+        source: ./certbot/www
+        target: /var/www/certbot
+    networks:
+      - django
+
+  # celery:
+  #   image: *image
+  #   environment:
+  #     - DJANGO_SETTINGS_MODULE=main.settings.prod
+  #   volumes:
+  #     *volumes
+
+  # celery-beat:
+  #   image: *image
+  #   environment:
+  #     - DJANGO_SETTINGS_MODULE=main.settings.prod
+  #   volumes:
+  #     *volumes
+volumes:
+  static_volume:

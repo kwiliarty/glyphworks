@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "${HANKER_MAILHOG_WEB_PORT}:8025"
+    networks:
+      - django
