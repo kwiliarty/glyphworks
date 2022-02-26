@@ -11,6 +11,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${ props => props.theme.fontFamily };
     font-family: 'DoulosSILW', sans-serif;
   }
+
+  h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+  }
 `
 
 export default GlobalStyle

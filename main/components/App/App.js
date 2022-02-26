@@ -12,6 +12,10 @@ const App = () => {
     <Wrapper>
       <GlobalStyle theme={ theme } />
       <h1>ɡlɪfwə˞ks</h1>
+      <h2>ɡlɪfwə˞ks</h2>
+      <h3>ɡlɪfwə˞ks</h3>
+      <h4>ɡlɪfwə˞ks</h4>
+      <p>ɡlɪfwə˞ks</p>
     </Wrapper>
   )
 }
