@@ -14,18 +14,21 @@ const GlobalStyle = createGlobalStyle`
     font-family: GentiumPlus;
     src: url(static/fonts/GentiumPlus-Regular.woff2) format('woff2'),
          url(static/fonts/GentiumPlus-Regular.woff) format('woff');
+    size-adjust: 120%;
   }
   @font-face {
     font-family: GentiumPlus;
     src: url(static/fonts/GentiumPlus-Italic.woff2) format('woff2'),
          url(static/fonts/GentiumPlus-Italic.woff) format('woff');
     font-style: italic;
+    size-adjust: 120%;
   }
   @font-face {
     font-family: GentiumPlus;
     src: url(static/fonts/GentiumPlus-Bold.woff2) format('woff2'),
          url(static/fonts/GentiumPlus-Bold.woff) format('woff');
     font-weight: bold;
+    size-adjust: 120%;
   }
   @font-face {
     font-family: GentiumPlus;
@@ -33,6 +36,7 @@ const GlobalStyle = createGlobalStyle`
          url(static/fonts/GentiumPlus-BoldItalic.woff) format('woff');
     font-style: italic;
     font-weight: bold;
+    size-adjust: 120%;
   }
 
   @font-face {

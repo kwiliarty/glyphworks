@@ -14,10 +14,11 @@ const App = () => {
     <Wrapper>
       <GlobalStyle theme={ theme } />
       <h1>
-        <Ipa>
-          [ɡlɪfwə˞ks]
-        </Ipa>
+        <Ipa>[ɡlɪfwə˞ks]</Ipa>
       </h1>
+      <p>
+        Welcome to <Ipa>[ɡlɪfwə˞ks]</Ipa>! Not much to see here yet, but we're working on it.
+      </p>
     </Wrapper>
   )
 }

@@ -1,7 +1,7 @@
 const theme = {
   bodyFontFamily: 'NotoSans, sans-serif',
   ipaFontFamily: 'GentiumPlus, serif',
-  baseFontSize: '28px',
+  baseFontSize: '24px',
 }
 
 export default theme

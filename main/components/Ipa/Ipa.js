@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 import theme from '../../themes/glyphworks'
 
-const Wrapper = styled.span`
+const Wrapper = styled.div`
+  display: inline-block;
   font-family: ${ theme.ipaFontFamily };
 `
 
