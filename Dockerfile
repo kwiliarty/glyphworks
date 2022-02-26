@@ -70,8 +70,8 @@ FROM runtime AS prod
 
     COPY . .
     RUN npm run build
-    RUN /node_modules/.bin/webpack --config webpack.config.js --mode production
-    RUN python manage.py collectstatic --no-input --settings 'main.settings.prod'
+    RUN /node_modules/.bin/webpack --config webpack.config.js --mode production && \
+      python manage.py collectstatic --no-input --settings 'main.settings.prod'
 
     # Switch to a new user
     USER appuser
