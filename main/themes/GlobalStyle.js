@@ -57,8 +57,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: ${ props => props.theme.fontFamily };
-    font-family: 'NotoSans', sans-serif;
+    font-family: ${ props => props.theme.bodyFontFamily };
+    font-size: ${ props => props.theme.baseFontSize };
   }
 
   h1 {

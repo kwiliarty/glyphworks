@@ -1,7 +1,7 @@
 const theme = {
-  // fontFamily: '"Tinos", serif',
-  fontFamily: '"Noto Serif", sans-serif',
-  fontImportURL: 'https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap'
+  bodyFontFamily: 'NotoSans, sans-serif',
+  ipaFontFamily: 'GentiumPlus, serif',
+  baseFontSize: '28px',
 }
 
 export default theme
