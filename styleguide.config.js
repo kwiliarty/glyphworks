@@ -28,6 +28,10 @@ module.exports = {
       content: './main/themes/theme.md',
     },
     {
+      name: 'Layout',
+      components: './main/layouts/**/[A-Z]*.js',
+    },
+    {
       name: 'Components',
       components: './main/components/**/[A-Z]*.js',
     },

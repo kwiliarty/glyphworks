@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 
-import theme from '../../themes/hampshire'
+import theme from '../../themes/glyphworks'
 
 const StyledBlock = styled.div`
   background-color: rgb( 255, 0, 0, 0.2 );

@@ -10,7 +10,7 @@ const FontSample = props => {
     <div className={ font } style={{ fontSize: '1.2em' }}>
       <h2>{ simpleName }</h2>
       <p>
-        Regular, <strong>Bold,</strong> <em>Italic,</em> <strong><em>Bold Italic,</em></strong> [ɡlɪfwə˞ks]
+        Regular, <strong>Bold,</strong> <em>Italic,</em> <strong><em>Bold Italic,</em></strong> [ɡlɪfwɜ˞ks]
         <br />
         <strong>CSS class name:</strong> .{ font }
       </p>
