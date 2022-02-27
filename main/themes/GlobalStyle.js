@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { fonts } from './glyphworks'
 
 const GlobalStyle = createGlobalStyle`
   /* Doulos SIL - Regular */
@@ -44,6 +45,11 @@ const GlobalStyle = createGlobalStyle`
     font-size: 2em;
     margin: 0.5em 0;
   }
+
+  // creates classes for each font
+  ${ Object.keys(fonts).map( font => 
+    `.${font} { font-family: ${ fonts[font] };}`
+  )}
 `
 
 export default GlobalStyle

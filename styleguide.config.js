@@ -4,7 +4,6 @@ const path = require('path')
 
 module.exports = {
   title: 'GlyphWorks',
-  components: '**/components/**/[A-Z]*.js',
   styleguideComponents: {
     Wrapper: path.join( __dirname, './main/themes/ThemeProvider' )
   },
@@ -19,4 +18,14 @@ module.exports = {
       ]
     }
   },
+  sections: [
+    {
+      name: 'Fonts',
+      content: './main/themes/fonts.md',
+    },
+    {
+      name: 'Components',
+      components: './main/components/**/[A-Z]*.js',
+    },
+  ],
 }
