@@ -11,8 +11,9 @@ const FontSample = props => {
       <h2>{ simpleName }</h2>
       <p>
         Regular, <strong>Bold,</strong> <em>Italic,</em> <strong><em>Bold Italic,</em></strong> [ɡlɪfwə˞ks]
+        <br />
+        <strong>CSS class name:</strong> .{ font }
       </p>
-      <p>CSS class name: <strong>.{ font }</strong></p>
     </div>
   )
 }

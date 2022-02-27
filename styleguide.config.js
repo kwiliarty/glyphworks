@@ -24,6 +24,10 @@ module.exports = {
       content: './main/themes/fonts.md',
     },
     {
+      name: 'Theme',
+      content: './main/themes/theme.md',
+    },
+    {
       name: 'Components',
       components: './main/components/**/[A-Z]*.js',
     },
