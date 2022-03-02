@@ -5,46 +5,52 @@ import styled, { withTheme } from 'styled-components'
 import theme from '../../themes/glyphworks'
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-height: ${ props => props.minHeight };
 `
 
-const StyledHeader = styled.div``
+const StyledTop = styled.div``
 
-const StyledBody = styled.div``
+const StyledContents = styled.div`
+  flex: 1;
+`
 
-const StyledFooter = styled.div``
+const StyledBottom = styled.div``
 
-const HeaderBodyFooter = props => {
+const ContentBox = props => {
 
   const { children } = props
 
   return (
     <Container { ...props }>
-      <StyledHeader { ...props }>
-        { children.filter( child => child.type.nickname == 'Header' ) }
-      </StyledHeader>
-      <StyledBody { ...props }>
-        { children.filter( child => child.type.nickname == 'Body' ) }
-      </StyledBody>
-      <StyledFooter { ...props }>
-        { children.filter( child => child.type.nickname == 'Footer' ) }
-      </StyledFooter>
+      <StyledTop { ...props }>
+        { children.filter( child => child.type.nickname == 'Top' ) }
+      </StyledTop>
+      <StyledContents { ...props }>
+        { children.filter( child => child.type.nickname == 'Contents' ) }
+      </StyledContents>
+      <StyledBottom { ...props }>
+        { children.filter( child => child.type.nickname == 'Bottom' ) }
+      </StyledBottom>
     </Container>
   )
 }
 
-const Header = props => props.children
-Header.nickname = 'Header'
-HeaderBodyFooter.Header = Header
+const Top = props => props.children
+Top.nickname = 'Top'
+ContentBox.Top = Top
 
-const Body = props => props.children
-Body.nickname = 'Body'
-HeaderBodyFooter.Body = Body
+const Contents = props => props.children
+Contents.nickname = 'Contents'
+ContentBox.Contents = Contents
 
-const Footer = props => props.children
-Footer.nickname = 'Footer'
-HeaderBodyFooter.Footer = Footer
+const Bottom = props => props.children
+Bottom.nickname = 'Bottom'
+ContentBox.Bottom = Bottom
 
-HeaderBodyFooter.propTypes = {
+ContentBox.propTypes = {
   /** A title for the block that will appear centered */
   blockTitle: PropTypes.string,
   /** A minimum height for the block */
@@ -53,11 +59,11 @@ HeaderBodyFooter.propTypes = {
   theme: PropTypes.object,
 }
 
-HeaderBodyFooter.defaultProps = {
+ContentBox.defaultProps = {
   blockTitle: 'Set a blockTitle!',
   minHeight: '200px',
   theme: theme,
 }
 
 /** @component */
-export default withTheme( HeaderBodyFooter )
+export default withTheme( ContentBox )

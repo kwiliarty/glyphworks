@@ -5,8 +5,8 @@ import styled, { withTheme } from 'styled-components'
 import theme from '../../themes/glyphworks'
 
 const StyledBlock = styled.div`
-  background-color: rgb( 255, 0, 0, 0.2 );
-  outline: 3px solid red;
+  background-color: rgb( 0, 0, 0, 0.1 );
+  outline: 3px solid gray;
   color: black;
   display: flex;
   flex-wrap: wrap;
