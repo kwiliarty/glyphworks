@@ -6,7 +6,7 @@ import Ipa from '../Ipa'
 const StyledHeader = styled.header`
   background-color: ${ props => props.theme.headerBgColor };
   color: ${ props => props.theme.headerTextColor };
-  padding: 1rem;
+  padding: ${ props => props.theme.basePadding };
   h1 {
     margin: 0;
     font-size: 2rem;

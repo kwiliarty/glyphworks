@@ -8,6 +8,7 @@ export const colors = {
 }
 
 const theme = {
+  basePadding: '1rem',
   bodyFontFamily: fonts.gentium,
   ipaFontFamily: fonts.gentium,
   baseFontSize: '28px',

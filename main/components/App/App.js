@@ -7,6 +7,7 @@ import GlobalStyle from '../../themes/GlobalStyle'
 import Ipa from '../Ipa'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
+import Main from '../Main'
 
 const Wrapper = styled.div`
 `
@@ -20,9 +21,11 @@ const App = () => {
             <Header />
           </ContentBox.Top>
           <ContentBox.Contents>
-            <p>
-              Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Not much to see here yet, but we're working on it.
-            </p>
+            <Main>
+              <p>
+                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Not much to see here yet, but we're working on it.
+              </p>
+            </Main>
           </ContentBox.Contents>
           <ContentBox.Bottom>
             Copyright 2022
