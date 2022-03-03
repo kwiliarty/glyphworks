@@ -6,6 +6,7 @@ import GlobalStyle from '../../themes/GlobalStyle'
 
 import Ipa from '../Ipa'
 import ContentBox from '../../layouts/ContentBox'
+import Header from '../Header'
 
 const Wrapper = styled.div`
 `
@@ -16,9 +17,7 @@ const App = () => {
       <GlobalStyle theme={ theme } />
         <ContentBox minHeight='100vh'>
           <ContentBox.Top>
-            <h1>
-              <Ipa>[ɡlɪfwɜ˞ks]</Ipa>
-            </h1>
+            <Header />
           </ContentBox.Top>
           <ContentBox.Contents>
             <p>
