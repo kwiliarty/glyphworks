@@ -8,6 +8,7 @@ import Ipa from '../Ipa'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
+import Footer from '../Footer'
 
 const Wrapper = styled.div`
 `
@@ -28,7 +29,7 @@ const App = () => {
             </Main>
           </ContentBox.Contents>
           <ContentBox.Bottom>
-            Copyright 2022
+            <Footer />
           </ContentBox.Bottom>
         </ContentBox>
     </Wrapper>
