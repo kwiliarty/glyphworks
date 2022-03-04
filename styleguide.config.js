@@ -24,6 +24,10 @@ module.exports = {
       content: './main/themes/fonts.md',
     },
     {
+      name: 'Colors',
+      content: './main/themes/colors.md',
+    },
+    {
       name: 'Theme',
       content: './main/themes/theme.md',
     },
