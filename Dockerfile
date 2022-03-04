@@ -32,7 +32,7 @@ FROM base AS python-deps
 FROM base AS watchman
 
     RUN apt-get update && apt-get install -y inotify-tools
-    RUN wget https://github.com/facebook/watchman/releases/download/$WM_VERSION/watchman-$WM_VERSION-linux.zip
+    RUN wget https://github.com/facebook/watchman/releases/download/${WM_VERSION}/watchman-${WM_VERSION}-linux.zip
     RUN unzip watchman-$WM_VERSION-linux.zip
 
 # Runtime elements shared by prod and dev

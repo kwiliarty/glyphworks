@@ -15,7 +15,7 @@ globals:
   jest: readonly
   expect: readonly
   module: readonly
-parser: 'babel-eslint'
+parser: '@babel/eslint-parser'
 plugins:
   - 'react'
   - 'react-hooks'

@@ -8,7 +8,7 @@
 if [ -f "docker/override.env" ]
     then . ./docker/override.env
 fi
-echo $location
+
 # Base file for docker-compose
 composefile="${location}/docker/docker-compose.yml"
 
@@ -30,9 +30,13 @@ then
     composefile="${composefile}:${location}/docker/docker-compose.prod.yml"
 fi
 
-export COMPOSE_FILE=${composefile}
+# For ci
+if [ $GW_ENV = 'ci' ]
+then
+    composefile="${composefile}:${location}/docker/docker-compose.ci.yml"
+fi
 
-#export CYPRESS_BASE_URL="http://0.0.0.0:${HANKER_CYPRESS_PORT}"
+export COMPOSE_FILE=${composefile}
 
 # We need to disable tty when we run on Gitlab
 # This variable makes it easy for us to do that
@@ -49,7 +53,7 @@ gw() {
 
 # Functions to manage image
 gw_build_dev() {
-    docker build \
+    DOCKER_BUILDKIT=1 docker build \
         --tag kwiliarty/glyphworks:main-dev \
         --cache-from kwiliarty/glyphworks:main-dev \
         --build-arg BUILD_ENV='dev' \
@@ -60,7 +64,7 @@ gw_build_dev() {
 }
 
 gw_build_prod() {
-    docker build \
+    DOCKER_BUILDKIT=1 docker build \
         --tag kwiliarty/glyphworks:main \
         --cache-from kwiliarty/glyphworks:main \
         --build-arg BUILD_ENV='prod' \
@@ -74,6 +78,7 @@ gw_build_prod() {
 ## general aliases
 alias gw-env='echo "$GW_ENV"'
 alias gw-build-dev='gw_build_dev'
+alias gw-build-ci='gw_build_ci'
 alias gw-build-prod='gw_build_prod'
 alias gw-pull-dev='docker pull kwiliarty/glyphworks:main-dev'
 alias gw-pull-prod='docker pull kwiliarty/glyphworks:main'
@@ -88,6 +93,7 @@ alias gw-show-urls='gw python manage.py show_urls'
 alias gw-up='docker-compose up -d'
 alias gw-up-tail='docker-compose up'
 alias gw-status='docker-compose ps'
+alias gw-eslint='gw yarn run eslint .'
 
 ## python aliases
 alias gw-bash='docker-compose run -u root python /bin/bash'

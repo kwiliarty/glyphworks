@@ -1,0 +1,34 @@
+name: GlyphWorks CI
+on: [push]
+jobs:
+  test:
+    runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: build-dev
+        run: |
+          shopt -s expand_aliases
+          mv docker/ci.env docker/override.env
+          source ./glyphworks.sh
+          gw-build-dev # --build-arg WM_VERSION=${WM_VERSION}
+      - name: launch
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-up
+      - name: eslint
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-logs python
+          gw-eslint
+  shutdown:
+    runs-on: self-hosted
+    if: ${{ always() }}
+    needs: [test]
+    steps:
+      - name: down
+        run: |
+          source ./glyphworks.sh
+          docker-compose down

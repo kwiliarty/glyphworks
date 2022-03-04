@@ -10,20 +10,14 @@ services:
       - TZ=America/New_York
       - GW_ENV
       - GW_INSTANCE
-#       - HANKER_FQDN=${HANKER_FQDN}
       - SECRET_KEY
-#       - REDIS_PASSWORD=${HANKER_REDIS_PASSWORD}
-#       - POSTGRES_PASSWORD=${HANKER_POSTGRES_PASSWORD}
-#       - HANKER_ADMIN_EMAIL_LEVEL=${HANKER_ADMIN_EMAIL_LEVEL}
     networks:
       - django
     volumes:
-#       - django_logs:/var/log
       - node_modules:/node_modules
       - yarn_cache:/yarn_cache
     depends_on:
       - db
-#       - redis
 
   db:
     image: postgres:13.5-bullseye
@@ -37,33 +31,10 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-#   celery:
-#     << : *python
-#     command: celery -A main worker -l INFO
-#     depends_on:
-#       - python
-
-#   celery-beat:
-#     << : *python
-#     command: celery -A main beat -l INFO --pidfile='/tmp/celerybeat.pid'
-#     depends_on:
-#       - celery
-
-#   redis:
-#     image: redis:4.0.11-alpine
-#     restart: always
-#     command: redis-server --requirepass "${HANKER_REDIS_PASSWORD}"
-#     networks:
-#       - django
-#     volumes:
-#       - redis_data:/data
-
 networks:
   django:
 
 volumes:
-#   django_logs:
   postgres_data:
-#   redis_data:
   node_modules:
   yarn_cache:
