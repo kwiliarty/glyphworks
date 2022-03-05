@@ -51,6 +51,8 @@ Bottom.nickname = 'Bottom'
 ContentBox.Bottom = Bottom
 
 ContentBox.propTypes = {
+  /** This component will display children of its sub-components */
+  children: PropTypes.node,
   /** A title for the block that will appear centered */
   blockTitle: PropTypes.string,
   /** A minimum height for the block */

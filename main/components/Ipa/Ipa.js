@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import theme from '../../themes/glyphworks'
@@ -14,6 +15,11 @@ const Ipa = props => {
       { props.children }
     </Wrapper>
   )
+}
+
+Ipa.propTypes = {
+  /** This component renders its children. */
+  children: PropTypes.node,
 }
 
 export default Ipa

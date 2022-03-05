@@ -1,7 +1,5 @@
 import React from 'react'
-import styled, { withTheme } from 'styled-components'
-
-import theme from './glyphworks'
+import PropTypes from 'prop-types'
 
 const FontSample = props => {
   const { font, declaration } = props
@@ -16,6 +14,13 @@ const FontSample = props => {
       </p>
     </div>
   )
+}
+
+FontSample.propTypes = {
+  /** The contents of the CSS style declaration */
+  declaration: PropTypes.string,
+  /** The key/name of the font */
+  font: PropTypes.string,
 }
 
 export default FontSample

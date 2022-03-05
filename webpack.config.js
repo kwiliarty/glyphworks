@@ -1,4 +1,4 @@
-/* global require,module,__dirname */
+/* global require,__dirname */
 
 const path = require('path')
 // var webpack = require('webpack')
@@ -74,28 +74,6 @@ var config = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
-      // {
-      //   test: /ckeditor5-[^/\\]+[/\\]theme[/\\]icons[/\\][^/\\]+\.svg$/,
-      //   include: path.resolve( __dirname, '../../../node_modules/@ckeditor' ),
-      //   use: [ 'raw-loader' ]
-      // },
-      // {
-      //   test: /ckeditor5-[^/\\]+[/\\]theme[/\\].+\.css$/,
-      //   include: path.resolve( __dirname, '../../../node_modules/@ckeditor' ),
-      //   use: [
-      //     MiniCssExtractPlugin.loader,
-      //     'css-loader',
-      //     {
-      //       loader: 'postcss-loader',
-      //       options: styles.getPostCssConfig({
-      //         themeImporter: {
-      //           themePath: require.resolve( '@ckeditor/ckeditor5-theme-lark' )
-      //         },
-      //         minify: true
-      //       })
-      //     },
-      //   ]
-      // },
     ],
   },
 

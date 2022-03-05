@@ -1,4 +1,4 @@
-/* global require,module,__dirname */
+/* global require,__dirname */
 
 const path = require('path')
 

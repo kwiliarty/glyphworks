@@ -24,7 +24,7 @@ const App = () => {
           <ContentBox.Contents>
             <Main>
               <p>
-                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Not much to see here yet, but we're working on it.
+                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Not much to see here yet, but we’re working on it.
               </p>
             </Main>
           </ContentBox.Contents>
