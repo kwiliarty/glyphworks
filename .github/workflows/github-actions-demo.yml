@@ -11,7 +11,7 @@ jobs:
           shopt -s expand_aliases
           mv docker/ci.env docker/override.env
           source ./glyphworks.sh
-          gw-build-dev # --build-arg WM_VERSION=${WM_VERSION}
+          gw-build-dev
       - name: launch
         run: |
           shopt -s expand_aliases
@@ -21,8 +21,12 @@ jobs:
         run: |
           shopt -s expand_aliases
           source ./glyphworks.sh
-          gw-logs python
           gw-eslint
+      - name: flake8
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-flake8
   shutdown:
     runs-on: self-hosted
     if: ${{ always() }}

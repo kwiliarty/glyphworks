@@ -12,6 +12,7 @@ django-webpack-loader = "*"
 django-extensions = "*"
 daphne = "*"
 gunicorn = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.9.10"

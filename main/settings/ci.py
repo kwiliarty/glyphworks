@@ -1,5 +1,3 @@
-import os
-
 from . import shared
 
 BASE_DIR = shared.BASE_DIR

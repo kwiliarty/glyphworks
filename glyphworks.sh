@@ -94,6 +94,7 @@ alias gw-up='docker-compose up -d'
 alias gw-up-tail='docker-compose up'
 alias gw-status='docker-compose ps'
 alias gw-eslint='gw yarn run eslint .'
+alias gw-flake8='gw flake8 .'
 
 ## python aliases
 alias gw-bash='docker-compose run -u root python /bin/bash'
