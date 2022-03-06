@@ -1,7 +1,7 @@
 name: GlyphWorks CI
 on: [push]
 jobs:
-  test:
+  build-dev:
     runs-on: self-hosted
     steps:
       - name: Check out repository code
@@ -12,6 +12,10 @@ jobs:
           mv docker/ci.env docker/override.env
           source ./glyphworks.sh
           gw-build-dev
+  test:
+    needs: [build-dev]
+    runs-on: self-hosted
+    steps:
       - name: launch
         run: |
           shopt -s expand_aliases
@@ -30,7 +34,7 @@ jobs:
   shutdown:
     runs-on: self-hosted
     if: ${{ always() }}
-    needs: [test]
+    needs: [build-dev, test]
     steps:
       - name: down
         run: |
