@@ -31,10 +31,20 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-flake8
+  build-prod:
+    runs-on: self-hosted
+    if: github.ref == 'refs/heads/main'
+    needs: [build-dev, test]
+    steps:
+      - name: Build production image
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-build-prod
   shutdown:
     runs-on: self-hosted
     if: ${{ always() }}
-    needs: [build-dev, test]
+    needs: [build-dev, test, build-prod]
     steps:
       - name: down
         run: |
