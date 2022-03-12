@@ -24,6 +24,7 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-up
+          gw yarn install --frozen-lockfile
       - name: eslint
         run: |
           shopt -s expand_aliases
@@ -44,6 +45,11 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-pip-audit
+      - name: jest
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-jest
   build-prod:
     runs-on: self-hosted
     if: github.ref == 'refs/heads/main'
