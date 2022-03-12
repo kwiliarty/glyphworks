@@ -111,3 +111,6 @@ alias gw-collectstatic='gw python manage.py collectstatic --no-input'
 alias gw-nginx='docker-compose exec nginx'
 alias gw-nginx-shell='gw-nginx /bin/sh'
 alias gw-nginx-reload='gw-nginx nginx -s reload'
+
+## last things
+alias gw-deploy='gw-pull-prod && gw-up && gw-collectstatic'
