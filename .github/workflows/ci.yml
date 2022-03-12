@@ -1,5 +1,8 @@
 name: GlyphWorks CI
 on: [push]
+concurrency:
+  group: 'glyphworks'
+  cancel-in-progress: false
 jobs:
   build-dev:
     runs-on: self-hosted
@@ -36,6 +39,11 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-yarn-audit
+      - name: pip-audit
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-pip-audit
   build-prod:
     runs-on: self-hosted
     if: github.ref == 'refs/heads/main'

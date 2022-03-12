@@ -5,9 +5,10 @@ name = "pypi"
 
 [dev-packages]
 pywatchman = "*"
+pip-audit = "*"
 
 [packages]
-django = "==4.0.1"
+django = "==4.0.2"
 django-webpack-loader = "*"
 django-extensions = "*"
 daphne = "*"
