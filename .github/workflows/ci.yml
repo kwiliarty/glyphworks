@@ -24,7 +24,6 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-up
-          gw yarn install --frozen-lockfile
       - name: eslint
         run: |
           shopt -s expand_aliases

@@ -13,9 +13,6 @@ services:
       - SECRET_KEY
     networks:
       - django
-    volumes:
-      - node_modules:/node_modules
-      - yarn_cache:/yarn_cache
     depends_on:
       - db
 
@@ -36,5 +33,3 @@ networks:
 
 volumes:
   postgres_data:
-  node_modules:
-  yarn_cache:

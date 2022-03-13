@@ -58,7 +58,6 @@ FROM base AS runtime
     COPY .yarnrc .yarnrc
     RUN if [ ${BUILD_ENV} = 'prod' ]; \
         then yarn install --frozen-lockfile --production; \
-        else yarn install --frozen-lockfile; \
         fi
 
     # Create appuser, we'll switch to it later

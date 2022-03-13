@@ -13,6 +13,12 @@ services:
     command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
       &volumes
+      - node_modules:/node_modules
+      - yarn_cache:/yarn_cache
       - type: bind
         source: ./../
         target: /usr/src/app
+
+volumes:
+  node_modules:
+  yarn_cache:
