@@ -99,7 +99,7 @@ alias gw-yarn-audit='gw yarn audit --groups dependencies'
 alias gw-pip-audit='gw pip-audit'
 alias gw-jest='gw yarn jest'
 alias gw-jest-watch='gw yarn jest --watch'
-alias gw-test-all='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit'
+alias gw-test-all='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit && gw-jest'
 
 ## python aliases
 alias gw-bash='docker-compose run -u root python /bin/bash'

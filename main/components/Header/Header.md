@@ -1,13 +1,18 @@
 The application Header.
 
-Using the default foreground and background:
+Using the defaults:
 
 ```jsx
 <Header />
 ```
 
-But you can also pass in colors as props:
+Or customized:
 
 ```jsx
-<Header backColor='darkPurple' foreColor='veryLightGreen' />
+<Header
+  backColor='darkPurple'
+  foreColor='veryLightGreen'
+  mainTitle='Custom Title'
+  ipaTitle='[some IPA here]'
+/>
 ```
