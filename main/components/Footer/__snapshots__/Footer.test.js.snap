@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Header component can accept custom colors 1`] = `
+.c0 {
+  background-color: pink;
+  color: wheat;
+}
+
+<footer
+  class="c0"
+>
+  ©
+  3023
+</footer>
+`;
+
+exports[`The Header component displays the copyright year 1`] = `
+.c0 {
+  background-color: #c9b978;
+  color: #621818;
+}
+
+<footer
+  class="c0"
+>
+  ©
+  3023
+</footer>
+`;
