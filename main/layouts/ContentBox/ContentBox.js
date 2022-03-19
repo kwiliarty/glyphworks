@@ -14,6 +14,8 @@ const Container = styled.div`
 const StyledTop = styled.div``
 
 const StyledContents = styled.div`
+  display: flex;
+  flex-direction: column;
   flex: 1;
 `
 

@@ -2,6 +2,12 @@ The Main content.
 
 ```jsx
 <Main>
-  Display the children
+  Using default colors
+</Main>
+```
+
+```jsx
+<Main foreColor='green' backColor='lightBrown'>
+  Setting custom colors
 </Main>
 ```

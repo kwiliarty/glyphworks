@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Main component can accept custom colors 1`] = `
+.c0 {
+  background-color: pink;
+  color: wheat;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<main
+  class="c0"
+/>
+`;
+
+exports[`The Main component displays with a default text and background color 1`] = `
+.c0 {
+  background-color: #fffae9;
+  color: #625418;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+<main
+  class="c0"
+/>
+`;

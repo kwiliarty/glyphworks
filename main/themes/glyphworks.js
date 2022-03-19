@@ -5,6 +5,7 @@ export const fonts = {
 export const colors = {
   white: '#ffffff',
   black: '#202020',
+  parchment: '#fffae9',
   veryLightGreen: '#badfba',
   lightGreen: '#60a060',
   green: '#326e32',
