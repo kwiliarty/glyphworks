@@ -5,6 +5,7 @@ import theme from '../../themes/glyphworks'
 import GlobalStyle from '../../themes/GlobalStyle'
 
 import Ipa from '../Ipa'
+import IpaPairedInput from '../IpaPairedInput'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
@@ -24,8 +25,10 @@ const App = () => {
           <ContentBox.Contents>
             <Main>
               <p>
-                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Not much to see here yet, but we’re working on it.
+                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>!
+                You can use the inputs below to convert X-SAMPA to IPA or vice versa.
               </p>
+              <IpaPairedInput />
             </Main>
           </ContentBox.Contents>
           <ContentBox.Bottom>

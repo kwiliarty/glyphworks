@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The TextInput component renders an input with a label 1`] = `
+.c0 {
+  border: 1px solid #625418;
+  border-radius: 0.1em;
+  font-family: GentiumPlus,serif;
+  font-size: 28px;
+  color: #625418;
+}
+
+.c0:focus {
+  outline: 2px solid #625418;
+}
+
+<input
+  class="c0"
+  id="id-test"
+  type="text"
+/>
+`;

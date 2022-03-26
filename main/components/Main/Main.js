@@ -33,7 +33,7 @@ Main.propTypes = {
 
 Main.defaultProps = {
   backColor: 'parchment',
-  foreColor: 'darkBrown',
+  foreColor: theme.mainTextColor,
 }
 
 export default Main
