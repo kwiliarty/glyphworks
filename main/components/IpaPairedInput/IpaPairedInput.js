@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components' 
 
-import { xsampa2ipa, ipa2xsampa } from './mapping'
+import { xsampa2ipa, ipa2xsampa } from '../../js-utils/mapping'
 import TextInput from '../TextInput'
 
 const StyledDiv = styled.div`
