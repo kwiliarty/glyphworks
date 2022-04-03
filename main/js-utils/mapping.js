@@ -165,7 +165,7 @@ export const mapping = {
   '%': 'ˌ',
   '\'': 'ʲ',
   ':': 'ː',
-  '-': '',
+  '-': '​', // zero-width space
   '@': 'ə',
   '{': 'æ',
   '}': 'ʉ',
@@ -189,6 +189,10 @@ export const mapping = {
   '_': ' ͡',
 }
 
+// The following X-SAMPA keys are alternatives to other available keys.
+// We won't produce them when going from IPA to X-SAMPA.
+const stoplist = [ 'v\\', '_j', '_/', '_=', '_\\', '_~' ]
+
 export const xsampaIpaMap = Object.keys( mapping )
   .reduce(( result, key ) => {
     result[ key ] = mapping[ key ].trim()
@@ -197,7 +201,7 @@ export const xsampaIpaMap = Object.keys( mapping )
 
 export const ipaXsampaMap = Object.keys( mapping )
   .reduce(( result, key ) => {
-    if ( key != '-' ) {
+    if ( !stoplist.includes( key ) ) {
       result[ mapping[ key ].trim() ] = key
     }
     return result
