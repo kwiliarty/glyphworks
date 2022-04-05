@@ -7,6 +7,7 @@ exports[`The TextInput component renders an input with a label 1`] = `
   font-family: GentiumPlus,serif;
   font-size: 28px;
   color: #625418;
+  text-indent: 0.3em;
 }
 
 .c0:focus {

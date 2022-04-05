@@ -20,6 +20,7 @@ const StyledInput = styled.input`
   font-family: ${ theme.ipaFontFamily };
   font-size: ${ theme.baseFontSize };
   color: ${ theme.mainTextColor };
+  text-indent: 0.3em;
   &:focus {
     outline: 2px solid ${ theme.mainTextColor };
   }
