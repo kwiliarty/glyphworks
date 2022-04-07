@@ -16,6 +16,7 @@ module.exports = function (api) {
   const plugins = [
     '@babel/plugin-proposal-class-properties',
     'babel-plugin-styled-components',
+    '@babel/plugin-proposal-async-generator-functions',
   ]
 
   return {

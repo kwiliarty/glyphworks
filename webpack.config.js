@@ -12,6 +12,7 @@ var config = {
 
   entry: {
     main: './main/assets/js/index.js',
+    regenerator: 'regenerator-runtime/runtime.js',
   },
 
   output: {
