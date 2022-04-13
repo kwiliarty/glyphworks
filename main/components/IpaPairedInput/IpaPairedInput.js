@@ -38,21 +38,28 @@ const IpaPairedInput = () => {
     },
   }
 
+  const xsampaId = ( Math.random().toString( 36 ).substr( 2, 16 ) )
+  const ipaId = ( Math.random().toString( 36 ).substr( 2, 16 ) )
+
   return (
     <StyledDiv>
       <TextInput
         labelText='X-SAMPA'
+        idStem={ xsampaId }
         inputProps={{
           value: value.ascii,
           onChange: updateXsampa,
+          'aria-controls': `id-${ ipaId }`
         }}
         wrapperProps={ wrapperProps }
       />
       <TextInput
         labelText='IPA'
+        idStem={ ipaId }
         inputProps={{
           value: value.ipa,
           onChange: updateIpa,
+          'aria-controls': `id-${ xsampaId }`
         }}
         wrapperProps={ wrapperProps }
       />

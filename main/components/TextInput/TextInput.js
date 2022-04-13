@@ -45,7 +45,7 @@ const TextInput = props => {
 TextInput.propTypes = {
   /** An optional id stem for the input fields. If none is provided, we create a random one. */
   idStem: PropTypes.string,
-  /** Properties that will be passed to the <input> element. */
+  /** Properties that will be passed to the `<input>` element. */
   inputProps: PropTypes.object,
   /** Label for the text input */
   labelText: PropTypes.string.isRequired,
