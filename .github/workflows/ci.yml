@@ -24,6 +24,9 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-up
+          sleep 3
+          gw /node_modules/.bin/webpack --config webpack.config.js --mode development
+          # gw chmod -R a+rwx main/assets/bundles/
       - name: eslint
         run: |
           shopt -s expand_aliases
@@ -49,6 +52,13 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-jest
+      - name: cypress
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-mk-env ci
+          sleep 3
+          gw-cypress-run
   build-prod:
     runs-on: self-hosted
     if: github.ref == 'refs/heads/main'
@@ -72,5 +82,7 @@ jobs:
     steps:
       - name: down
         run: |
+          shopt -s expand_aliases
           source ./glyphworks.sh
+          gw rm -r main/assets/bundles/
           docker-compose down
