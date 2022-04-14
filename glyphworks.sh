@@ -223,6 +223,7 @@ alias gw-eslint='gw yarn run eslint .'
 alias gw-flake8='gw flake8 .'
 alias gw-yarn-audit='gw yarn audit --groups dependencies'
 alias gw-pip-audit='gw pip-audit'
+alias gw-local-yarn="yarn --modules-folder ${YARN_MODULES_FOLDER} --cache-folder ${YARN_CACHE_FOLDER}"
 alias gw-jest='gw yarn jest'
 alias gw-jest-watch='gw yarn jest --watch'
 alias gw-local-cypress-run="gw_local_cypress_run"

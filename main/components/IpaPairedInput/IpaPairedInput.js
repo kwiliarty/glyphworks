@@ -47,6 +47,7 @@ const IpaPairedInput = () => {
         labelText='X-SAMPA'
         idStem={ xsampaId }
         inputProps={{
+          name: 'xsampa',
           value: value.ascii,
           onChange: updateXsampa,
           'aria-controls': `id-${ ipaId }`
@@ -57,6 +58,7 @@ const IpaPairedInput = () => {
         labelText='IPA'
         idStem={ ipaId }
         inputProps={{
+          name: 'ipa',
           value: value.ipa,
           onChange: updateIpa,
           'aria-controls': `id-${ xsampaId }`
