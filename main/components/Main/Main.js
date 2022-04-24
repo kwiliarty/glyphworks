@@ -9,6 +9,7 @@ const StyledMain = styled.main`
   color: ${ props => props.foreColor };
   padding: ${ props => props.theme.basePadding }; 
   flex-grow: 1;
+  max-width: 800px;
 `
 
 const Main = props => {

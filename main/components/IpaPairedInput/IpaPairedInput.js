@@ -7,7 +7,7 @@ import TextInput from '../TextInput'
 const StyledDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 `
 
@@ -34,7 +34,7 @@ const IpaPairedInput = () => {
 
   const wrapperProps = {
     style: {
-      margin: '0.5em',
+      margin: '0',
     },
   }
 
@@ -50,7 +50,10 @@ const IpaPairedInput = () => {
           name: 'xsampa',
           value: value.ascii,
           onChange: updateXsampa,
-          'aria-controls': `id-${ ipaId }`
+          'aria-controls': `id-${ ipaId }`,
+          style: {
+            marginBottom: '0.5em',
+          },
         }}
         wrapperProps={ wrapperProps }
       />

@@ -15,7 +15,8 @@ const StyledTop = styled.div``
 
 const StyledContents = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   flex: 1;
 `
 

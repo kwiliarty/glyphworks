@@ -12,6 +12,7 @@ import Main from '../Main'
 import Footer from '../Footer'
 
 const Wrapper = styled.div`
+  background-color: ${theme.colors.parchment};
 `
 
 const App = () => {

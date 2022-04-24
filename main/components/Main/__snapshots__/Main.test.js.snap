@@ -8,6 +8,7 @@ exports[`The Main component can accept custom colors 1`] = `
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  max-width: 800px;
 }
 
 <main
@@ -23,6 +24,7 @@ exports[`The Main component displays with a default text and background color 1`
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  max-width: 800px;
 }
 
 <main
