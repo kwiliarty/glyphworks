@@ -18,6 +18,12 @@ services:
       - type: bind
         source: ./../
         target: /usr/src/app
+      - type: bind
+        source: ./../cypress/support/node_modules/axe-core
+        target: /node_modules/axe-core
+      - type: bind
+        source: ./../cypress/support/node_modules/cypress-axe
+        target: /node_modules/cypress-axe
 
   webpack:
     image: *image

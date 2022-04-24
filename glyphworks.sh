@@ -124,7 +124,7 @@ gw_rm_env() {
 
 # Invoke local cypress
 gw_local_cypress() {
-    yarn \
+    NODE_PATH=${YARN_MODULES_FOLDER} yarn \
         --modules-folder ${YARN_MODULES_FOLDER} \
         --cache-folder ${YARN_CACHE_FOLDER} \
         run cypress \

@@ -12,4 +12,10 @@ describe( 'The GlyphWorks index page', () => {
     cy.get( 'input[name="ipa"]' )
       .should( 'have.value', 'sʌm θɪŋ' )
   })
+
+  it( 'passes accessibility checks', () => {
+    cy.visit( '/' )
+    cy.injectAxe()
+    cy.myCheckA11y()
+  })
 })

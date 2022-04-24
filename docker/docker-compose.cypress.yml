@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   cypress:
-    image: cypress/included:9.5.3
+    image: cypress/included:9.5.4
     working_dir: /usr/src/app
     environment:
       - CYPRESS_BASE_URL=http://python:8001
