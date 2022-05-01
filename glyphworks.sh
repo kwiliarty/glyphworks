@@ -220,7 +220,7 @@ alias gw-up='docker-compose up -d && if [ ${GW_ENV} != 'prod' ]; then gw yarn in
 alias gw-up-tail='docker-compose up'
 alias gw-status='docker-compose ps'
 alias gw-eslint='gw yarn run eslint .'
-alias gw-flake8='gw flake8 .'
+alias gw-flake8='echo "running flake8" && gw flake8 .'
 alias gw-yarn-audit='gw yarn audit --groups dependencies'
 alias gw-pip-audit='gw pip-audit'
 alias gw-local-yarn="yarn --modules-folder ${YARN_MODULES_FOLDER} --cache-folder ${YARN_CACHE_FOLDER}"

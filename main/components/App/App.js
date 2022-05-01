@@ -10,6 +10,7 @@ import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
 import Footer from '../Footer'
+import Link from '../Link'
 
 const Wrapper = styled.div`
   background-color: ${theme.colors.parchment};
@@ -26,8 +27,7 @@ const App = () => {
           <ContentBox.Contents>
             <Main>
               <p>
-                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>!
-                You can use the inputs below to convert X-SAMPA to IPA or vice versa.
+                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Convert <Link href='https://en.wikipedia.org/wiki/X-SAMPA'>X-SAMPA</Link> to <Link href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</Link> or vice versa.
               </p>
               <IpaPairedInput />
             </Main>
