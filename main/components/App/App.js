@@ -25,10 +25,9 @@ const App = () => {
           </ContentBox.Top>
           <ContentBox.Contents>
             <Main>
-              <p>
-                { Strings.welcome_message }
-              </p>
+              { Strings.welcome_message }
               <IpaPairedInput />
+              { Strings.quickstart_examples }
             </Main>
           </ContentBox.Contents>
           <ContentBox.Bottom>
