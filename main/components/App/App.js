@@ -4,13 +4,12 @@ import styled from 'styled-components'
 import theme from '../../themes/glyphworks'
 import GlobalStyle from '../../themes/GlobalStyle'
 
-import Ipa from '../Ipa'
 import IpaPairedInput from '../IpaPairedInput'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
 import Footer from '../Footer'
-import Link from '../Link'
+import * as Strings from '../../strings'
 
 const Wrapper = styled.div`
   background-color: ${theme.colors.parchment};
@@ -27,7 +26,7 @@ const App = () => {
           <ContentBox.Contents>
             <Main>
               <p>
-                Welcome to <Ipa>[ɡlɪfwɜ˞ks]</Ipa>! Convert <Link href='https://en.wikipedia.org/wiki/X-SAMPA'>X-SAMPA</Link> to <Link href='https://en.wikipedia.org/wiki/International_Phonetic_Alphabet'>IPA</Link> or vice versa.
+                { Strings.welcome_message }
               </p>
               <IpaPairedInput />
             </Main>
