@@ -21,7 +21,7 @@ DEBUG = False
 ALLOWED_HOSTS = []
 
 
-def dbname():
+def db_host():
     if os.getenv('CYPRESS_SERVER', False):
         return 'db-test'
     return 'db'
@@ -33,7 +33,7 @@ default_db = {
     'NAME': 'postgres',
     'USER': 'postgres',
     'PASSWORD': os.getenv('POSTGRES_PASSWORD'),
-    'HOST': dbname(),
+    'HOST': db_host(),
     'PORT': 5432,
 }
 
@@ -45,6 +45,15 @@ for_all_envs = {
     # 'USE_I18N': False,
     # 'USE_L10N': False,
     # 'USE_TZ': True,
+    'DATABASES': {
+        'default': {
+            **default_db,
+        },
+        'test': {
+            **default_db,
+        },
+    },
+
     'STATIC_URL': '/static/',
     'STATIC_ROOT': '/usr/src/app/static/',
     'STATICFILES_DIRS': [os.path.join(BASE_DIR, 'main/assets/')],  # webpack
@@ -72,10 +81,11 @@ ssl = {
 # Application definition
 
 CORE_APPS = [
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    # 'django.contrib.messages',
-    # 'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.sessions',
     'django.contrib.staticfiles',
 ]
 
@@ -90,6 +100,7 @@ THIRD_PARTY_APPS = [
 CUSTOM_APPS = [
     # good place to include custom admin configs
     # ***.apps.***Config, for instance
+    'glyphs',
 ]
 
 INSTALLED_APPS = CORE_APPS + THIRD_PARTY_APPS + CUSTOM_APPS

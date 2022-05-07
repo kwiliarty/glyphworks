@@ -25,6 +25,29 @@ services:
         source: ./../cypress/support/node_modules/cypress-axe
         target: /node_modules/cypress-axe
 
+  python-test:
+    image: *image
+    restart: always
+    stdin_open: true
+    tty: true
+    environment:
+      - TZ=America/New_York
+      - GW_ENV=ci
+      - GW_INSTANCE
+      - DJANGO_SETTINGS_MODULE=main.settings.ci
+      - CYPRESS_SERVER=True
+      - SECRET_KEY
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - '0:8000'
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    networks:
+      - django
+    volumes:
+      *volumes
+    depends_on:
+      - db-test
+
   webpack:
     image: *image
     restart: always
@@ -45,6 +68,24 @@ services:
     volumes:
       *volumes
 
+  db-test:
+    image: postgres:13.5-bullseye
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - django
+    volumes:
+      - postgres_test_data:/var/lib/postgresql/data
+
 volumes:
   node_modules:
   yarn_cache:
+  postgres_test_data:

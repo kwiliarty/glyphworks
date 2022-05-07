@@ -12,7 +12,7 @@ jobs:
       - name: build-dev
         run: |
           shopt -s expand_aliases
-          mv docker/ci.env docker/override.env
+          cp docker/ci.env docker/override.env
           source ./glyphworks.sh
           gw-build-dev
   test:
@@ -56,8 +56,6 @@ jobs:
         run: |
           shopt -s expand_aliases
           source ./glyphworks.sh
-          gw-mk-env ci
-          sleep 3
           gw-cypress-run
   build-prod:
     runs-on: self-hosted
@@ -85,4 +83,4 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw rm -r main/assets/bundles/
-          docker-compose down
+          docker-compose down --remove-orphans

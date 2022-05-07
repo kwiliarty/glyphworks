@@ -11,6 +11,7 @@ services:
       - GW_ENV
       - GW_INSTANCE
       - SECRET_KEY
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     networks:
       - django
     depends_on:
@@ -23,6 +24,11 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
     networks:
       - django
     volumes:

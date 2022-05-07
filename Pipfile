@@ -14,6 +14,7 @@ django-extensions = "*"
 daphne = "*"
 gunicorn = "*"
 flake8 = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.9.10"

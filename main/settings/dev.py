@@ -13,8 +13,8 @@ shared.apply(shared.for_all_envs, globals())
 INSTALLED_APPS = shared.INSTALLED_APPS + [
 ]
 
-# MIDDLEWARE = shared.MIDDLEWARE + [
-# ]
+MIDDLEWARE = shared.MIDDLEWARE + [
+]
 
 TEMPLATES = shared.TEMPLATES
 TEMPLATES[0]['OPTIONS']['debug'] = True
