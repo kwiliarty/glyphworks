@@ -223,10 +223,12 @@ alias gw-pip-audit='gw pip-audit'
 alias gw-local-yarn="yarn --modules-folder ${YARN_MODULES_FOLDER} --cache-folder ${YARN_CACHE_FOLDER}"
 alias gw-jest='gw yarn jest'
 alias gw-jest-watch='gw yarn jest --watch'
-alias gw-local-cypress-run="gw_local_cypress_run"
-alias gw-local-cypress-open="gw_local_cypress_open"
-alias gw-cypress-run="gw_cypress_run"
-alias gw-test-fast='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit && gw-jest'
+alias gw-local-cypress-run='gw_local_cypress_run'
+alias gw-local-cypress-open='gw_local_cypress_open'
+alias gw-cypress-run='gw_cypress_run'
+alias gw-unit-test='gw ./manage.py test --settings main.settings.ci'
+alias gw-unit-test-deprecated='gw python -Wa ./manage.py test --settings main.settings.ci'
+alias gw-test-fast='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit && gw-jest && gw-unit-test'
 alias gw-test-all='gw-test-fast && gw-cypress-run'
 
 ## postgres aliases

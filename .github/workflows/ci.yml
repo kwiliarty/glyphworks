@@ -52,6 +52,11 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw-jest
+      - name: unit-test
+        run: |
+          shopt -s expand_aliases
+          source ./glyphworks.sh
+          gw-unit-test
       - name: cypress
         run: |
           shopt -s expand_aliases
