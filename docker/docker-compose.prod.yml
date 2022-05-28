@@ -35,7 +35,7 @@ services:
         target: /var/www/certbot
     depends_on:
       - python
-    restart: 'on-failure'
+    restart: always
     networks:
       - django
 
