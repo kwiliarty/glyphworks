@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 {% load render_bundle from webpack_loader %}
 <html lang="en">
@@ -5,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlyphWorks</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/png">
+    <link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
   </head>
   <body>
     <div id="app"></div>
