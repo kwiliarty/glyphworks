@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import theme from '../../themes/glyphworks'
 
 const Wrapper = styled.span`
-  display: inline-block;
   font-family: ${ theme.ipaFontFamily };
 `
 
