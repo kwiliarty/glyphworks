@@ -8,3 +8,4 @@ class GlyphFactory(factory.django.DjangoModelFactory):
         model = Glyph
 
     glyph = 'Z'
+    slug = 'z'

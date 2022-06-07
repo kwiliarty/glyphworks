@@ -9,14 +9,26 @@ class GlyphModelTests(TestCase):
         pass
         glyph = GlyphFactory()
         attributes = [
-            'id',
             'glyph',
+            'hex_code',
+            'combining',
+            'ipa_definition',
+            'ipa_number',
+            'ipa_name',
+            'slug',
+            'group',
         ]
         for a in attributes:
-            self.assertTrue(hasattr(glyph, a))
+            self.assertTrue(
+                hasattr(glyph, a),
+                msg=f'The glyph {glyph} does not have the attribute {a}',
+            )
 
     def test___str__(self):
         glyph = GlyphFactory(
             glyph='A',
+            slug='capital-a',
+            ipa_name='Capital A',
+            ipa_definition='voiced mono-syllable',
         )
-        self.assertEqual(glyph.__str__(), 'A')
+        self.assertEqual(glyph.__str__(), 'A (Capital A): voiced mono-syllable')
