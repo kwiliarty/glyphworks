@@ -230,6 +230,7 @@ alias gw-unit-test='gw ./manage.py test --settings main.settings.ci'
 alias gw-unit-test-deprecated='gw python -Wa ./manage.py test --settings main.settings.ci'
 alias gw-test-fast='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit && gw-jest && gw-unit-test'
 alias gw-test-all='gw-test-fast && gw-cypress-run'
+alias gw-shell-plus='gw ./manage.py shell_plus --plain'
 
 ## postgres aliases
 alias gw-db='docker-compose exec db psql -U postgres'
