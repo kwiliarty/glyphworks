@@ -2,11 +2,13 @@ from django.db import models
 
 
 class Glyph(models.Model):
+    '''The principal glyph model.'''
 
     class GlyphGroup(models.TextChoices):
+        '''Enumeration for the possible glyph groups'''
         PULMONIC_CONSONANT = 'PC', 'pulmonic consonant'
         NON_PULMONITC_CONSONANT = 'NPC', 'non-pulmonic consonant'
-        OTHER_SYMBOL = 'OT', 'other symbol'
+        OTHER_SYMBOL = 'OS', 'other symbol'
         VOWEL = 'V', 'vowel'
         DIACRITIC = 'D', 'diacritic'
         SUPRASEGMENTAL = 'SS', 'suprasegmental'
@@ -16,33 +18,46 @@ class Glyph(models.Model):
     glyph = models.CharField(
         max_length=5,
         unique=True,
+        default='',
     )
     hex_code = models.CharField(
         max_length=4,
         unique=True,
+        default='',
     )
     combining = models.BooleanField(
         default=False,
     )
     ipa_definition = models.CharField(
         max_length=100,
+        default='',
+        unique=True,
+        blank=True,
+        null=True,
     )
     ipa_number = models.CharField(
         max_length=5,
-        unique=True,
+        default='',
+        blank=True,
+        null=True,
     )
     ipa_name = models.CharField(
         max_length=100,
-        unique=True,
+        default='',
+        blank=True,
+        null=True,
     )
     slug = models.CharField(
         max_length=100,
         primary_key=True,
+        default='',
     )
     group = models.CharField(
         max_length=100,
         choices=GlyphGroup.choices,
+        default=GlyphGroup.PULMONIC_CONSONANT,
     )
 
     def __str__(self):
-        return f'{self.glyph} ({self.ipa_name}): {self.ipa_definition}'
+        '''Custom display string'''
+        return f'{self.glyph} ({self.slug}): {self.ipa_definition}'

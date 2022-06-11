@@ -1,0 +1,2459 @@
+[
+{
+  "model": "glyphs.glyph",
+  "pk": "acute-accent-over",
+  "fields": {
+    "glyph": "◌́",
+    "hex_code": "0301",
+    "combining": true,
+    "ipa_definition": "high level tone (accent mark)",
+    "ipa_number": "513",
+    "ipa_name": "acute accent (over)",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "advancing-sign",
+  "fields": {
+    "glyph": "◌̘",
+    "hex_code": "0318",
+    "combining": true,
+    "ipa_definition": "advanced tongue root",
+    "ipa_number": "417",
+    "ipa_name": "advancing sign",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "apostrophe",
+  "fields": {
+    "glyph": "ʼ",
+    "hex_code": "02BC",
+    "combining": false,
+    "ipa_definition": "ejective diacritic",
+    "ipa_number": "401",
+    "ipa_name": "apostrophe",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "ash",
+  "fields": {
+    "glyph": "æ",
+    "hex_code": "00E6",
+    "combining": false,
+    "ipa_definition": "raised-open front unrounded vowel",
+    "ipa_number": "325",
+    "ipa_name": "ash; lower-case a-e ligature",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-dotless-j",
+  "fields": {
+    "glyph": "ɟ",
+    "hex_code": "025F",
+    "combining": false,
+    "ipa_definition": "voiced palatal plosive",
+    "ipa_number": "108",
+    "ipa_name": "barred dotless j",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-glottal-stop",
+  "fields": {
+    "glyph": "ʡ",
+    "hex_code": "02A1",
+    "combining": false,
+    "ipa_definition": "voiced epiglottal plosive",
+    "ipa_number": "173",
+    "ipa_name": "barred glottal stop",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-h",
+  "fields": {
+    "glyph": "ħ",
+    "hex_code": "0127",
+    "combining": false,
+    "ipa_definition": "voiceless pharyngeal fricative",
+    "ipa_number": "144",
+    "ipa_name": "barred h",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-i",
+  "fields": {
+    "glyph": "ɨ",
+    "hex_code": "0268",
+    "combining": false,
+    "ipa_definition": "close central unrounded vowel",
+    "ipa_number": "317",
+    "ipa_name": "barred i",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-o",
+  "fields": {
+    "glyph": "ɵ",
+    "hex_code": "0275",
+    "combining": false,
+    "ipa_definition": "close-mid central rounded vowel",
+    "ipa_number": "323",
+    "ipa_name": "barred o",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-reversed-glottal-stop",
+  "fields": {
+    "glyph": "ʢ",
+    "hex_code": "02A2",
+    "combining": false,
+    "ipa_definition": "voiced epiglottal fricative",
+    "ipa_number": "174",
+    "ipa_name": "barred reversed glottal stop",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "barred-u",
+  "fields": {
+    "glyph": "ʉ",
+    "hex_code": "0289",
+    "combining": false,
+    "ipa_definition": "close central rounded vowel",
+    "ipa_number": "318",
+    "ipa_name": "barred u",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "belted-l",
+  "fields": {
+    "glyph": "ɬ",
+    "hex_code": "026C",
+    "combining": false,
+    "ipa_definition": "voiceless lateral alveolar fricative",
+    "ipa_number": "148",
+    "ipa_name": "belted l",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "beta",
+  "fields": {
+    "glyph": "β",
+    "hex_code": "03B2",
+    "combining": false,
+    "ipa_definition": "voiced bilabial fricative",
+    "ipa_number": "127",
+    "ipa_name": "beta",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "bottom-tie-bar",
+  "fields": {
+    "glyph": "◌͜",
+    "hex_code": "035C",
+    "combining": true,
+    "ipa_definition": "tie bar (below)",
+    "ipa_number": "509",
+    "ipa_name": "bottom tie bar",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "breve",
+  "fields": {
+    "glyph": "◌̆",
+    "hex_code": "0306",
+    "combining": true,
+    "ipa_definition": "extra-short",
+    "ipa_number": "505",
+    "ipa_name": "breve",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "bulls-eye",
+  "fields": {
+    "glyph": "ʘ",
+    "hex_code": "0298",
+    "combining": false,
+    "ipa_definition": "bilabial click",
+    "ipa_number": "176",
+    "ipa_name": "bull's eye",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "buttom-tie-bar",
+  "fields": {
+    "glyph": "‿",
+    "hex_code": "203F",
+    "combining": false,
+    "ipa_definition": "linking (absence of a break)",
+    "ipa_number": "509",
+    "ipa_name": "bottom tie bar",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "c-cedilla",
+  "fields": {
+    "glyph": "ç",
+    "hex_code": "00E7",
+    "combining": false,
+    "ipa_definition": "voiceless palatal fricative",
+    "ipa_number": "138",
+    "ipa_name": "c cedilla",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "chi",
+  "fields": {
+    "glyph": "χ",
+    "hex_code": "03C7",
+    "combining": false,
+    "ipa_definition": "voiceless uvular fricative",
+    "ipa_number": "142",
+    "ipa_name": "chi",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "circumflex",
+  "fields": {
+    "glyph": "◌̂",
+    "hex_code": "0302",
+    "combining": true,
+    "ipa_definition": "falling contour tone (accent mark)",
+    "ipa_number": "525",
+    "ipa_name": "circumflex",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "closed-reversed-epsilon",
+  "fields": {
+    "glyph": "ɞ",
+    "hex_code": "025E",
+    "combining": false,
+    "ipa_definition": "open-mid central rounded vowel",
+    "ipa_number": "395",
+    "ipa_name": "closed reversed epsilon",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "corner",
+  "fields": {
+    "glyph": "◌̚",
+    "hex_code": "031A",
+    "combining": true,
+    "ipa_definition": "no audible release",
+    "ipa_number": "427",
+    "ipa_name": "corner",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "curly-tail-c",
+  "fields": {
+    "glyph": "ɕ",
+    "hex_code": "0255",
+    "combining": false,
+    "ipa_definition": "voiceless alveolo-palatal fricative",
+    "ipa_number": "182",
+    "ipa_name": "curly-tail c",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "curly-tail-j",
+  "fields": {
+    "glyph": "ʝ",
+    "hex_code": "029D",
+    "combining": false,
+    "ipa_definition": "voiced palatal fricative",
+    "ipa_number": "139",
+    "ipa_name": "curly-tail j",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "curly-tail-z",
+  "fields": {
+    "glyph": "ʑ",
+    "hex_code": "0291",
+    "combining": false,
+    "ipa_definition": "voiced alveolo-palatal fricative",
+    "ipa_number": "183",
+    "ipa_name": "curly-tail z",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "cursive-v",
+  "fields": {
+    "glyph": "ʋ",
+    "hex_code": "028B",
+    "combining": false,
+    "ipa_definition": "voiced labiodental approximant",
+    "ipa_number": "150",
+    "ipa_name": "cursive v",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "d-curly-tail-z-ligature",
+  "fields": {
+    "glyph": "ʥ",
+    "hex_code": "02A5",
+    "combining": false,
+    "ipa_definition": "compiled voiced alveolo-palatal affricate",
+    "ipa_number": "216",
+    "ipa_name": "d-curly-tail-z ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "d-ezh-ligature",
+  "fields": {
+    "glyph": "ʤ",
+    "hex_code": "02A4",
+    "combining": false,
+    "ipa_definition": "compiled voiced postalveolar affricate",
+    "ipa_number": "214",
+    "ipa_name": "d-ezh ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "diacritic-falling-rising-contour-tone",
+  "fields": {
+    "glyph": "◌᷉",
+    "hex_code": "1DC9",
+    "combining": true,
+    "ipa_definition": "falling-rising contour tone (accent mark)",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "diacritic-glottal-stop",
+  "fields": {
+    "glyph": "ˀ",
+    "hex_code": "02C0",
+    "combining": false,
+    "ipa_definition": "diacritic glottal stop",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "diacritic-mid-high-falling-contour-tone",
+  "fields": {
+    "glyph": "◌᷇",
+    "hex_code": "1DC7",
+    "combining": true,
+    "ipa_definition": "high-mid falling contour tone (accent mark)",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "diacritic-mid-low-falling-contour-tone",
+  "fields": {
+    "glyph": "◌᷆",
+    "hex_code": "1DC6",
+    "combining": true,
+    "ipa_definition": "mid-low falling contour tone (accent mark)",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "diacritic-retroflexion",
+  "fields": {
+    "glyph": "◌̢",
+    "hex_code": "0322",
+    "combining": true,
+    "ipa_definition": "diacritic retroflexion",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "double-acute-accent-over",
+  "fields": {
+    "glyph": "◌̋",
+    "hex_code": "030B",
+    "combining": true,
+    "ipa_definition": "extra-high level tone (accent mark)",
+    "ipa_number": "512",
+    "ipa_name": "double acute accent (over)",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "double-barred-pipe",
+  "fields": {
+    "glyph": "ǂ",
+    "hex_code": "01C2",
+    "combining": false,
+    "ipa_definition": "palatoalveolar click",
+    "ipa_number": "179",
+    "ipa_name": "double-barred pipe",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "double-grave-accent-over",
+  "fields": {
+    "glyph": "◌̏",
+    "hex_code": "030F",
+    "combining": true,
+    "ipa_definition": "extra-low level tone (accent mark)",
+    "ipa_number": "516",
+    "ipa_name": "double grave accent (over)",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "double-pipe",
+  "fields": {
+    "glyph": "ǁ",
+    "hex_code": "01C1",
+    "combining": false,
+    "ipa_definition": "alveolar lateral click",
+    "ipa_number": "180",
+    "ipa_name": "double pipe",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "double-vertical-line-thick",
+  "fields": {
+    "glyph": "‖",
+    "hex_code": "2016",
+    "combining": false,
+    "ipa_definition": "major (intonational) group",
+    "ipa_number": "508",
+    "ipa_name": "double vertical line (thick)",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "down-arrow",
+  "fields": {
+    "glyph": "ꜜ",
+    "hex_code": "A71C",
+    "combining": false,
+    "ipa_definition": "downstep",
+    "ipa_number": "517",
+    "ipa_name": "down arrow",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "downward-diagonal-arrow",
+  "fields": {
+    "glyph": "↘",
+    "hex_code": "2198",
+    "combining": false,
+    "ipa_definition": "global fall",
+    "ipa_number": "511",
+    "ipa_name": "downward diagonal arrow",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "d-z-ligature",
+  "fields": {
+    "glyph": "ʣ",
+    "hex_code": "02A3",
+    "combining": false,
+    "ipa_definition": "compiled voiced alveolar affricate",
+    "ipa_number": "212",
+    "ipa_name": "d-z ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "eng",
+  "fields": {
+    "glyph": "ŋ",
+    "hex_code": "014B",
+    "combining": false,
+    "ipa_definition": "voiced velar nasal",
+    "ipa_number": "119",
+    "ipa_name": "eng",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "epsilon",
+  "fields": {
+    "glyph": "ɛ",
+    "hex_code": "025B",
+    "combining": false,
+    "ipa_definition": "open-mid front unrounded vowel",
+    "ipa_number": "303",
+    "ipa_name": "epsilon",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "esh",
+  "fields": {
+    "glyph": "ʃ",
+    "hex_code": "0283",
+    "combining": false,
+    "ipa_definition": "voiceless postalveolar fricative",
+    "ipa_number": "134",
+    "ipa_name": "esh",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "eth",
+  "fields": {
+    "glyph": "ð",
+    "hex_code": "00F0",
+    "combining": false,
+    "ipa_definition": "voiced dental fricative",
+    "ipa_number": "131",
+    "ipa_name": "eth",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "exclamation-point",
+  "fields": {
+    "glyph": "ǃ",
+    "hex_code": "01C3",
+    "combining": false,
+    "ipa_definition": "(post)alveolar click",
+    "ipa_number": "178",
+    "ipa_name": "exclamation point",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "extra-high-tone-letter",
+  "fields": {
+    "glyph": "˥",
+    "hex_code": "02E5",
+    "combining": false,
+    "ipa_definition": "extra-high level tone (Chao letter)",
+    "ipa_number": "519",
+    "ipa_name": "extra-high tone letter",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "extra-low-tone-letter",
+  "fields": {
+    "glyph": "˩",
+    "hex_code": "02E9",
+    "combining": false,
+    "ipa_definition": "extra-low level tone (Chao letter)",
+    "ipa_number": "523",
+    "ipa_name": "extra-low tone letter",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "ezh",
+  "fields": {
+    "glyph": "ʒ",
+    "hex_code": "0292",
+    "combining": false,
+    "ipa_definition": "voiced postalveolar fricative",
+    "ipa_number": "135",
+    "ipa_name": "ezh; tailed z",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "fish-hook-r",
+  "fields": {
+    "glyph": "ɾ",
+    "hex_code": "027E",
+    "combining": false,
+    "ipa_definition": "voiced alveolar tap",
+    "ipa_number": "124",
+    "ipa_name": "fish-hook r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "gamma",
+  "fields": {
+    "glyph": "ɣ",
+    "hex_code": "0263",
+    "combining": false,
+    "ipa_definition": "voiced velar fricative",
+    "ipa_number": "141",
+    "ipa_name": "gamma",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "glottal-stop",
+  "fields": {
+    "glyph": "ʔ",
+    "hex_code": "0294",
+    "combining": false,
+    "ipa_definition": "voiceless glottal plosive",
+    "ipa_number": "113",
+    "ipa_name": "glottal stop",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "grave-accent-macron",
+  "fields": {
+    "glyph": "◌᷅",
+    "hex_code": "1DC5",
+    "combining": true,
+    "ipa_definition": "low rising contour tone (accent mark)",
+    "ipa_number": "527",
+    "ipa_name": "grave accent + macron",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "grave-accent-over",
+  "fields": {
+    "glyph": "◌̀",
+    "hex_code": "0300",
+    "combining": true,
+    "ipa_definition": "low level tone (accent mark)",
+    "ipa_number": "515",
+    "ipa_name": "grave accent (over)",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "grave-acute-grave-accent",
+  "fields": {
+    "glyph": "◌᷈",
+    "hex_code": "1DC8",
+    "combining": true,
+    "ipa_definition": "rising-falling contour tone (accent mark)",
+    "ipa_number": "528",
+    "ipa_name": "grave + acute + grave accent",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "half-length-mark",
+  "fields": {
+    "glyph": "ˑ",
+    "hex_code": "02D1",
+    "combining": false,
+    "ipa_definition": "half-long",
+    "ipa_number": "504",
+    "ipa_name": "half-length mark",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "high-tone-letter",
+  "fields": {
+    "glyph": "˦",
+    "hex_code": "02E6",
+    "combining": false,
+    "ipa_definition": "high level tone (Chao letter)",
+    "ipa_number": "520",
+    "ipa_name": "high tone letter",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-b",
+  "fields": {
+    "glyph": "ɓ",
+    "hex_code": "0253",
+    "combining": false,
+    "ipa_definition": "voiced bilabial implosive",
+    "ipa_number": "160",
+    "ipa_name": "hooktop b",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-barred-dotless-j",
+  "fields": {
+    "glyph": "ʄ",
+    "hex_code": "0284",
+    "combining": false,
+    "ipa_definition": "voiced palatal implosive",
+    "ipa_number": "164",
+    "ipa_name": "hooktop barred dotless j",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-d",
+  "fields": {
+    "glyph": "ɗ",
+    "hex_code": "0257",
+    "combining": false,
+    "ipa_definition": "voiced dental/alveolar implosive",
+    "ipa_number": "162",
+    "ipa_name": "hooktop d",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-g",
+  "fields": {
+    "glyph": "ɠ",
+    "hex_code": "0260",
+    "combining": false,
+    "ipa_definition": "voiced velar implosive",
+    "ipa_number": "166",
+    "ipa_name": "hooktop g",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-h",
+  "fields": {
+    "glyph": "ɦ",
+    "hex_code": "0266",
+    "combining": false,
+    "ipa_definition": "voiced glottal fricative",
+    "ipa_number": "147",
+    "ipa_name": "hooktop h",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-heng",
+  "fields": {
+    "glyph": "ɧ",
+    "hex_code": "0267",
+    "combining": false,
+    "ipa_definition": "voiceless postalveolar-velar fricative",
+    "ipa_number": "175",
+    "ipa_name": "hooktop heng",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "hooktop-small-capital-g",
+  "fields": {
+    "glyph": "ʛ",
+    "hex_code": "029B",
+    "combining": false,
+    "ipa_definition": "voiced uvular implosive",
+    "ipa_number": "168",
+    "ipa_name": "hooktop small capital g",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "inverted-small-capital-r",
+  "fields": {
+    "glyph": "ʁ",
+    "hex_code": "0281",
+    "combining": false,
+    "ipa_definition": "voiced uvular fricative",
+    "ipa_number": "143",
+    "ipa_name": "inverted small capital r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "inverted-subscript-bridge",
+  "fields": {
+    "glyph": "◌̺",
+    "hex_code": "033A",
+    "combining": true,
+    "ipa_definition": "apical",
+    "ipa_number": "409",
+    "ipa_name": "inverted subscript bridge",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "left-tail-m-at-right",
+  "fields": {
+    "glyph": "ɱ",
+    "hex_code": "0271",
+    "combining": false,
+    "ipa_definition": "voiced labiodental nasal",
+    "ipa_number": "115",
+    "ipa_name": "left-tail m at right",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "left-tail-n-at-left",
+  "fields": {
+    "glyph": "ɲ",
+    "hex_code": "0272",
+    "combining": false,
+    "ipa_definition": "voiced palatal nasal",
+    "ipa_number": "118",
+    "ipa_name": "left-tail n at left",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "length-mark",
+  "fields": {
+    "glyph": "ː",
+    "hex_code": "02D0",
+    "combining": false,
+    "ipa_definition": "long",
+    "ipa_number": "503",
+    "ipa_name": "length mark",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "l-ezh-ligature",
+  "fields": {
+    "glyph": "ɮ",
+    "hex_code": "026E",
+    "combining": false,
+    "ipa_definition": "voiced lateral alveolar fricative",
+    "ipa_number": "149",
+    "ipa_name": "l-ezh ligature",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-a",
+  "fields": {
+    "glyph": "a",
+    "hex_code": "0061",
+    "combining": false,
+    "ipa_definition": "open front unrounded vowel",
+    "ipa_number": "304",
+    "ipa_name": "lower-case a",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-b",
+  "fields": {
+    "glyph": "b",
+    "hex_code": "0062",
+    "combining": false,
+    "ipa_definition": "voiced bilabial plosive",
+    "ipa_number": "102",
+    "ipa_name": "lower-case b",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-c",
+  "fields": {
+    "glyph": "c",
+    "hex_code": "0063",
+    "combining": false,
+    "ipa_definition": "voiceless palatal plosive",
+    "ipa_number": "107",
+    "ipa_name": "lower-case c",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-d",
+  "fields": {
+    "glyph": "d",
+    "hex_code": "0064",
+    "combining": false,
+    "ipa_definition": "voiced alveolar plosive",
+    "ipa_number": "104",
+    "ipa_name": "lower-case d",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-e",
+  "fields": {
+    "glyph": "e",
+    "hex_code": "0065",
+    "combining": false,
+    "ipa_definition": "close-mid front unrounded vowel",
+    "ipa_number": "302",
+    "ipa_name": "lower-case e",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-f",
+  "fields": {
+    "glyph": "f",
+    "hex_code": "0067",
+    "combining": false,
+    "ipa_definition": "voiceless labiodental fricative",
+    "ipa_number": "128",
+    "ipa_name": "lower-case f",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-h",
+  "fields": {
+    "glyph": "h",
+    "hex_code": "0068",
+    "combining": false,
+    "ipa_definition": "voiceless glottal fricative",
+    "ipa_number": "146",
+    "ipa_name": "lower-case h",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-i",
+  "fields": {
+    "glyph": "i",
+    "hex_code": "0069",
+    "combining": false,
+    "ipa_definition": "close front unrounded vowel",
+    "ipa_number": "301",
+    "ipa_name": "lower-case i",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-j",
+  "fields": {
+    "glyph": "j",
+    "hex_code": "006A",
+    "combining": false,
+    "ipa_definition": "voiced palatal approximant",
+    "ipa_number": "153",
+    "ipa_name": "lower-case j",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-k",
+  "fields": {
+    "glyph": "k",
+    "hex_code": "006B",
+    "combining": false,
+    "ipa_definition": "voiceless velar plosive",
+    "ipa_number": "109",
+    "ipa_name": "lower-case k",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-l",
+  "fields": {
+    "glyph": "l",
+    "hex_code": "006C",
+    "combining": false,
+    "ipa_definition": "voiced lateral alveolar approximant",
+    "ipa_number": "155",
+    "ipa_name": "lower-case l",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-m",
+  "fields": {
+    "glyph": "m",
+    "hex_code": "006D",
+    "combining": false,
+    "ipa_definition": "voiced bilabial nasal",
+    "ipa_number": "114",
+    "ipa_name": "lower-case m",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-n",
+  "fields": {
+    "glyph": "n",
+    "hex_code": "006E",
+    "combining": false,
+    "ipa_definition": "voiced alveolar nasal",
+    "ipa_number": "116",
+    "ipa_name": "lower-case n",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-o",
+  "fields": {
+    "glyph": "o",
+    "hex_code": "006F",
+    "combining": false,
+    "ipa_definition": "close-mid back rounded vowel",
+    "ipa_number": "307",
+    "ipa_name": "lower-case o",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-o-e-ligature",
+  "fields": {
+    "glyph": "œ",
+    "hex_code": "0153",
+    "combining": false,
+    "ipa_definition": "open-mid front rounded vowel",
+    "ipa_number": "311",
+    "ipa_name": "lower-case o-e ligature",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-p",
+  "fields": {
+    "glyph": "p",
+    "hex_code": "0070",
+    "combining": false,
+    "ipa_definition": "voiceless bilabial plosive",
+    "ipa_number": "101",
+    "ipa_name": "lower-case p",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-q",
+  "fields": {
+    "glyph": "q",
+    "hex_code": "0071",
+    "combining": false,
+    "ipa_definition": "voiceless uvular plosive",
+    "ipa_number": "111",
+    "ipa_name": "lower-case q",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-r",
+  "fields": {
+    "glyph": "r",
+    "hex_code": "0072",
+    "combining": false,
+    "ipa_definition": "voiced alveolar trill",
+    "ipa_number": "122",
+    "ipa_name": "lower-case r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-s",
+  "fields": {
+    "glyph": "s",
+    "hex_code": "0073",
+    "combining": false,
+    "ipa_definition": "voiceless alveolar fricative",
+    "ipa_number": "132",
+    "ipa_name": "lower-case s",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-t",
+  "fields": {
+    "glyph": "t",
+    "hex_code": "0074",
+    "combining": false,
+    "ipa_definition": "voiceless alveolar plosive",
+    "ipa_number": "103",
+    "ipa_name": "lower-case t",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-u",
+  "fields": {
+    "glyph": "u",
+    "hex_code": "0075",
+    "combining": false,
+    "ipa_definition": "close back rounded vowel",
+    "ipa_number": "308",
+    "ipa_name": "lower-case u",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-v",
+  "fields": {
+    "glyph": "v",
+    "hex_code": "0076",
+    "combining": false,
+    "ipa_definition": "voiced labiodental fricative",
+    "ipa_number": "129",
+    "ipa_name": "lower-case v",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-w",
+  "fields": {
+    "glyph": "w",
+    "hex_code": "0077",
+    "combining": false,
+    "ipa_definition": "voiced labial-velar approximant",
+    "ipa_number": "170",
+    "ipa_name": "lower-case w",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-x",
+  "fields": {
+    "glyph": "x",
+    "hex_code": "0078",
+    "combining": false,
+    "ipa_definition": "voiceless velar fricative",
+    "ipa_number": "140",
+    "ipa_name": "lower-case x",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-y",
+  "fields": {
+    "glyph": "y",
+    "hex_code": "0079",
+    "combining": false,
+    "ipa_definition": "close front rounded vowel",
+    "ipa_number": "309",
+    "ipa_name": "lower-case y",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lower-case-z",
+  "fields": {
+    "glyph": "z",
+    "hex_code": "007A",
+    "combining": false,
+    "ipa_definition": "voiced alveolar fricative",
+    "ipa_number": "133",
+    "ipa_name": "lower-case z",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "lowering-sign",
+  "fields": {
+    "glyph": "◌̞",
+    "hex_code": "031E",
+    "combining": true,
+    "ipa_definition": "lowered",
+    "ipa_number": "430",
+    "ipa_name": "lowering sign",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "low-tone-letter",
+  "fields": {
+    "glyph": "˨",
+    "hex_code": "02E8",
+    "combining": false,
+    "ipa_definition": "low level tone (Chao letter)",
+    "ipa_number": "522",
+    "ipa_name": "low tone letter",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "l-with-tilde",
+  "fields": {
+    "glyph": "ɫ",
+    "hex_code": "026B",
+    "combining": false,
+    "ipa_definition": "velarized alveolar lateral approximant",
+    "ipa_number": "209",
+    "ipa_name": "l with tilde",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "macron",
+  "fields": {
+    "glyph": "◌̄",
+    "hex_code": "0304",
+    "combining": true,
+    "ipa_definition": "mid level tone (accent mark)",
+    "ipa_number": "514",
+    "ipa_name": "macron",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "macron-acute-accent",
+  "fields": {
+    "glyph": "◌᷄",
+    "hex_code": "1DC4",
+    "combining": true,
+    "ipa_definition": "high rising contour tone (accent mark)",
+    "ipa_number": "526",
+    "ipa_name": "macron + acute accent",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "mid-tone-letter",
+  "fields": {
+    "glyph": "˧",
+    "hex_code": "02E7",
+    "combining": false,
+    "ipa_definition": "mid level tone (Chao letter)",
+    "ipa_number": "521",
+    "ipa_name": "mid tone letter",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "open-o",
+  "fields": {
+    "glyph": "ɔ",
+    "hex_code": "0254",
+    "combining": false,
+    "ipa_definition": "open-mid back rounded vowel",
+    "ipa_number": "306",
+    "ipa_name": "open o",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "opentail-g",
+  "fields": {
+    "glyph": "ɡ",
+    "hex_code": "0261",
+    "combining": false,
+    "ipa_definition": "voiced velar plosive",
+    "ipa_number": "110",
+    "ipa_name": "opentail g",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "over-cross",
+  "fields": {
+    "glyph": "◌̽",
+    "hex_code": "033D",
+    "combining": true,
+    "ipa_definition": "mid-centralized",
+    "ipa_number": "416",
+    "ipa_name": "over-cross",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "over-ring",
+  "fields": {
+    "glyph": "◌̊",
+    "hex_code": "030A",
+    "combining": true,
+    "ipa_definition": "voiceless (over)",
+    "ipa_number": "402B",
+    "ipa_name": "over-ring",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "period",
+  "fields": {
+    "glyph": ".",
+    "hex_code": "002E",
+    "combining": false,
+    "ipa_definition": "syllable break",
+    "ipa_number": "506",
+    "ipa_name": "period",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "phi",
+  "fields": {
+    "glyph": "ɸ",
+    "hex_code": "0278",
+    "combining": false,
+    "ipa_definition": "voiceless bilabial fricative",
+    "ipa_number": "126",
+    "ipa_name": "phi",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "pipe",
+  "fields": {
+    "glyph": "ǀ",
+    "hex_code": "01C0",
+    "combining": false,
+    "ipa_definition": "dental click",
+    "ipa_number": "177",
+    "ipa_name": "pipe",
+    "group": "NPC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "raising-sign",
+  "fields": {
+    "glyph": "◌̝",
+    "hex_code": "031D",
+    "combining": true,
+    "ipa_definition": "raised",
+    "ipa_number": "429",
+    "ipa_name": "raising sign",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "rams-horns",
+  "fields": {
+    "glyph": "ɤ",
+    "hex_code": "0264",
+    "combining": false,
+    "ipa_definition": "close-mid back unrounded vowel",
+    "ipa_number": "315",
+    "ipa_name": "ram's horns",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "retractinc-sign",
+  "fields": {
+    "glyph": "◌̙",
+    "hex_code": "0319",
+    "combining": true,
+    "ipa_definition": "retracted tongue root",
+    "ipa_number": "418",
+    "ipa_name": "retracting sign",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "reversed-e",
+  "fields": {
+    "glyph": "ɘ",
+    "hex_code": "0258",
+    "combining": false,
+    "ipa_definition": "close-mid central unrounded vowel",
+    "ipa_number": "397",
+    "ipa_name": "reversed e",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "reversed-epsilon",
+  "fields": {
+    "glyph": "ɜ",
+    "hex_code": "025C",
+    "combining": false,
+    "ipa_definition": "open-mid central unrounded vowel",
+    "ipa_number": "326",
+    "ipa_name": "reversed epsilon",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "reversed-glottal-stop",
+  "fields": {
+    "glyph": "ʕ",
+    "hex_code": "0295",
+    "combining": false,
+    "ipa_definition": "voiced pharyngeal fricative",
+    "ipa_number": "145",
+    "ipa_name": "reversed glottal stop",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-hook",
+  "fields": {
+    "glyph": "˞",
+    "hex_code": "02DE",
+    "combining": false,
+    "ipa_definition": "rhoticity",
+    "ipa_number": "419",
+    "ipa_name": "right hook",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-hook-reverse-script-e",
+  "fields": {
+    "glyph": "ɝ",
+    "hex_code": "025D",
+    "combining": false,
+    "ipa_definition": "rhotacized open-mid central vowel",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-hook-schwa",
+  "fields": {
+    "glyph": "ɚ",
+    "hex_code": "025A",
+    "combining": false,
+    "ipa_definition": "r-coloured mid central vowel",
+    "ipa_number": "327",
+    "ipa_name": "right-hook schwa",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-hook-v",
+  "fields": {
+    "glyph": "ⱱ",
+    "hex_code": "2C71",
+    "combining": false,
+    "ipa_definition": "voiced labiodental flap",
+    "ipa_number": "184",
+    "ipa_name": "right-hook v",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-d",
+  "fields": {
+    "glyph": "ɖ",
+    "hex_code": "0256",
+    "combining": false,
+    "ipa_definition": "voiced retroflex plosive",
+    "ipa_number": "106",
+    "ipa_name": "right-tail d",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-l",
+  "fields": {
+    "glyph": "ɭ",
+    "hex_code": "026D",
+    "combining": false,
+    "ipa_definition": "voiced retroflex lateral approximant",
+    "ipa_number": "156",
+    "ipa_name": "right-tail l",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-n",
+  "fields": {
+    "glyph": "ɳ",
+    "hex_code": "0273",
+    "combining": false,
+    "ipa_definition": "voiced retroflex nasal",
+    "ipa_number": "117",
+    "ipa_name": "right-tail n",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-r",
+  "fields": {
+    "glyph": "ɽ",
+    "hex_code": "027D",
+    "combining": false,
+    "ipa_definition": "voiced retroflex flap",
+    "ipa_number": "125",
+    "ipa_name": "right-tail r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-s-at-left",
+  "fields": {
+    "glyph": "ʂ",
+    "hex_code": "0282",
+    "combining": false,
+    "ipa_definition": "voiceless retroflex fricative",
+    "ipa_number": "136",
+    "ipa_name": "right-tail s at left",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-t",
+  "fields": {
+    "glyph": "ʈ",
+    "hex_code": "0288",
+    "combining": false,
+    "ipa_definition": "voiceless retroflex plosive",
+    "ipa_number": "105",
+    "ipa_name": "right-tail t",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "right-tail-z",
+  "fields": {
+    "glyph": "ʐ",
+    "hex_code": "0290",
+    "combining": false,
+    "ipa_definition": "voiced retroflex fricative",
+    "ipa_number": "137",
+    "ipa_name": "right-tail z",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "schwa",
+  "fields": {
+    "glyph": "ə",
+    "hex_code": "0259",
+    "combining": false,
+    "ipa_definition": "mid central unrounded vowel",
+    "ipa_number": "322",
+    "ipa_name": "schwa",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "script-a",
+  "fields": {
+    "glyph": "ɑ",
+    "hex_code": "0251",
+    "combining": false,
+    "ipa_definition": "open back unrounded vowel",
+    "ipa_number": "305",
+    "ipa_name": "script a",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "slashed-o",
+  "fields": {
+    "glyph": "ø",
+    "hex_code": "00F8",
+    "combining": false,
+    "ipa_definition": "close-mid front rounded vowel",
+    "ipa_number": "310",
+    "ipa_name": "slashed o",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-b",
+  "fields": {
+    "glyph": "ʙ",
+    "hex_code": "0299",
+    "combining": false,
+    "ipa_definition": "voiced bilabial trill",
+    "ipa_number": "121",
+    "ipa_name": "small capital b",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-g",
+  "fields": {
+    "glyph": "ɢ",
+    "hex_code": "0262",
+    "combining": false,
+    "ipa_definition": "voiced uvular plosive",
+    "ipa_number": "112",
+    "ipa_name": "small capital g",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-h",
+  "fields": {
+    "glyph": "ʜ",
+    "hex_code": "029C",
+    "combining": false,
+    "ipa_definition": "voiceless epiglottal fricative",
+    "ipa_number": "172",
+    "ipa_name": "small capital h",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-i",
+  "fields": {
+    "glyph": "ɪ",
+    "hex_code": "026A",
+    "combining": false,
+    "ipa_definition": "lowered-close front unrounded vowel",
+    "ipa_number": "319",
+    "ipa_name": "small capital i",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-j",
+  "fields": {
+    "glyph": "ʏ",
+    "hex_code": "028F",
+    "combining": false,
+    "ipa_definition": "lowered-close front rounded vowel",
+    "ipa_number": "320",
+    "ipa_name": "small capital j",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-l",
+  "fields": {
+    "glyph": "ʟ",
+    "hex_code": "029F",
+    "combining": false,
+    "ipa_definition": "voiced velar lateral approximant",
+    "ipa_number": "158",
+    "ipa_name": "small capital l",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-n",
+  "fields": {
+    "glyph": "ɴ",
+    "hex_code": "0274",
+    "combining": false,
+    "ipa_definition": "voiced uvular nasal",
+    "ipa_number": "120",
+    "ipa_name": "small capital n",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-o-e-ligature",
+  "fields": {
+    "glyph": "ɶ",
+    "hex_code": "0276",
+    "combining": false,
+    "ipa_definition": "open front rounded vowel",
+    "ipa_number": "312",
+    "ipa_name": "small capital o-e ligature",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "small-capital-r",
+  "fields": {
+    "glyph": "ʀ",
+    "hex_code": "0280",
+    "combining": false,
+    "ipa_definition": "voiced uvular trill",
+    "ipa_number": "123",
+    "ipa_name": "small capital r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-arch",
+  "fields": {
+    "glyph": "◌̯",
+    "hex_code": "032F",
+    "combining": true,
+    "ipa_definition": "non-syllabic",
+    "ipa_number": "432",
+    "ipa_name": "subscript arch",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-bridge",
+  "fields": {
+    "glyph": "◌̪",
+    "hex_code": "032A",
+    "combining": true,
+    "ipa_definition": "dental",
+    "ipa_number": "408",
+    "ipa_name": "subscript bridge",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-left-half-ring",
+  "fields": {
+    "glyph": "◌̜",
+    "hex_code": "031C",
+    "combining": true,
+    "ipa_definition": "less rounded",
+    "ipa_number": "412",
+    "ipa_name": "subscript left half-ring",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-plus",
+  "fields": {
+    "glyph": "◌̟",
+    "hex_code": "031F",
+    "combining": true,
+    "ipa_definition": "advanced",
+    "ipa_number": "413",
+    "ipa_name": "subscript plus",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-right-half-ring",
+  "fields": {
+    "glyph": "◌̹",
+    "hex_code": "0339",
+    "combining": true,
+    "ipa_definition": "more rounded",
+    "ipa_number": "411",
+    "ipa_name": "subscript right half-ring",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-seagull",
+  "fields": {
+    "glyph": "◌̫",
+    "hex_code": "032B",
+    "combining": true,
+    "ipa_definition": "linguolabial",
+    "ipa_number": "407",
+    "ipa_name": "subscript seagull",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-square",
+  "fields": {
+    "glyph": "◌̻",
+    "hex_code": "033B",
+    "combining": true,
+    "ipa_definition": "laminal",
+    "ipa_number": "410",
+    "ipa_name": "subscript square",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-tilde",
+  "fields": {
+    "glyph": "◌̰",
+    "hex_code": "0330",
+    "combining": true,
+    "ipa_definition": "creaky voiced",
+    "ipa_number": "406",
+    "ipa_name": "subscript tilde",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-umlaut",
+  "fields": {
+    "glyph": "◌̤",
+    "hex_code": "0324",
+    "combining": true,
+    "ipa_definition": "breathy voiced",
+    "ipa_number": "405",
+    "ipa_name": "subscript umlaut",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "subscript-wedge",
+  "fields": {
+    "glyph": "◌̬",
+    "hex_code": "032C",
+    "combining": true,
+    "ipa_definition": "voiced",
+    "ipa_number": "403",
+    "ipa_name": "subscript wedge",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superimposed-tilde",
+  "fields": {
+    "glyph": "◌̴",
+    "hex_code": "0334",
+    "combining": true,
+    "ipa_definition": "velarized or pharyngealized",
+    "ipa_number": "428",
+    "ipa_name": "superimposed tilde",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-gamma",
+  "fields": {
+    "glyph": "ˠ",
+    "hex_code": "02E0",
+    "combining": false,
+    "ipa_definition": "velarized",
+    "ipa_number": "422",
+    "ipa_name": "superscript gamma",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-h",
+  "fields": {
+    "glyph": "ʰ",
+    "hex_code": "02B0",
+    "combining": false,
+    "ipa_definition": "aspirated",
+    "ipa_number": "404",
+    "ipa_name": "superscript h",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-hooktop-h",
+  "fields": {
+    "glyph": "ʱ",
+    "hex_code": "02B1",
+    "combining": false,
+    "ipa_definition": "diacritic voiced glottal fricative",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-inverted-small-capital-r",
+  "fields": {
+    "glyph": "ʶ",
+    "hex_code": "02B6",
+    "combining": false,
+    "ipa_definition": "diacritic uvular approximant",
+    "ipa_number": "676",
+    "ipa_name": "superscript inverted small capital r",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-j",
+  "fields": {
+    "glyph": "ʲ",
+    "hex_code": "02B2",
+    "combining": false,
+    "ipa_definition": "palatalized",
+    "ipa_number": "421",
+    "ipa_name": "superscript j",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-l",
+  "fields": {
+    "glyph": "ˡ",
+    "hex_code": "02E1",
+    "combining": false,
+    "ipa_definition": "lateral release",
+    "ipa_number": "426",
+    "ipa_name": "superscript l",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-n",
+  "fields": {
+    "glyph": "ⁿ",
+    "hex_code": "207F",
+    "combining": false,
+    "ipa_definition": "nasal release",
+    "ipa_number": "425",
+    "ipa_name": "superscript n",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-reversed-glottal-stop",
+  "fields": {
+    "glyph": "ˤ",
+    "hex_code": "02E4",
+    "combining": false,
+    "ipa_definition": "pharyngealized",
+    "ipa_number": "423",
+    "ipa_name": "superscript reversed glottal stop",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-tilde",
+  "fields": {
+    "glyph": "◌̃",
+    "hex_code": "0303",
+    "combining": true,
+    "ipa_definition": "nasalized",
+    "ipa_number": "424",
+    "ipa_name": "superscript tilde",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-turned-r",
+  "fields": {
+    "glyph": "ʴ",
+    "hex_code": "02B4",
+    "combining": false,
+    "ipa_definition": "diacritic alveolar approximant",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-turned-r-right-tail",
+  "fields": {
+    "glyph": "ʵ",
+    "hex_code": "02B5",
+    "combining": false,
+    "ipa_definition": "diacritic retroflex approximant",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscript-w",
+  "fields": {
+    "glyph": "ʷ",
+    "hex_code": "02B7",
+    "combining": false,
+    "ipa_definition": "labialized",
+    "ipa_number": "420",
+    "ipa_name": "superscript w",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "superscritp-r",
+  "fields": {
+    "glyph": "ʳ",
+    "hex_code": "02B3",
+    "combining": false,
+    "ipa_definition": "diacritic alveolar trill",
+    "ipa_number": null,
+    "ipa_name": null,
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "syllability-mark",
+  "fields": {
+    "glyph": "◌̩",
+    "hex_code": "0329",
+    "combining": true,
+    "ipa_definition": "syllabic",
+    "ipa_number": "431",
+    "ipa_name": "syllabicity mark",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "t-curly-tail-c-ligature",
+  "fields": {
+    "glyph": "ʨ",
+    "hex_code": "02A8",
+    "combining": false,
+    "ipa_definition": "compiled voiceless alveolo-palatal affricate",
+    "ipa_number": "215",
+    "ipa_name": "t-curly-tail-c ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "t-esh-ligature",
+  "fields": {
+    "glyph": "ʧ",
+    "hex_code": "02A7",
+    "combining": false,
+    "ipa_definition": "compiled voiceless postalveolar affricate",
+    "ipa_number": "213",
+    "ipa_name": "t-esh ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "theta",
+  "fields": {
+    "glyph": "θ",
+    "hex_code": "03B8",
+    "combining": false,
+    "ipa_definition": "voiceless dental fricative",
+    "ipa_number": "130",
+    "ipa_name": "theta",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "top-tie-bar",
+  "fields": {
+    "glyph": "◌͡",
+    "hex_code": "0361",
+    "combining": true,
+    "ipa_definition": "tie bar (above)",
+    "ipa_number": "433",
+    "ipa_name": "top tie bar",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "t-s-ligature",
+  "fields": {
+    "glyph": "ʦ",
+    "hex_code": "02A6",
+    "combining": false,
+    "ipa_definition": "compiled voiceless alveolar affricate",
+    "ipa_number": "211",
+    "ipa_name": "t-s ligature",
+    "group": "NOC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-a",
+  "fields": {
+    "glyph": "ɐ",
+    "hex_code": "2050",
+    "combining": false,
+    "ipa_definition": "raised-open central unrounded vowel",
+    "ipa_number": "324",
+    "ipa_name": "turned a",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-h",
+  "fields": {
+    "glyph": "ɥ",
+    "hex_code": "0265",
+    "combining": false,
+    "ipa_definition": "voiced labial-palatal approximant",
+    "ipa_number": "171",
+    "ipa_name": "turned h",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-long-leg-r",
+  "fields": {
+    "glyph": "ɺ",
+    "hex_code": "027A",
+    "combining": false,
+    "ipa_definition": "voiced alveolar lateral flap",
+    "ipa_number": "181",
+    "ipa_name": "turned long-leg r",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-m",
+  "fields": {
+    "glyph": "ɯ",
+    "hex_code": "026F",
+    "combining": false,
+    "ipa_definition": "close back unrounded vowel",
+    "ipa_number": "316",
+    "ipa_name": "turned m",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-m-right-leg",
+  "fields": {
+    "glyph": "ɰ",
+    "hex_code": "0270",
+    "combining": false,
+    "ipa_definition": "voiced velar approximant",
+    "ipa_number": "154",
+    "ipa_name": "turned m right leg",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-r",
+  "fields": {
+    "glyph": "ɹ",
+    "hex_code": "0279",
+    "combining": false,
+    "ipa_definition": "voiced alveolar approximant",
+    "ipa_number": "151",
+    "ipa_name": "turned r",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-r-right-tail",
+  "fields": {
+    "glyph": "ɻ",
+    "hex_code": "027B",
+    "combining": false,
+    "ipa_definition": "voiced retroflex approximant",
+    "ipa_number": "152",
+    "ipa_name": "turned r right-tail",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-script-a",
+  "fields": {
+    "glyph": "ɒ",
+    "hex_code": "0252",
+    "combining": false,
+    "ipa_definition": "open back rounded vowel",
+    "ipa_number": "313",
+    "ipa_name": "turned script a",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-v",
+  "fields": {
+    "glyph": "ʌ",
+    "hex_code": "028C",
+    "combining": false,
+    "ipa_definition": "open-mid back unrounded vowel",
+    "ipa_number": "314",
+    "ipa_name": "turned v",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-w",
+  "fields": {
+    "glyph": "ʍ",
+    "hex_code": "028D",
+    "combining": false,
+    "ipa_definition": "voiceless labial-velar fricative",
+    "ipa_number": "169",
+    "ipa_name": "turned w",
+    "group": "OS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "turned-y",
+  "fields": {
+    "glyph": "ʎ",
+    "hex_code": "028E",
+    "combining": false,
+    "ipa_definition": "voiced palatal lateral approximant",
+    "ipa_number": "157",
+    "ipa_name": "turned y",
+    "group": "PC"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "umlaut",
+  "fields": {
+    "glyph": "◌̈",
+    "hex_code": "0308",
+    "combining": true,
+    "ipa_definition": "centralized",
+    "ipa_number": "415",
+    "ipa_name": "umlaut",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "under-bar",
+  "fields": {
+    "glyph": "◌̠",
+    "hex_code": "0320",
+    "combining": true,
+    "ipa_definition": "retracted",
+    "ipa_number": "414",
+    "ipa_name": "under-bar",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "under-ring",
+  "fields": {
+    "glyph": "◌̥",
+    "hex_code": "0325",
+    "combining": true,
+    "ipa_definition": "voiceless (under)",
+    "ipa_number": "402A",
+    "ipa_name": "under-ring",
+    "group": "D"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "up-arrow",
+  "fields": {
+    "glyph": "ꜛ",
+    "hex_code": "A71B",
+    "combining": false,
+    "ipa_definition": "upstep",
+    "ipa_number": "518",
+    "ipa_name": "up arrow",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "upsilon",
+  "fields": {
+    "glyph": "ʊ",
+    "hex_code": "028A",
+    "combining": false,
+    "ipa_definition": "lowered-close back rounded vowel",
+    "ipa_number": "321",
+    "ipa_name": "upsilon",
+    "group": "V"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "upward-diagonal-arrow",
+  "fields": {
+    "glyph": "↗",
+    "hex_code": "2197",
+    "combining": false,
+    "ipa_definition": "global rise",
+    "ipa_number": "510",
+    "ipa_name": "upward diagonal arrow",
+    "group": "T"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "vertical-line-thick",
+  "fields": {
+    "glyph": "|",
+    "hex_code": "007C",
+    "combining": false,
+    "ipa_definition": "minor (foot) group",
+    "ipa_number": "507",
+    "ipa_name": "vertical line (thick)",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "vertical-stroke-inferior",
+  "fields": {
+    "glyph": "ˌ",
+    "hex_code": "02CC",
+    "combining": false,
+    "ipa_definition": "secondary stress",
+    "ipa_number": "502",
+    "ipa_name": "vertical stroke (inferior)",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "vertical-stroke-superior",
+  "fields": {
+    "glyph": "ˈ",
+    "hex_code": "02C8",
+    "combining": false,
+    "ipa_definition": "primary stress",
+    "ipa_number": "501",
+    "ipa_name": "vertical stroke (superior)",
+    "group": "SS"
+  }
+},
+{
+  "model": "glyphs.glyph",
+  "pk": "wedge",
+  "fields": {
+    "glyph": "◌̌",
+    "hex_code": "030C",
+    "combining": true,
+    "ipa_definition": "rising contour tone (accent mark)",
+    "ipa_number": "524",
+    "ipa_name": "wedge: háček",
+    "group": "T"
+  }
+}
+]

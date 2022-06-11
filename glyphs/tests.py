@@ -1,12 +1,12 @@
 from django.test import TestCase
 
+from glyphs.models import Glyph
 from glyphs.factories import GlyphFactory
 
 
 class GlyphModelTests(TestCase):
 
     def test_glyph_fields(self):
-        pass
         glyph = GlyphFactory()
         attributes = [
             'glyph',
@@ -31,4 +31,7 @@ class GlyphModelTests(TestCase):
             ipa_name='Capital A',
             ipa_definition='voiced mono-syllable',
         )
-        self.assertEqual(glyph.__str__(), 'A (Capital A): voiced mono-syllable')
+        self.assertEqual(glyph.__str__(), 'A (capital-a): voiced mono-syllable')
+
+    def test_glyph_load(self):
+        self.assertEqual(Glyph.objects.count(), 189)

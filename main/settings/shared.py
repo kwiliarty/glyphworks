@@ -100,6 +100,7 @@ THIRD_PARTY_APPS = [
 CUSTOM_APPS = [
     # good place to include custom admin configs
     # ***.apps.***Config, for instance
+    'main',
     'glyphs',
 ]
 
