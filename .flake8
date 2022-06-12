@@ -5,4 +5,5 @@ exclude =
     migrations,
     main/settings/override.py,
     node_modules,
+    .ipython
 max-line-length = 119

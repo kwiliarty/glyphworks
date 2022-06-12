@@ -170,6 +170,7 @@ CELERY_SETTINGS = {
     'CELERY_TIMEZONE': 'America/New_York',
 }
 
+SHELL_PLUS = 'ipython'
 SHELL_PLUS_POST_IMPORTS = [
     ('pprint', ('pprint')),
 ]

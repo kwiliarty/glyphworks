@@ -16,6 +16,7 @@ gunicorn = "*"
 flake8 = "*"
 psycopg2 = "*"
 factory-boy = "*"
+ipython = "*"
 
 [requires]
 python_version = "3.9.10"
