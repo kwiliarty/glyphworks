@@ -252,4 +252,4 @@ alias gw-nginx-shell='gw-nginx /bin/sh'
 alias gw-nginx-reload='gw-nginx nginx -s reload'
 
 ## last things
-alias gw-deploy='gw-pull-prod && gw-up --remove-orphans && gw-migrate && gw-collectstatic'
+alias gw-deploy='gw-pull-prod && gw-up && gw-migrate && gw-collectstatic'
