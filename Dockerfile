@@ -8,7 +8,9 @@ FROM python:3.9.10-bullseye AS base
     ENV PYTHONDONTWRITEBYTECODE 1
     ENV PYTHONFAULTHANDLER 1
     ENV PYTHONUNBUFFERED 1
+    ENV PYTHONHASHSEED random
     ENV DJANGO_WATCHMAN_TIMEOUT 20
+    ENV POETRY_VERSION 1.1.13
 
     ARG BUILD_ENV=prod
     ARG WM_VERSION
@@ -16,17 +18,26 @@ FROM python:3.9.10-bullseye AS base
 # Python dependencies
 FROM base AS python-deps
 
-    # Install pipenv and compilation dependencies
-    RUN pip install pipenv
+    # Guidance on poetry in a docker build:
+    # https://stackoverflow.com/a/57886655/2079708
+    ENV PIP_DEFAULT_TIMEOUT 100
+    ENV PIP_DISABLE_PIP_VERSION_CHECK 1
+    ENV PIP_NO_CACHE_DIR 1
 
-    # Install python dependencies in /.venv
-    COPY Pipfile .
-    COPY Pipfile.lock .
+    WORKDIR /usr/src/app
 
+    RUN pip install "poetry==$POETRY_VERSION"
+    RUN python -m venv /venv
+
+    COPY pyproject.toml poetry.lock ./
     RUN if [ ${BUILD_ENV} = 'prod' ]; \
-        then PIPENV_VENV_IN_PROJECT=1 pipenv install; \
-        else PIPENV_VENV_IN_PROJECT=1 pipenv install --dev; \
+        then poetry export -f requirements.txt | /venv/bin/pip install -r /dev/stdin; \
+        else poetry export -f requirements.txt --dev | /venv/bin/pip install -r /dev/stdin; \
         fi
+
+    # Potentially this, too
+    # COPY . .
+    # RUN poetry build && /venv/bin/pip install dist/*.whl
 
 # Watchman, for dev
 FROM base AS watchman
@@ -41,8 +52,8 @@ FROM base AS runtime
     WORKDIR /usr/src/app
 
     # Copy virtual env from python-deps stage
-    COPY --from=python-deps /.venv /.venv
-    ENV PATH="/.venv/bin:$PATH"
+    COPY --from=python-deps /venv /venv
+    ENV PATH="/venv/bin:$PATH"
 
     # Install node and yarn
     # https://github.com/nodesource/distributions#debinstall
@@ -62,7 +73,8 @@ FROM base AS runtime
 
     # Create appuser, we'll switch to it later
     RUN useradd --home-dir /usr/src/app appuser
-    RUN pip install pipenv
+    # RUN pip install pipenv
+    RUN pip install "poetry==$POETRY_VERSION"
 
 # Production
 FROM runtime AS prod
