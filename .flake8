@@ -5,5 +5,6 @@ exclude =
     migrations,
     main/settings/override.py,
     node_modules,
-    .ipython
+    .ipython,
+    .cache
 max-line-length = 119
