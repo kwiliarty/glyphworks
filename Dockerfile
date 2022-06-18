@@ -11,6 +11,9 @@ FROM python:3.9.10-bullseye AS base
     ENV PYTHONHASHSEED random
     ENV DJANGO_WATCHMAN_TIMEOUT 20
     ENV POETRY_VERSION 1.1.13
+    ENV POETRY_CACHE_DIR /poetry_cache
+    # for the jedi cache
+    ENV XDG_CACHE_HOME /xdg_cache
 
     ARG BUILD_ENV=prod
     ARG WM_VERSION
