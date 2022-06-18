@@ -1,5 +1,5 @@
 Favicon:
 
 ```jsx noeditor
-<img src='/images/favicon.svg' width='64' />
+<img src='/static/images/favicon.svg' width='64' />
 ```

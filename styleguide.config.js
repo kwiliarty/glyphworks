@@ -4,7 +4,6 @@ const path = require('path')
 
 module.exports = {
   title: 'GlyphWorks',
-  assetsDir: './main/assets/',
   styleguideComponents: {
     Wrapper: path.join( __dirname, './main/themes/ThemeProvider' )
   },

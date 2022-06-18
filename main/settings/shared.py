@@ -39,7 +39,7 @@ default_db = {
 
 for_all_envs = {
     'SECRET_KEY': os.getenv('SECRET_KEY', '@b0-*s6$dm_7s8t6^k5po*ey^yi6-@vu^z2=-w2(cpk_@j0qe@'),
-    'ROOT_URLCONF': 'main.urls',
+    'ROOT_URLCONF': 'main.urls.shared',
     # 'LANGUAGE_CODE': 'en-us',
     # 'TIME_ZONE': 'America/New_York',
     # 'USE_I18N': False,
