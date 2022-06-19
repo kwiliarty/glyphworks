@@ -4,8 +4,13 @@ dev URL Configuration
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
 """
+from django.urls import path
+from django.contrib import admin
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import shared
 
-# staticfiles_urlpatterns helps us load assets into the styleguide
-urlpatterns = shared.urlpatterns + staticfiles_urlpatterns()
+urlpatterns = [
+    *shared.urlpatterns,
+    path('admin/', admin.site.urls),
+    *staticfiles_urlpatterns(),  # for styleguide assets
+]
