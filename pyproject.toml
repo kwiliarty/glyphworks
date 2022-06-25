@@ -16,6 +16,7 @@ flake8 = "^4.0.1"
 psycopg2 = "^2.9.3"
 factory-boy = "^3.2.1"
 ipython = "^8.4.0"
+graphene-django = "^2.15.0"
 
 [tool.poetry.dev-dependencies]
 pywatchman = "^1.4.1"

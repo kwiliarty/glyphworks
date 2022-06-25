@@ -7,6 +7,13 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 
+# Hack because graphene_django does not support Django 4 yet
+# https://stackoverflow.com/a/70833150/2079708
+import django
+from django.utils.encoding import force_str
+django.utils.encoding.force_text = force_str
+
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -63,6 +70,9 @@ for_all_envs = {
             'STATS_FILE': os.path.join(BASE_DIR, 'main/webpack-stats.json'),
         },
     },
+    'GRAPHENE': {
+        'SCHEMA': 'main.schema.schema',
+    },
 }
 
 for_nonprod_envs = {
@@ -90,11 +100,9 @@ CORE_APPS = [
 ]
 
 THIRD_PARTY_APPS = [
-    # 'hijack',
     'django_extensions',
-    # 'rest_framework',
+    'graphene_django',
     'webpack_loader',
-    # 'widget_tweaks',
 ]
 
 CUSTOM_APPS = [
