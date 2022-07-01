@@ -11,6 +11,7 @@
     "stylguidist": "/node_modules/react-styleguidist/bin/styleguidist.js"
   },
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@babel/cli": "^7.16.8",
     "@babel/core": "^7.17.0",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
@@ -24,6 +25,8 @@
     "cypress-axe": "^0.14.0",
     "eslint-plugin-cypress": "^2.12.1",
     "file-loader": "^6.2.0",
+    "graphql": "^16.5.0",
+    "js-cookie": "^3.0.1",
     "mini-css-extract-plugin": "^2.5.3",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",

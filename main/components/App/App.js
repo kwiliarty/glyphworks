@@ -19,21 +19,21 @@ const App = () => {
   return (
     <Wrapper>
       <GlobalStyle theme={ theme } />
-        <ContentBox minHeight='100vh'>
-          <ContentBox.Top>
-            <Header />
-          </ContentBox.Top>
-          <ContentBox.Contents>
-            <Main>
-              { Strings.welcome_message }
-              <IpaPairedInput />
-              { Strings.quickstart_examples }
-            </Main>
-          </ContentBox.Contents>
-          <ContentBox.Bottom>
-            <Footer />
-          </ContentBox.Bottom>
-        </ContentBox>
+      <ContentBox minHeight='100vh'>
+        <ContentBox.Top>
+          <Header />
+        </ContentBox.Top>
+        <ContentBox.Contents>
+          <Main>
+            { Strings.welcome_message }
+            <IpaPairedInput />
+            { Strings.quickstart_examples }
+          </Main>
+        </ContentBox.Contents>
+        <ContentBox.Bottom>
+          <Footer />
+        </ContentBox.Bottom>
+      </ContentBox>
     </Wrapper>
   )
 }
