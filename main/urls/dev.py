@@ -10,7 +10,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from . import shared
 
 urlpatterns = [
-    *shared.urlpatterns,
     path('admin/', admin.site.urls),
+    *shared.urlpatterns,
     *staticfiles_urlpatterns(),  # for styleguide assets
 ]

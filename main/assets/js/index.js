@@ -11,6 +11,8 @@ import {
   concat,
 } from '@apollo/client'
 
+import { BrowserRouter } from 'react-router-dom'
+
 import Cookies from 'js-cookie'
 
 import App from '../../components/App'
@@ -39,11 +41,13 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <React.StrictMode>
-    <ApolloProvider client={ client }>
-      <ThemeProvider theme={ theme }>
-        <App />
-      </ThemeProvider>
-    </ApolloProvider>
+    <BrowserRouter>
+      <ApolloProvider client={ client }>
+        <ThemeProvider theme={ theme }>
+          <App />
+        </ThemeProvider>
+      </ApolloProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('app')
 )

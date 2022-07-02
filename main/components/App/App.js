@@ -4,12 +4,14 @@ import styled from 'styled-components'
 import theme from '../../themes/glyphworks'
 import GlobalStyle from '../../themes/GlobalStyle'
 
-import IpaPairedInput from '../IpaPairedInput'
+import { Routes, Route } from 'react-router-dom'
+
+import Welcome from '../Welcome'
+import Glyphs from '../Glyphs'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
 import Footer from '../Footer'
-import * as Strings from '../../strings'
 
 const Wrapper = styled.div`
   background-color: ${theme.colors.parchment};
@@ -25,9 +27,10 @@ const App = () => {
         </ContentBox.Top>
         <ContentBox.Contents>
           <Main>
-            { Strings.welcome_message }
-            <IpaPairedInput />
-            { Strings.quickstart_examples }
+            <Routes>
+              <Route path='/' element={ <Welcome /> } />
+              <Route path='glyphs' element={ <Glyphs /> } />
+            </Routes>
           </Main>
         </ContentBox.Contents>
         <ContentBox.Bottom>
