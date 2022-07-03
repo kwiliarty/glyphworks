@@ -7,10 +7,11 @@ from . import shared
 # BASE_DIR = shared.BASE_DIR
 DEBUG = False
 ALLOWED_HOSTS = ['glyph.works']
+CSRF_TRUSTED_ORIGINS = ['https://glyph.works']
 # LOGIN_URL = shared.LOGIN_URL
 
 shared.apply(shared.for_all_envs, globals())
-# shared.apply(shared.ssl, globals())
+shared.apply(shared.ssl, globals())
 
 INSTALLED_APPS = shared.INSTALLED_APPS + [
 ]
