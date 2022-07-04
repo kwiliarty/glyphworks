@@ -26,7 +26,7 @@ class Query(graphene.ObjectType):
     glyphs = graphene.List(GlyphType)
 
     def resolve_glyphs(root, info):
-        return Glyph.objects.all()
+        return Glyph.objects.on_chart()
 
 
 schema = graphene.Schema(query=Query)

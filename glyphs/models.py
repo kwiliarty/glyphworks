@@ -1,10 +1,20 @@
 from django.db import models
 
 
+class GlyphQuerySet(models.QuerySet):
+    def on_chart(self):
+        return self.exclude(group=Glyph.Group.NOT_ON_CHART)
+
+
 class Glyph(models.Model):
     '''The principal glyph model.'''
 
-    class GlyphGroup(models.TextChoices):
+    class Meta:
+        ordering = ['ipa_number']
+
+    objects = GlyphQuerySet.as_manager()
+
+    class Group(models.TextChoices):
         '''Enumeration for the possible glyph groups'''
         PULMONIC_CONSONANT = 'PC', 'pulmonic consonant'
         NON_PULMONITC_CONSONANT = 'NPC', 'non-pulmonic consonant'
@@ -54,8 +64,8 @@ class Glyph(models.Model):
     )
     group = models.CharField(
         max_length=100,
-        choices=GlyphGroup.choices,
-        default=GlyphGroup.PULMONIC_CONSONANT,
+        choices=Group.choices,
+        default=Group.PULMONIC_CONSONANT,
     )
 
     def __str__(self):
