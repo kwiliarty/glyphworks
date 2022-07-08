@@ -26,6 +26,11 @@ export const colors = {
   red: '#893f3f',
   darkRed: '#621818',
   veryDarkRed: '#280000',
+  veryLightGrey: '#e0e0e0',
+  lightGrey: '#b0b0b0',
+  grey: '#909090',
+  darkGrey: '#707070',
+  veryDarkGrey: '#505050',
 }
 
 const theme = {

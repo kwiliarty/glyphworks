@@ -148,7 +148,7 @@ gw_local_cypress_run() {
     echo "Running the tests"
         gw_local_cypress run \
         --config "video=false,baseUrl=http://$(docker-compose port python-test 8000)" \
-        --spec "cypress/integration/main/*" \
+        --spec "cypress/e2e/main/*" \
         --browser 'chrome' \
         "$@"
     EXIT_CODE=$?
@@ -184,7 +184,7 @@ gw_cypress_run() {
         $DISABLE_TTY \
         -e CYPRESS_BASE_URL=http://python-test:8000 \
         cypress npx cypress run \
-        --spec "cypress/integration/main/*" \
+        --spec "cypress/e2e/main/*" \
         --browser chrome \
         --config video=false \
         "$@"

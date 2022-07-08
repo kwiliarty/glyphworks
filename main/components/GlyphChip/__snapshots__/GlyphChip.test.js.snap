@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A GlyphChip accepts a width prop 1`] = `
+.c0 {
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  border-radius: 0.1em;
+  background-color: #621818;
+  color: #fff7d4;
+  margin: 0.5rem;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: calc(3rem * 0.8);
+}
+
+<div
+  class="c0"
+  color="veryLightBrown"
+  width="3rem"
+>
+  t
+</div>
+`;
+
+exports[`A GlyphChip accepts color and bColor props 1`] = `
+.c0 {
+  width: 5rem;
+  min-width: 5rem;
+  height: 5rem;
+  border-radius: 0.1em;
+  background-color: #badfba;
+  color: #134e13;
+  margin: 0.5rem;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: calc(5rem * 0.8);
+}
+
+<div
+  class="c0"
+  color="darkGreen"
+  width="5rem"
+>
+  k
+</div>
+`;
+
+exports[`A GlyphChip features a glyph 1`] = `
+.c0 {
+  width: 5rem;
+  min-width: 5rem;
+  height: 5rem;
+  border-radius: 0.1em;
+  background-color: #621818;
+  color: #fff7d4;
+  margin: 0.5rem;
+  padding-top: 0.1em;
+  padding-bottom: 0.2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: calc(5rem * 0.8);
+}
+
+<div
+  class="c0"
+  color="veryLightBrown"
+  width="5rem"
+>
+  p
+</div>
+`;
