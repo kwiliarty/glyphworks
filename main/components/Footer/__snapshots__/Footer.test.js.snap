@@ -1,29 +1,107 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Header component can accept custom colors 1`] = `
+.c2 {
+  display: inline-block;
+  color: #1f1643;
+}
+
+.c2:focus {
+  outline: 2px dotted;
+}
+
+.c2:hover {
+  outline: 1px dotted;
+}
+
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: pink;
   color: wheat;
+  font-size: 20px;
+}
+
+.c1 {
+  margin: 1rem;
 }
 
 <footer
   class="c0"
 >
-  ©
-  3023
+  <div
+    class="c1"
+  >
+    ©
+    3023
+  </div>
+  <div
+    class="c1"
+  >
+    Note that the 
+    <a
+      class="c2"
+      color="darkPurple"
+      href="http://www.internationalphoneticassociation.org/content/ipa-chart"
+    >
+      IPA Chart
+    </a>
+     is available under a Creative Commons Attribution-Sharealike 3.0 Unported License. Copyright © 2015 International Phonetic Association.
+  </div>
 </footer>
 `;
 
 exports[`The Header component displays the copyright year 1`] = `
+.c2 {
+  display: inline-block;
+  color: #1f1643;
+}
+
+.c2:focus {
+  outline: 2px dotted;
+}
+
+.c2:hover {
+  outline: 1px dotted;
+}
+
 .c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #c9b978;
   color: #621818;
+  font-size: 20px;
+}
+
+.c1 {
+  margin: 1rem;
 }
 
 <footer
   class="c0"
 >
-  ©
-  3023
+  <div
+    class="c1"
+  >
+    ©
+    3023
+  </div>
+  <div
+    class="c1"
+  >
+    Note that the 
+    <a
+      class="c2"
+      color="darkPurple"
+      href="http://www.internationalphoneticassociation.org/content/ipa-chart"
+    >
+      IPA Chart
+    </a>
+     is available under a Creative Commons Attribution-Sharealike 3.0 Unported License. Copyright © 2015 International Phonetic Association.
+  </div>
 </footer>
 `;

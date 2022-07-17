@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`The Link Component accepts a color attribute 1`] = `
+.c0 {
+  display: inline-block;
+  color: #621818;
+}
+
+.c0:focus {
+  outline: 2px dotted;
+}
+
+.c0:hover {
+  outline: 1px dotted;
+}
+
+<a
+  class="c0"
+  color="darkRed"
+  href="https://glyph.works"
+>
+  Custom color
+</a>
+`;
+
 exports[`The Link Component renders an anchor tag 1`] = `
 .c0 {
   display: inline-block;
@@ -16,6 +39,7 @@ exports[`The Link Component renders an anchor tag 1`] = `
 
 <a
   class="c0"
+  color="lightPurple"
   href="https://glyph.works"
 >
   GlyphWorks

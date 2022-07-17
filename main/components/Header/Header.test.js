@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen } from 'utils'
 import Header from './Header.js'
 import * as Strings from '../../strings'
 

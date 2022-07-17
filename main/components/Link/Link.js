@@ -2,11 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import theme from '../../themes/glyphworks'
-
 const StyledLink = styled.a`
   display: inline-block;
-  color: ${ theme.colors.lightPurple };
+  color: ${ props => props.theme.colors[props.color] };
   &:focus {
     outline: 2px dotted;
   }
@@ -26,6 +24,12 @@ const Link = props => {
 Link.propTypes = {
   /** This component renders its children. */
   children: PropTypes.node,
+  /** A theme color */
+  color: PropTypes.string,
+}
+
+Link.defaultProps = {
+  color: 'lightPurple',
 }
 
 export default Link

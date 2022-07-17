@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from '@testing-library/react'
+import { render, screen } from 'utils'
 import Footer from './Footer.js'
 
 describe( 'The Header component', () => {
@@ -18,6 +18,12 @@ describe( 'The Header component', () => {
     const footer = screen.getByRole( 'contentinfo' )
     expect( footer ).toHaveTextContent( '3023' )
     expect( footer ).toMatchSnapshot()
+  })
+
+  it( 'displays an attribution to the IPA chart', () => {
+    render( <Footer /> )
+    const footer = screen.getByRole( 'contentinfo' )
+    expect( footer ).toHaveTextContent( 'International Phonetic Association' )
   })
 
   it( 'can accept custom colors', () => {

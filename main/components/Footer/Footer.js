@@ -3,12 +3,17 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import theme from '../../themes/glyphworks'
+import Link from '../Link'
 
 const StyledFooter = styled.footer`
+  display: flex;
   background-color: ${ props => props.backColor };
   color: ${ props => props.foreColor };
-  padding: ${ props => props.theme.basePadding };
   font-size: ${ props => props.theme.smallFontSize };
+`
+
+const StyledChild = styled.div`
+  margin: 1rem;
 `
 
 const Footer = props => {
@@ -19,7 +24,10 @@ const Footer = props => {
 
   return (
     <StyledFooter backColor={ backColor } foreColor={ foreColor }>
-      ©{ date.getFullYear() }
+      <StyledChild>©{ date.getFullYear() }</StyledChild>
+      <StyledChild>
+        Note that the <Link color='darkPurple' href='http://www.internationalphoneticassociation.org/content/ipa-chart'>IPA Chart</Link> is available under a Creative Commons Attribution-Sharealike 3.0 Unported License. Copyright © 2015 International Phonetic Association.
+      </StyledChild>
     </StyledFooter>
   )
 }
