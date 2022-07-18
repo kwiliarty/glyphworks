@@ -4,6 +4,8 @@
 # default.env is under version control and should not be overwritten.
 # Overrides can be added to override.env which is ignored by git.
 
+export COMPOSE_COMPATIBILITY=true
+
 . ./docker/default.env
 if [ -f "docker/override.env" ]
     then . ./docker/override.env
@@ -53,9 +55,9 @@ gw() {
 
 # Reset the test database
 gw_reset_db_test() {
-    docker-compose stop python-test
-    docker-compose run $DISABLE_TTY python-test ./manage.py reset_db --noinput
-    docker-compose run $DISABLE_TTY python-test ./manage.py migrate
+    docker-compose restart python-test
+    docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput
+    docker-compose exec $DISABLE_TTY python-test ./manage.py migrate
     docker-compose restart python-test
 }
 
