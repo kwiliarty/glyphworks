@@ -64,7 +64,7 @@ jobs:
           gw-cypress-run
   build-prod:
     runs-on: self-hosted
-    if: github.ref == 'refs/heads/main'
+    if: (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
     needs: [build-dev, test]
     steps:
       - name: Log in to Docker Hub
