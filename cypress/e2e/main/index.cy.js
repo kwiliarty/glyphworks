@@ -3,6 +3,8 @@ describe( 'The GlyphWorks index page', () => {
     cy.visit( '/' )
     cy.get( 'h1' )
       .should( 'contain.text', 'GlyphWorks' )
+      .click()
+    cy.url().should('eq', Cypress.config().baseUrl + '/')
   })
 
   it( 'features an IpaPairedInput', () => {

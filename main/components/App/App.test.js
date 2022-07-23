@@ -2,13 +2,10 @@ import React from 'react'
 import { render, screen } from 'utils'
 import App from './App.js'
 import * as Strings from '../../strings'
-import { MemoryRouter } from 'react-router-dom'
 
 const AppWithRouter = () => {
   return (
-    <MemoryRouter>
-      <App />
-    </MemoryRouter>
+    <App />
   )
 }
 

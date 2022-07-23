@@ -11,6 +11,7 @@ import Glyphs from '../Glyphs'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
+import MainNav from '../MainNav'
 import Footer from '../Footer'
 
 const Wrapper = styled.div`
@@ -24,6 +25,7 @@ const App = props => {
       <ContentBox minHeight='100vh'>
         <ContentBox.Top>
           <Header />
+          <MainNav />
         </ContentBox.Top>
         <ContentBox.Contents>
           <Main>

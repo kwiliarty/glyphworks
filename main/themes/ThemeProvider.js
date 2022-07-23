@@ -4,12 +4,15 @@ import PropTypes from 'prop-types'
 
 import theme from './glyphworks'
 import GlobalStyle from './GlobalStyle'
+import { MemoryRouter } from 'react-router-dom'
 
 const Wrapper = props => (
   <React.Fragment>
     <ThemeProvider theme={ theme }>
-      <GlobalStyle />
-      { props.children }
+      <MemoryRouter>
+        <GlobalStyle />
+        { props.children }
+      </MemoryRouter>
     </ThemeProvider>
   </React.Fragment>
 )

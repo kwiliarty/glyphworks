@@ -3,10 +3,5 @@ different components at different URLs. For simplicity we show the default route
 here.
 
 ```jsx
-import { MemoryRouter } from 'react-router-dom'
-;
-
-<MemoryRouter>
-  <App />
-</MemoryRouter>
+<App />
 ```

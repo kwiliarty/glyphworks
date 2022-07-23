@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
 import { useQuery, gql } from '@apollo/client'
@@ -22,6 +22,17 @@ export const GET_GLYPHS = gql`
 `
 
 const Glyphs = () => {
+  useEffect(() => {
+    document.title = 'Glyph List : GlyphWorks'
+  }, [])
+
+  useEffect(() => {
+    const wrapper = document.getElementById('app')
+    if ( wrapper ) {
+      wrapper.focus()
+    }
+  }, [])
+
   const { loading, error, data } = useQuery(GET_GLYPHS)
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :-/</p>

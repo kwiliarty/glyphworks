@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 import * as Strings from '../../strings'
 
@@ -14,6 +15,13 @@ const StyledHeader = styled.header`
     margin: 0;
     font-size: 2rem;
   }
+  a, a:hover, a:focus, a:active, a:visited {
+    color: inherit;
+    text-decoration: none;
+    &:focus {
+      outline: 2px dotted ${ props => props.theme.colors[ props.foreColor ] || props.foreColor };
+    }
+  }
 `
 
 const Header = props => {
@@ -21,7 +29,9 @@ const Header = props => {
   return (
     <StyledHeader backColor={ props.backColor } foreColor={ props.foreColor }>
       <h1>
-        { props.mainTitle } <Ipa>{ props.ipaTitle }</Ipa>
+        <Link to='/'>
+          { props.mainTitle } <Ipa>{ props.ipaTitle }</Ipa>
+        </Link>
       </h1>
     </StyledHeader>
   )

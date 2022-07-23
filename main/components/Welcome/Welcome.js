@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
 
 import IpaPairedInput from '../IpaPairedInput'
@@ -8,6 +8,17 @@ const Wrapper = styled.div`
 `
 
 const Welcome = () => {
+  useEffect(() => {
+    document.title = 'Home : GlyphWorks'
+  }, [])
+
+  useEffect(() => {
+    const wrapper = document.getElementById('app')
+    if ( wrapper ) {
+      wrapper.focus()
+    }
+  }, [])
+
   return (
     <Wrapper>
       { Strings.welcome_message }
