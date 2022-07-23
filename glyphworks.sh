@@ -100,6 +100,7 @@ gw_pull_prod() {
 
 gw_deploy() {
     gw_pull_prod ${1-main}
+    docker tag kwiliarty/glyphworks:${1-main} kwiliarty/glyphworks:main
     docker-compose up -d
     docker-compose exec $DISABLE_TTY python ./manage.py migrate
     docker-compose exec $DISABLE_TTY python ./manage.py collectstatic --no-input
