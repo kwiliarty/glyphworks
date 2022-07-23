@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { withTheme } from 'styled-components'
-
-import theme from '../../themes/glyphworks'
+import styled from 'styled-components'
 
 const StyledBlock = styled.div`
   background-color: rgb( 0, 0, 0, 0.1 );
@@ -37,15 +35,12 @@ Block.propTypes = {
   blockTitle: PropTypes.string,
   /** A minimum height for the block */
   minHeight: PropTypes.string,
-  /** A custom theme object. Generally you will not want to modify this. */
-  theme: PropTypes.object,
 }
 
 Block.defaultProps = {
   blockTitle: 'Set a blockTitle!',
   minHeight: '200px',
-  theme: theme,
 }
 
 /** @component */
-export default withTheme( Block )
+export default Block

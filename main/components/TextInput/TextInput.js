@@ -2,12 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components' 
 
-import theme from '../../themes/glyphworks'
-
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: ${ theme.smallFontSize };
+  font-size: ${ props => props.theme.smallFontSize };
 `
 
 const StyledLabel = styled.label`
@@ -15,14 +13,14 @@ const StyledLabel = styled.label`
 `
 
 const StyledInput = styled.input`
-  border: 1px solid ${ theme.mainTextColor };
-  border-radius: ${ theme.borderRadius };
-  font-family: ${ theme.ipaFontFamily };
-  font-size: ${ theme.baseFontSize };
-  color: ${ theme.mainTextColor };
+  border: 1px solid ${ props => props.theme.mainTextColor };
+  border-radius: ${ props => props.theme.borderRadius };
+  font-family: ${ props => props.theme.ipaFontFamily };
+  font-size: ${ props => props.theme.baseFontSize };
+  color: ${ props => props.theme.mainTextColor };
   text-indent: 0.3em;
   &:focus {
-    outline: 2px solid ${ theme.mainTextColor };
+    outline: 2px solid ${ props => props.theme.mainTextColor };
   }
 `
 

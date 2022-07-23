@@ -1,5 +1,5 @@
 import React from 'react'
-import GlyphChip from './GlyphChip.js'
+import GlyphChip from './GlyphChip'
 import { render, screen } from 'utils'
 import theme from 'glyphworks'
 

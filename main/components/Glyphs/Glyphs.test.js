@@ -1,6 +1,6 @@
 import React from 'react'
 import 'regenerator-runtime/runtime'
-import { render, screen, waitFor } from '@testing-library/react'
+import { render, screen, waitFor } from 'utils'
 import { MockedProvider } from '@apollo/client/testing'
 import { mocks } from './mocks'
 import Glyphs from './Glyphs.js'

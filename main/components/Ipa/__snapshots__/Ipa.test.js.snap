@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`An Ipa component displays its children in an IPA font 1`] = `
+.c0 {
+  font-family: GentiumPlus,serif;
+}
+
+<span
+  class="c0"
+>
+  test
+</span>
+`;

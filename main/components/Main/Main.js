@@ -5,19 +5,16 @@ import styled from 'styled-components'
 import theme from '../../themes/glyphworks'
 
 const StyledMain = styled.main`
-  background-color: ${ props => props.backColor };
-  color: ${ props => props.foreColor };
+  background-color: ${ props => props.theme.colors[ props.backColor ] || props.backColor };
+  color: ${ props => props.theme.colors[ props.foreColor ] || props.foreColor };
   padding: ${ props => props.theme.basePadding }; 
   flex-grow: 1;
   max-width: 800px;
 `
 
 const Main = props => {
-  const backColor = theme.colors[ props.backColor ] || props.backColor
-  const foreColor = theme.colors[ props.foreColor ] || props.foreColor
-
   return (
-    <StyledMain { ...props } backColor={ backColor } foreColor={ foreColor }>
+    <StyledMain { ...props } backColor={ props.backColor } foreColor={ props.foreColor }>
       { props.children }
     </StyledMain>
   )

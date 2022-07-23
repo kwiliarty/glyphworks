@@ -1,7 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import theme from '../../themes/glyphworks'
 import GlobalStyle from '../../themes/GlobalStyle'
 
 import { Routes, Route } from 'react-router-dom'
@@ -14,13 +14,13 @@ import Main from '../Main'
 import Footer from '../Footer'
 
 const Wrapper = styled.div`
-  background-color: ${theme.colors.parchment};
+  background-color: ${ props => props.theme.colors.parchment };
 `
 
-const App = () => {
+const App = props => {
   return (
     <Wrapper>
-      <GlobalStyle theme={ theme } />
+      <GlobalStyle theme={ props.theme } />
       <ContentBox minHeight='100vh'>
         <ContentBox.Top>
           <Header />
@@ -39,6 +39,11 @@ const App = () => {
       </ContentBox>
     </Wrapper>
   )
+}
+
+App.propTypes = {
+  /** A theme object, should be provided by ThemeProvider */
+  theme: PropTypes.object,
 }
 
 export default App

@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, screen } from 'utils'
-import Header from './Header.js'
+import Header from './Header'
 import * as Strings from '../../strings'
 
 describe( 'The Header component', () => {

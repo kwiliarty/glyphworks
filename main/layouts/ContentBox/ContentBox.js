@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 
-import theme from '../../themes/glyphworks'
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -60,14 +58,11 @@ ContentBox.propTypes = {
   blockTitle: PropTypes.string,
   /** A minimum height for the block */
   minHeight: PropTypes.string,
-  /** A custom theme object. Generally you will not want to modify this. */
-  theme: PropTypes.object,
 }
 
 ContentBox.defaultProps = {
   blockTitle: 'Set a blockTitle!',
   minHeight: '200px',
-  theme: theme,
 }
 
 /** @component */

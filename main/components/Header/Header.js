@@ -2,14 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import theme from '../../themes/glyphworks'
 import * as Strings from '../../strings'
 
 import Ipa from '../Ipa'
 
 const StyledHeader = styled.header`
-  background-color: ${ props => props.backColor };
-  color: ${ props => props.foreColor };
+  background-color: ${ props => props.theme.colors[ props.backColor ] || props.backColor };
+  color: ${ props => props.theme.colors[ props.foreColor ] || props.foreColor };
   padding: ${ props => props.theme.basePadding };
   h1 {
     margin: 0;
@@ -19,11 +18,8 @@ const StyledHeader = styled.header`
 
 const Header = props => {
 
-  const backColor = theme.colors[ props.backColor ] || props.backColor
-  const foreColor = theme.colors[ props.foreColor ] || props.foreColor
-
   return (
-    <StyledHeader backColor={ backColor } foreColor={ foreColor }>
+    <StyledHeader backColor={ props.backColor } foreColor={ props.foreColor }>
       <h1>
         { props.mainTitle } <Ipa>{ props.ipaTitle }</Ipa>
       </h1>

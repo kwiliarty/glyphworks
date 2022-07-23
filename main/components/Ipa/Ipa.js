@@ -2,15 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import theme from '../../themes/glyphworks'
-
 const Wrapper = styled.span`
-  font-family: ${ theme.ipaFontFamily };
+  font-family: ${ props => props.theme.ipaFontFamily };
 `
 
 const Ipa = props => {
   return (
-    <Wrapper theme={ theme }>
+    <Wrapper>
       { props.children }
     </Wrapper>
   )
