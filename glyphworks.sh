@@ -94,6 +94,17 @@ gw_push_prod() {
     done
 }
 
+gw_pull_prod() {
+    docker pull kwiliarty/glyphworks:${1-main}
+}
+
+gw_deploy() {
+    gw_pull_prod ${1-main}
+    docker-compose up -d
+    docker-compose exec $DISABLE_TTY python ./manage.py migrate
+    docker-compose exec $DISABLE_TTY python ./manage.py collectstatic --no-input
+}
+
 # Function to run site in any environment
 gw_mk_env() {
     ENV=$1
@@ -211,7 +222,7 @@ alias gw-build-dev='gw_build_dev'
 alias gw-build-ci='gw_build_ci'
 alias gw-build-prod='gw_build_prod'
 alias gw-pull-dev='docker pull kwiliarty/glyphworks:main-dev'
-alias gw-pull-prod='docker pull kwiliarty/glyphworks:main'
+alias gw-pull-prod='gw_pull_prod'
 alias gw-push-dev='docker push kwiliarty/glyphworks:main-dev'
 alias gw-push-prod='gw_push_prod'
 alias gw-down='docker-compose down'
@@ -225,7 +236,7 @@ alias gw-open-env='gw_open_env'
 alias gw-rm-env='gw_rm_env'
 alias gw-show-urls='gw python manage.py show_urls'
 #alias gw-pdb-docs='open https://docs.python.org/3/library/pdb.html'
-alias gw-up='docker-compose up -d && if [ ${GW_ENV} != 'prod' ]; then gw yarn install --frozen-lockfile; fi'
+alias gw-up="docker-compose up -d && if [ ${GW_ENV} != 'prod' ]; then gw yarn install --frozen-lockfile; fi"
 alias gw-up-tail='docker-compose up'
 alias gw-status='docker-compose ps'
 alias gw-eslint='gw yarn run eslint .'
@@ -264,4 +275,4 @@ alias gw-nginx-shell='gw-nginx /bin/sh'
 alias gw-nginx-reload='gw-nginx nginx -s reload'
 
 ## last things
-alias gw-deploy='gw-pull-prod && gw-up && gw-migrate && gw-collectstatic'
+alias gw-deploy='gw_deploy'
