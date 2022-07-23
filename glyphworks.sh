@@ -82,6 +82,16 @@ gw_build_prod() {
         --target prod \
         "$@" \
         .
+    for tag in $(git tag --points-at HEAD)
+    do docker tag kwiliarty/glyphworks:main kwiliarty/glyphworks:${tag}
+    done
+}
+
+gw_push_prod() {
+    docker push kwiliarty/glyphworks:main
+    for tag in $(git tag --points-at HEAD)
+    do docker push kwiliarty/glyphworks:${tag}
+    done
 }
 
 # Function to run site in any environment
@@ -203,7 +213,7 @@ alias gw-build-prod='gw_build_prod'
 alias gw-pull-dev='docker pull kwiliarty/glyphworks:main-dev'
 alias gw-pull-prod='docker pull kwiliarty/glyphworks:main'
 alias gw-push-dev='docker push kwiliarty/glyphworks:main-dev'
-alias gw-push-prod='docker push kwiliarty/glyphworks:main'
+alias gw-push-prod='gw_push_prod'
 alias gw-down='docker-compose down'
 alias gw-logs='docker-compose logs'
 alias gw-open='open http://$(docker-compose port python 8000)'
