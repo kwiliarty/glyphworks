@@ -67,7 +67,6 @@ gw_build_dev() {
         --tag kwiliarty/glyphworks:main-dev \
         --cache-from kwiliarty/glyphworks:main-dev \
         --build-arg BUILD_ENV='dev' \
-        --build-arg WM_VERSION=${WM_VERSION} \
         --target dev \
         "$@" \
         .
@@ -78,7 +77,6 @@ gw_build_prod() {
         --tag kwiliarty/glyphworks:main \
         --cache-from kwiliarty/glyphworks:main \
         --build-arg BUILD_ENV='prod' \
-        --build-arg WM_VERSION=${WM_VERSION} \
         --target prod \
         "$@" \
         .

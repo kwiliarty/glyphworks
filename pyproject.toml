@@ -19,8 +19,9 @@ ipython = "^8.4.0"
 graphene-django = "^2.15.0"
 
 [tool.poetry.dev-dependencies]
-pywatchman = "^1.4.1"
 pip-audit = "^2.3.3"
+watchfiles = "^0.16.1"
+django-watchfiles = "^0.0.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

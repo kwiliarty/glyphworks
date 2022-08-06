@@ -2,12 +2,10 @@
 !.eslintignore
 !.eslintrc.yml
 !.flake8
-!.watchmanconfig
 !.yarnrc
 Dockerfile
 coverage
 docker
 !docker/docker-entrypoint.sh
-!docker/watchman
 docs
 glyphworks.sh

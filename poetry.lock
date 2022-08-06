@@ -7,6 +7,23 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "anyio"
+version = "3.6.1"
+description = "High level compatibility layer for multiple asynchronous event loop implementations"
+category = "dev"
+optional = false
+python-versions = ">=3.6.2"
+
+[package.dependencies]
+idna = ">=2.8"
+sniffio = ">=1.1"
+
+[package.extras]
+doc = ["packaging", "sphinx-rtd-theme", "sphinx-autodoc-typehints (>=1.2.0)"]
+test = ["coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "pytest (>=7.0)", "pytest-mock (>=3.6.1)", "trustme", "contextlib2", "uvloop (<0.15)", "mock (>=4)", "uvloop (>=0.15)"]
+trio = ["trio (>=0.16)"]
+
+[[package]]
 name = "appnope"
 version = "0.1.3"
 description = "Disable App Nap on macOS >= 10.9"
@@ -41,21 +58,21 @@ test = ["astroid", "pytest"]
 
 [[package]]
 name = "attrs"
-version = "21.4.0"
+version = "22.1.0"
 description = "Classes Without Boilerplate"
 category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+python-versions = ">=3.5"
 
 [package.extras]
-dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "mypy (>=0.900,!=0.940)", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
 docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
-tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
-tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "mypy (>=0.900,!=0.940)", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "mypy (>=0.900,!=0.940)", "pytest-mypy-plugins", "cloudpickle"]
 
 [[package]]
 name = "autobahn"
-version = "22.6.1"
+version = "22.7.1"
 description = "WebSocket client & server library, WAMP real-time framework"
 category = "main"
 optional = false
@@ -69,7 +86,7 @@ txaio = ">=21.2.1"
 [package.extras]
 all = ["zope.interface (>=5.2.0)", "twisted (>=20.3.0)", "attrs (>=20.3.0)", "python-snappy (>=0.6.0)", "msgpack (>=1.0.2)", "ujson (>=4.0.2)", "cbor2 (>=5.2.0)", "py-ubjson (>=0.16.1)", "flatbuffers (>=1.12)", "pyopenssl (>=20.0.1)", "service_identity (>=18.1.0)", "pynacl (>=1.4.0)", "pytrie (>=0.4.0)", "qrcode (>=7.3.1)", "cffi (>=1.14.5)", "argon2_cffi (>=20.1.0)", "passlib (>=1.7.4)", "xbr (>=21.2.1)", "click (>=8.1.2)", "zlmdb (>=21.2.1)", "web3 (>=5.29.0)", "rlp (>=2.0.1)", "py-eth-sig-utils (>=0.4.0)", "py-ecc (>=5.1.0)", "eth-abi (>=2.1.1)", "mnemonic (>=0.19)", "base58 (>=2.1.0)", "ecdsa (>=0.16.1)", "py-multihash (>=2.0.1)", "jinja2 (>=2.11.3)", "yapf (==0.29.0)", "spake2 (>=0.8)", "hkdf (>=0.0.3)", "PyGObject (>=3.40.0)"]
 compress = ["python-snappy (>=0.6.0)"]
-dev = ["awscli", "backports.tempfile (>=1.0)", "bumpversion (>=0.5.3)", "codecov (>=2.0.15)", "flake8 (>=3.5.0)", "humanize (>=0.5.1)", "passlib", "pep8-naming (>=0.3.3)", "pip (>=9.0.1)", "pyenchant (>=1.6.6)", "pyflakes (>=1.0.0)", "pyinstaller (>=4.2)", "pylint (>=1.9.2)", "pytest-aiohttp", "pytest-asyncio (>=0.14.0)", "pytest-runner (>=2.11.1)", "pytest (>=3.4.2)", "pyyaml (>=4.2b4)", "qualname", "sphinx-autoapi (>=1.7.0)", "sphinx (>=1.7.1)", "sphinx_rtd_theme (>=0.1.9)", "sphinxcontrib-images (>=0.9.1)", "tox-gh-actions (>=2.2.0)", "tox (>=2.9.1)", "twine (>=3.3.0)", "twisted (>=18.7.0)", "txaio (>=20.4.1)", "watchdog (>=0.8.3)", "wheel (>=0.36.2)", "yapf (==0.29.0)", "mypy (>=0.610)"]
+dev = ["awscli", "backports.tempfile (>=1.0)", "bumpversion (>=0.5.3)", "codecov (>=2.0.15)", "flake8 (<5)", "humanize (>=0.5.1)", "passlib", "pep8-naming (>=0.3.3)", "pip (>=9.0.1)", "pyenchant (>=1.6.6)", "pyflakes (>=1.0.0)", "pyinstaller (>=4.2)", "pylint (>=1.9.2)", "pytest-aiohttp", "pytest-asyncio (>=0.14.0)", "pytest-runner (>=2.11.1)", "pytest (>=3.4.2)", "pyyaml (>=4.2b4)", "qualname", "sphinx-autoapi (>=1.7.0)", "sphinx (>=1.7.1)", "sphinx_rtd_theme (>=0.1.9)", "sphinxcontrib-images (>=0.9.1)", "tox-gh-actions (>=2.2.0)", "tox (>=2.9.1)", "twine (>=3.3.0)", "twisted (>=18.7.0)", "txaio (>=20.4.1)", "watchdog (>=0.8.3)", "wheel (>=0.36.2)", "yapf (==0.29.0)", "mypy (>=0.610)"]
 encryption = ["pyopenssl (>=20.0.1)", "service_identity (>=18.1.0)", "pynacl (>=1.4.0)", "pytrie (>=0.4.0)", "qrcode (>=7.3.1)"]
 nvx = ["cffi (>=1.14.5)"]
 scram = ["cffi (>=1.14.5)", "argon2_cffi (>=20.1.0)", "passlib (>=1.7.4)"]
@@ -196,7 +213,7 @@ test = ["pytest (>=6.2.0)", "pytest-benchmark", "pytest-cov", "pytest-subtests",
 
 [[package]]
 name = "cyclonedx-python-lib"
-version = "2.6.0"
+version = "2.7.1"
 description = "A library for producing CycloneDX SBOM (Software Bill of Materials) files."
 category = "dev"
 optional = false
@@ -260,6 +277,18 @@ python-versions = ">=3.6"
 Django = ">=3.2"
 
 [[package]]
+name = "django-watchfiles"
+version = "0.0.1"
+description = "Use watchfiles in Django’s autoreloader."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+Django = ">=2.2"
+watchfiles = "*"
+
+[[package]]
 name = "django-webpack-loader"
 version = "1.6.0"
 description = "Transparently use webpack with django"
@@ -269,7 +298,7 @@ python-versions = "*"
 
 [[package]]
 name = "executing"
-version = "0.8.3"
+version = "0.9.1"
 description = "Get the currently executing AST node of a frame, and other information"
 category = "main"
 optional = false
@@ -292,7 +321,7 @@ doc = ["sphinx", "sphinx-rtd-theme", "sphinxcontrib-spelling"]
 
 [[package]]
 name = "faker"
-version = "13.15.0"
+version = "13.15.1"
 description = "Faker is a Python package that generates fake data for you."
 category = "main"
 optional = false
@@ -534,15 +563,15 @@ python-versions = "*"
 
 [[package]]
 name = "packageurl-python"
-version = "0.10.0"
+version = "0.10.1"
 description = "A purl aka. Package URL parser and builder"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
 
 [package.extras]
-test = ["black", "isort", "pytest"]
 build = ["wheel"]
+test = ["pytest", "isort", "black"]
 
 [[package]]
 name = "packaging"
@@ -588,7 +617,7 @@ python-versions = "*"
 
 [[package]]
 name = "pip-api"
-version = "0.0.29"
+version = "0.0.30"
 description = "An unofficial, importable pip API"
 category = "dev"
 optional = false
@@ -596,7 +625,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "pip-audit"
-version = "2.4.1"
+version = "2.4.3"
 description = "A tool for scanning Python environments for known vulnerabilities"
 category = "dev"
 optional = false
@@ -608,12 +637,28 @@ cyclonedx-python-lib = ">=2.0.0,<2.5.0 || >2.5.0"
 html5lib = ">=1.1"
 packaging = ">=21.0.0"
 pip-api = ">=0.0.28"
+pip-requirements-parser = ">=31.2.0"
 resolvelib = ">=0.8.0"
 rich = ">=12.4"
 toml = ">=0.10"
 
 [package.extras]
 dev = ["build", "black (>=22.3.0)", "bump (>=1.3.2)", "coverage", "flake8", "interrogate", "isort", "mypy", "pdoc3", "pretend", "pytest", "pytest-cov", "types-html5lib", "types-requests", "types-toml"]
+
+[[package]]
+name = "pip-requirements-parser"
+version = "31.2.0"
+description = "pip requirements parser - a mostly correct pip requirements parsing library because it uses pip's own code."
+category = "dev"
+optional = false
+python-versions = ">=3.6.*"
+
+[package.dependencies]
+packaging = "*"
+
+[package.extras]
+docs = ["Sphinx (>=3.3.1)", "sphinx-rtd-theme (>=0.5.0)", "doc8 (>=0.8.1)"]
+testing = ["pytest (>=6)", "pytest-xdist (>=2)"]
 
 [[package]]
 name = "promise"
@@ -756,14 +801,6 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 six = ">=1.5"
 
 [[package]]
-name = "pywatchman"
-version = "1.4.1"
-description = "Watchman client for python"
-category = "dev"
-optional = false
-python-versions = "*"
-
-[[package]]
 name = "requests"
 version = "2.28.1"
 description = "Python HTTP for Humans."
@@ -861,6 +898,14 @@ description = "Python 2 and 3 compatibility utilities"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "sniffio"
+version = "1.2.0"
+description = "Sniff out which async library your code is running under"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
 
 [[package]]
 name = "sortedcontainers"
@@ -997,7 +1042,7 @@ python-versions = ">=2"
 
 [[package]]
 name = "urllib3"
-version = "1.26.10"
+version = "1.26.11"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 category = "dev"
 optional = false
@@ -1007,6 +1052,17 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, 
 brotli = ["brotlicffi (>=0.8.0)", "brotli (>=1.0.9)", "brotlipy (>=0.6.0)"]
 secure = ["pyOpenSSL (>=0.14)", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "certifi", "ipaddress"]
 socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
+
+[[package]]
+name = "watchfiles"
+version = "0.16.1"
+description = "Simple, modern and high performance file watching and code reload in python."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+anyio = ">=3.0.0,<4"
 
 [[package]]
 name = "wcwidth"
@@ -1040,10 +1096,11 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "c48c70420b65cb8290d5c28184af5417e87be40d508334953e0124e8aa49a53a"
+content-hash = "fa7e797722c6cf7d9de0b395501be7166a3f9668afe7a8c1920c95e890246843"
 
 [metadata.files]
 aniso8601 = []
+anyio = []
 appnope = []
 asgiref = []
 asttokens = []
@@ -1064,6 +1121,7 @@ daphne = []
 decorator = []
 django = []
 django-extensions = []
+django-watchfiles = []
 django-webpack-loader = []
 executing = []
 factory-boy = []
@@ -1091,6 +1149,7 @@ pexpect = []
 pickleshare = []
 pip-api = []
 pip-audit = []
+pip-requirements-parser = []
 promise = []
 prompt-toolkit = []
 psycopg2 = []
@@ -1105,7 +1164,6 @@ pygments = []
 pyopenssl = []
 pyparsing = []
 python-dateutil = []
-pywatchman = []
 requests = []
 resolvelib = []
 rich = []
@@ -1113,6 +1171,7 @@ rx = []
 service-identity = []
 singledispatch = []
 six = []
+sniffio = []
 sortedcontainers = []
 sqlparse = []
 stack-data = []
@@ -1125,6 +1184,7 @@ txaio = []
 typing-extensions = []
 tzdata = []
 urllib3 = []
+watchfiles = []
 wcwidth = []
 webencodings = []
 "zope.interface" = []

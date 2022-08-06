@@ -9,14 +9,12 @@ FROM python:3.9.10-bullseye AS base
     ENV PYTHONFAULTHANDLER 1
     ENV PYTHONUNBUFFERED 1
     ENV PYTHONHASHSEED random
-    ENV DJANGO_WATCHMAN_TIMEOUT 20
     ENV POETRY_VERSION 1.1.13
     ENV POETRY_CACHE_DIR /poetry_cache
     # for the jedi cache
     ENV XDG_CACHE_HOME /xdg_cache
 
     ARG BUILD_ENV=prod
-    ARG WM_VERSION
 
 # Python dependencies
 FROM base AS python-deps
@@ -41,13 +39,6 @@ FROM base AS python-deps
     # Potentially this, too
     # COPY . .
     # RUN poetry build && /venv/bin/pip install dist/*.whl
-
-# Watchman, for dev
-FROM base AS watchman
-
-    RUN apt-get update && apt-get install -y inotify-tools
-    RUN wget https://github.com/facebook/watchman/releases/download/${WM_VERSION}/watchman-${WM_VERSION}-linux.zip
-    RUN unzip watchman-$WM_VERSION-linux.zip
 
 # Runtime elements shared by prod and dev
 FROM base AS runtime
@@ -91,14 +82,6 @@ FROM runtime AS prod
 
 # Dev
 From runtime AS dev
-
-    # Copy the watchman executable from watchman stage
-    COPY --from=watchman /usr/bin/inotify* /usr/bin
-    RUN mkdir -p /usr/local/{bin,lib} /usr/local/var/run/watchman
-    COPY --from=watchman /watchman-$WM_VERSION-linux/bin/* /usr/local/bin
-    COPY --from=watchman /watchman-$WM_VERSION-linux/lib/* /usr/local/lib
-    RUN chmod 755 /usr/local/bin/watchman
-    RUN chmod 2777 /usr/local/var/run/watchman
 
     # Switch to a new user
     USER appuser
