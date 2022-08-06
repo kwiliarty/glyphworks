@@ -1,7 +1,7 @@
 # Inspired by https://sourcery.ai/blog/python-docker/
 
 # Environment settings for all builds
-FROM python:3.9.10-bullseye AS base
+FROM python:3.10.6-bullseye AS base
 
     # set up env
     ENV LC_ALL C.UTF-8
