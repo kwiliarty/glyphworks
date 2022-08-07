@@ -56,7 +56,7 @@ gw() {
 # Reset the test database
 gw_reset_db_test() {
     docker-compose restart python-test
-    docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput
+    docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
     docker-compose exec $DISABLE_TTY python-test ./manage.py migrate
     docker-compose restart python-test
 }
@@ -183,7 +183,7 @@ gw_local_cypress_open() {
 
     echo "Resetting the test database"
         docker-compose restart python-test
-        docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput
+        docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
         docker-compose exec $DISABLE_TTY python-test ./manage.py migrate
 
     echo "Opening the IDE"
