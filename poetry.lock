@@ -266,6 +266,21 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-csp"
+version = "3.7"
+description = "Django Content Security Policy support."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+Django = ">=1.8"
+
+[package.extras]
+jinja2 = ["jinja2 (>=2.9.6)"]
+tests = ["pytest (<4.0)", "pytest-django", "pytest-flakes (==1.0.1)", "pytest-pep8 (==1.0.6)", "pep8 (==1.4.6)", "mock (==1.0.1)", "six (==1.12.0)", "jinja2 (>=2.9.6)"]
+
+[[package]]
 name = "django-extensions"
 version = "3.2.0"
 description = "Extensions for Django"
@@ -1096,7 +1111,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "fa7e797722c6cf7d9de0b395501be7166a3f9668afe7a8c1920c95e890246843"
+content-hash = "4333aa96af27ade14235a8efa122dbc7baa900ba033afe8934a3480b9891fced"
 
 [metadata.files]
 aniso8601 = []
@@ -1120,6 +1135,7 @@ cyclonedx-python-lib = []
 daphne = []
 decorator = []
 django = []
+django-csp = []
 django-extensions = []
 django-watchfiles = []
 django-webpack-loader = []

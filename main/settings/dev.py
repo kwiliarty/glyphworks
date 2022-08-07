@@ -16,6 +16,12 @@ INSTALLED_APPS = shared.INSTALLED_APPS + [
     'django_watchfiles',
 ]
 
+# Allow react dev tools in dev
+CSP_SCRIPT_SRC = (
+    "'self'",
+    "'unsafe-inline'",
+)
+
 MIDDLEWARE = shared.MIDDLEWARE + [
 ]
 

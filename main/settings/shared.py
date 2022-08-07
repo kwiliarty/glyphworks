@@ -60,7 +60,6 @@ for_all_envs = {
             **default_db,
         },
     },
-
     'STATIC_URL': '/static/',
     'STATIC_ROOT': '/usr/src/app/static/',
     'STATICFILES_DIRS': [os.path.join(BASE_DIR, 'main/assets/')],  # webpack
@@ -73,6 +72,13 @@ for_all_envs = {
     'GRAPHENE': {
         'SCHEMA': 'main.schema.schema',
     },
+    'CSP_DEFAULT_SRC': ("'none'",),
+    'CSP_SCRIPT_SRC': ("'self'",),
+    'CSP_IMG_SRC': ("'self'",),
+    'CSP_STYLE_SRC': ("'self'", "'unsafe-inline'"),
+    'CSP_FONT_SRC': ("'self'",),
+    'CSP_CONNECT_SRC': ("'self'",),
+    'SECURE_REFERRER_POLICY': 'same-origin',
 }
 
 for_nonprod_envs = {
@@ -121,6 +127,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'csp.middleware.CSPMiddleware',
 ]
 
 TEMPLATES = [

@@ -17,6 +17,7 @@ psycopg2 = "^2.9.3"
 factory-boy = "^3.2.1"
 ipython = "^8.4.0"
 graphene-django = "^2.15.0"
+django-csp = "^3.7"
 
 [tool.poetry.dev-dependencies]
 pip-audit = "^2.3.3"
