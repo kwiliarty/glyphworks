@@ -8,8 +8,12 @@ services:
     tty: true
     environment:
       - DJANGO_SETTINGS_MODULE=main.settings.dev
+      - VIRTUAL_HOST=glyphworks.dev.test
+      - VIRTUAL_PORT=8000
     ports:
       - "${GW_PYTHON_PORT}:8000"
+    expose:
+      - 8000
     command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
       &volumes
@@ -26,6 +30,8 @@ services:
       - type: bind
         source: ./../cypress/support/node_modules/cypress-axe
         target: /node_modules/cypress-axe
+    networks:
+      - nginx
 
   python-test:
     image: *image
@@ -93,3 +99,8 @@ volumes:
   poetry_cache:
   jedi_cache:
   postgres_test_data:
+
+networks:
+  nginx:
+    external:
+      name: nginx-proxy

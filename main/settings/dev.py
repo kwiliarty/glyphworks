@@ -6,6 +6,10 @@ from . import shared
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 # LOGIN_URL = '/login/'
+CSRF_TRUSTED_ORIGINS = [
+    'http://0.0.0.0',
+    'https://glyphworks.dev.test',
+]
 
 shared.apply(shared.for_all_envs, globals())
 # shared.apply(shared.for_nonprod_envs, globals())
