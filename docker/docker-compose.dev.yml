@@ -31,6 +31,7 @@ services:
         source: ./../cypress/support/node_modules/cypress-axe
         target: /node_modules/cypress-axe
     networks:
+      - django
       - nginx
 
   python-test:
@@ -69,10 +70,17 @@ services:
     image: *image
     restart: always
     command: ['yarn', 'styleguidist', 'server']
+    environment:
+      - VIRTUAL_HOST=styleguidist.dev.test
+      - VIRTUAL_PORT=443
+    expose:
+      - 6060
+      - 443
     ports:
       - '6060:6060'
     networks:
       - django
+      - nginx
     volumes:
       *volumes
 

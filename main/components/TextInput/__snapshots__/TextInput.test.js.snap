@@ -2,6 +2,10 @@
 
 exports[`The TextInput component renders an input with a label 1`] = `
 .c0 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   border: 1px solid #625418;
   border-radius: 0.1em;
   font-family: GentiumPlus,serif;

@@ -1,7 +1,7 @@
 # Inspired by https://sourcery.ai/blog/python-docker/
 
 # Environment settings for all builds
-FROM python:3.10.6-bullseye AS base
+FROM python:3.10.7-bullseye AS base
 
     # set up env
     ENV LC_ALL C.UTF-8
@@ -51,10 +51,10 @@ FROM base AS runtime
 
     # Install node and yarn
     # https://github.com/nodesource/distributions#debinstall
-    RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash - && \
+    RUN curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - && \
         curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | tee /usr/share/keyrings/yarnkey.gpg >/dev/null && \
         echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-        apt-get update && apt-get install -y nodejs yarn && \
+        apt-get clean && apt-get update && apt-get install -y nodejs yarn && \
         rm -rf /var/lib/apt/lists/*
 
     # Install node packages

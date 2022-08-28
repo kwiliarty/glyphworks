@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { xsampa2ipa, ipa2xsampa } from '../../js-utils/mapping'
 import TextInput from '../TextInput'
+import ClipboardCopy from '../ClipboardCopy'
 
 const StyledDiv = styled.div`
   display: flex;
@@ -34,7 +35,7 @@ const IpaPairedInput = () => {
 
   const wrapperProps = {
     style: {
-      margin: '0',
+      margin: '0 0 0.5em',
     },
   }
 
@@ -51,12 +52,13 @@ const IpaPairedInput = () => {
           value: value.ascii,
           onChange: updateXsampa,
           'aria-controls': `id-${ ipaId }`,
-          style: {
-            marginBottom: '0.5em',
-          },
         }}
         wrapperProps={ wrapperProps }
-      />
+      >
+        <TextInput.Suffix>
+          <ClipboardCopy text={ value.ascii } ariaLabel='Copy X-SAMPA' />
+        </TextInput.Suffix>
+      </TextInput>
       <TextInput
         labelText='IPA'
         idStem={ ipaId }
@@ -67,7 +69,11 @@ const IpaPairedInput = () => {
           'aria-controls': `id-${ xsampaId }`
         }}
         wrapperProps={ wrapperProps }
-      />
+      >
+        <TextInput.Suffix>
+          <ClipboardCopy text={ value.ipa } ariaLabel='Copy IPA' />
+        </TextInput.Suffix>
+      </TextInput>
     </StyledDiv>
   )
 }

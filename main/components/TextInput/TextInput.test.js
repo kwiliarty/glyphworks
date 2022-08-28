@@ -14,4 +14,18 @@ describe( 'The TextInput component', () => {
     expect( input ).toHaveValue( 'hello' )
     expect( input ).toMatchSnapshot()
   })
+
+  it( 'optionally displays a suffix', () => {
+    render(
+      <TextInput labelText='Testing Suffix' idStem='test-suffix'>
+        <TextInput.Suffix>
+          <button>Groetjes!</button>
+        </TextInput.Suffix>
+      </TextInput>
+    )
+    const input = screen.getByLabelText( 'Testing Suffix')
+    expect( input ).toHaveValue( '' )
+    const suffix = screen.getByRole( 'button' )
+    expect( suffix ).toHaveTextContent( 'Groetjes!' )
+  })
 })

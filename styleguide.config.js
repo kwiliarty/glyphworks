@@ -7,6 +7,7 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join( __dirname, './main/themes/ThemeProvider' )
   },
+  serverPort: 443,
   webpackConfig: {
     module: {
       rules: [
@@ -16,7 +17,15 @@ module.exports = {
           loader: 'babel-loader'
         },
       ]
-    }
+    },
+    devServer: {
+      allowedHosts: [
+        'styleguidist.dev.test',
+        '0.0.0.0',
+      ],
+      transportMode: 'ws',
+      sockHost: 'styleguidist.dev.test',
+    },
   },
   sections: [
     {

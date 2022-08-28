@@ -12,7 +12,13 @@ const StyledLabel = styled.label`
   margin-bottom: 0.1em;
 `
 
+const StyledInputLine = styled.div`
+  display: flex;
+  align-items: center;
+`
+
 const StyledInput = styled.input`
+  flex-grow: 1;
   border: 1px solid ${ props => props.theme.mainTextColor };
   border-radius: ${ props => props.theme.borderRadius };
   font-family: ${ props => props.theme.ipaFontFamily };
@@ -24,23 +30,38 @@ const StyledInput = styled.input`
   }
 `
 
+const StyledSuffix = styled.div`
+`
+
 const TextInput = props => {
 
   const idStem = ( props.idStem || Math.random().toString( 36 ).substr( 2, 16 ) )
+  const { children } = props
 
   return (
     <StyledDiv { ...props.wrapperProps }>
       <StyledLabel htmlFor={ `id-${idStem}` }>{ props.labelText }</StyledLabel>
-      <StyledInput
-        { ...props.inputProps }
-        type='text'
-        id={ `id-${idStem}` }
-      />
+      <StyledInputLine>
+        <StyledInput
+          { ...props.inputProps }
+          type='text'
+          id={ `id-${idStem}` }
+        />
+        <StyledSuffix { ...props }>
+          { children && [].concat( children ).filter( child => child.type.nickname == 'Suffix' ) }
+        </StyledSuffix>
+      </StyledInputLine>
     </StyledDiv>
   )
 }
 
+const Suffix = props => props.children
+Suffix.nickname = 'Suffix'
+TextInput.Suffix = Suffix
+
 TextInput.propTypes = {
+  /** This component displays children of its subcomponents. */
+  children: PropTypes.node,
   /** An optional id stem for the input fields. If none is provided, we create a random one. */
   idStem: PropTypes.string,
   /** Properties that will be passed to the `<input>` element. */
