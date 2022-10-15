@@ -52,6 +52,10 @@ const GlobalStyle = createGlobalStyle`
   ${ Object.keys(fonts).map( font => 
     `.${font} { font-family: ${ fonts[font] };}`
   )}
+
+  :focus {
+    outline: ${ props => props.theme.focusOutline };
+  }
 `
 
 export default GlobalStyle

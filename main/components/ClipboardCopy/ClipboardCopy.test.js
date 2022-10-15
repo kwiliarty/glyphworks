@@ -11,10 +11,10 @@ describe( 'A ClipboardCopy component', () => {
     render(
       <ClipboardCopy
         text='Copy Cat!'
-        ariaLabel='Click to copy'
+        hint='Click to copy'
       />
     )
-    const copyButton = screen.getByLabelText( 'Click to copy' )
+    const copyButton = screen.getByText( 'Click to copy' )
     await user.click( copyButton )
     expect( spy ).toBeCalledTimes( 1 )
     expect( spy ).toHaveBeenCalledWith( 'Copy Cat!' )

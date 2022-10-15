@@ -56,7 +56,7 @@ const IpaPairedInput = () => {
         wrapperProps={ wrapperProps }
       >
         <TextInput.Suffix>
-          <ClipboardCopy text={ value.ascii } ariaLabel='Copy X-SAMPA' />
+          <ClipboardCopy text={ value.ascii } hint='Copy X-SAMPA' />
         </TextInput.Suffix>
       </TextInput>
       <TextInput
@@ -71,7 +71,7 @@ const IpaPairedInput = () => {
         wrapperProps={ wrapperProps }
       >
         <TextInput.Suffix>
-          <ClipboardCopy text={ value.ipa } ariaLabel='Copy IPA' />
+          <ClipboardCopy text={ value.ipa } hint='Copy IPA' />
         </TextInput.Suffix>
       </TextInput>
     </StyledDiv>

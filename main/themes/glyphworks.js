@@ -47,6 +47,7 @@ const theme = {
   headerTextColor: colors.veryLightBrown,
   footerBgColor: colors.veryDarkBrown,
   footerTextColor: colors.white,
+  focusOutline: '2px dotted',
 }
 
 export default theme
