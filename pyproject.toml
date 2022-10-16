@@ -6,23 +6,23 @@ authors = ["Your Name <you@example.com>"]
 license = "n"
 
 [tool.poetry.dependencies]
-python = "^3.9"
-Django = "^4.0.5"
-django-extensions = "^3.1.5"
-django-webpack-loader = "^1.5.0"
-daphne = "^3.0.2"
-gunicorn = "^20.1.0"
-flake8 = "^4.0.1"
-psycopg2 = "^2.9.3"
-factory-boy = "^3.2.1"
-ipython = "^8.4.0"
-graphene-django = "^2.15.0"
-django-csp = "^3.7"
+python = "^3.10.7"
+Django = "4.1.2"
+django-extensions = "*"
+django-webpack-loader = "*"
+daphne = "*"
+gunicorn = "*"
+flake8 = "*"
+psycopg2 = "*"
+factory-boy = "*"
+ipython = "*"
+graphene-django = "*"
+django-csp = "*"
 
 [tool.poetry.dev-dependencies]
-pip-audit = "^2.3.3"
-watchfiles = "^0.16.1"
-django-watchfiles = "^0.0.1"
+pip-audit = "*"
+watchfiles = "*"
+django-watchfiles = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

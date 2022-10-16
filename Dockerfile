@@ -9,7 +9,7 @@ FROM python:3.10.7-bullseye AS base
     ENV PYTHONFAULTHANDLER 1
     ENV PYTHONUNBUFFERED 1
     ENV PYTHONHASHSEED random
-    ENV POETRY_VERSION 1.1.13
+    ENV POETRY_VERSION 1.2.2
     ENV POETRY_CACHE_DIR /poetry_cache
     # for the jedi cache
     ENV XDG_CACHE_HOME /xdg_cache
