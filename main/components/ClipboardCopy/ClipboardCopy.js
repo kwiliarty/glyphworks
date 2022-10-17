@@ -34,6 +34,7 @@ const StyledTip = styled.span`
   right: 0;
   background-color: ${ props => props.theme.colors.darkRed };
   color: ${ props => props.theme.headerTextColor };
+  font-family: ${ props => props.theme.hintFontFamily };
   padding: 4px;
   margin-bottom: 4px;
   border-radius: 0.5em;

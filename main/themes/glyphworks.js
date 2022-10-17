@@ -1,5 +1,6 @@
 export const fonts = {
   gentium: 'GentiumPlus, serif',
+  andika: 'Andika, sans-serif',
 }
 
 export const colors = {
@@ -36,18 +37,19 @@ export const colors = {
 const theme = {
   fonts: { ...fonts },
   colors: { ...colors },
+  baseFontSize: '28px',
   basePadding: '1rem',
   bodyFontFamily: fonts.gentium,
   borderRadius: '0.1em',
-  ipaFontFamily: fonts.gentium,
-  baseFontSize: '28px',
-  smallFontSize: '20px',
-  mainTextColor: colors.darkBrown,
-  headerBgColor: colors.darkBrown,
-  headerTextColor: colors.veryLightBrown,
+  focusOutline: '2px dotted',
   footerBgColor: colors.veryDarkBrown,
   footerTextColor: colors.white,
-  focusOutline: '2px dotted',
+  headerBgColor: colors.darkBrown,
+  headerTextColor: colors.veryLightBrown,
+  hintFontFamily: fonts.andika,
+  ipaFontFamily: fonts.gentium,
+  mainTextColor: colors.darkBrown,
+  smallFontSize: '20px',
 }
 
 export default theme
