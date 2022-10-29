@@ -10,19 +10,19 @@ export const mocks = [
         glyphs: [
           {
             glyph: 'p',
-            slug: 'p',
+            slug: 'lower-case-p',
             ipaName: 'lower-case p',
             ipaDefinition: 'voiceless bilabial plosive',
           },
           {
             glyph: 't',
-            slug: 't',
+            slug: 'lower-case-t',
             ipaName: 'lower-case t',
             ipaDefinition: 'voiceless alveolar plosive',
           },
           {
             glyph: 'k',
-            slug: 'k',
+            slug: 'lower-case-k',
             ipaName: 'lower-case k',
             ipaDefinition: 'voiceless velar plosive',
           },

@@ -1,10 +1,10 @@
-`GlyphCard` displays thumbnail details of a glyph. The glyph object has
-attributes: `glyph, slug`
+`GlyphCard` displays thumbnail details of a glyph.
 
 ```jsx
 <GlyphCard
   glyph='p'
   ipaName='lower-case p'
   ipaDefinition='voiceless labial stop'
+  slug='lower-case-p'
 />
 ```

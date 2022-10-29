@@ -13,8 +13,16 @@ describe( 'The Glyphs index page', () => {
       .should( 'have.length', 170 )
   })
 
+  it( 'links to glyph detail pages', () => {
+    cy.visit( '/glyphs' )
+    cy.get( 'a:contains(lower-case p)' )
+      .click()
+    cy.url().should('eq', Cypress.config().baseUrl + '/glyphs/lower-case-p')
+  })
+
   it( 'passes accessibility checks', () => {
     cy.visit( '/glyphs' )
+    cy.get( '[data-cy="glyphcard-wrapper"]' )
     cy.injectAxe()
     cy.myCheckA11y()
   })

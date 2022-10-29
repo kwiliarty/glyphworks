@@ -2,7 +2,6 @@
 
 exports[`The Header component can accept custom colors 1`] = `
 .c2 {
-  display: inline-block;
   color: #1f1643;
 }
 
@@ -55,7 +54,6 @@ exports[`The Header component can accept custom colors 1`] = `
 
 exports[`The Header component displays the copyright year 1`] = `
 .c2 {
-  display: inline-block;
   color: #1f1643;
 }
 

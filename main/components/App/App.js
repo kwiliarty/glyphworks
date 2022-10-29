@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Welcome from '../Welcome'
 import Glyphs from '../Glyphs'
+import Glyph from '../Glyph'
 import ContentBox from '../../layouts/ContentBox'
 import Header from '../Header'
 import Main from '../Main'
@@ -32,6 +33,8 @@ const App = props => {
             <Routes>
               <Route index element={ <Welcome /> } />
               <Route path='glyphs' element={ <Glyphs /> } />
+              <Route path='glyphs/:slug' element={ <Glyph /> } />
+              <Route path='*' element={ <div>no match</div> } />
             </Routes>
           </Main>
         </ContentBox.Contents>

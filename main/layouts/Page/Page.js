@@ -2,7 +2,11 @@ import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Container = styled.div``
+const Container = styled.div`
+  h1 {
+    margin-bottom: 1em;
+  }
+`
 
 const Page = props => {
   const { pageTitle, children } = props

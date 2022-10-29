@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { withTheme } from 'styled-components'
+import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
@@ -66,4 +66,4 @@ ContentBox.defaultProps = {
 }
 
 /** @component */
-export default withTheme( ContentBox )
+export default ContentBox

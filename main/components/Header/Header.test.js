@@ -7,7 +7,7 @@ describe( 'The Header component', () => {
   it( 'can display a default title', () => {
     render( <Header /> )
     const banner = screen.getByRole( 'banner' )
-    expect( banner ).toHaveTextContent( Strings.main_title )
+    expect( banner ).toHaveTextContent( Strings.mainTitle )
     expect( banner ).toMatchSnapshot()
   })
 

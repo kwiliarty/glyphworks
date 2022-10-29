@@ -1,5 +1,11 @@
-`Glyphs` displays an index of glyphs. By default the component comes wrapped in
-a Page:
+`Glyphs` displays an index of glyphs.
+
+The following examples use this `mocks` file:
+
+```js { "file": "../mocks.js" }
+```
+
+By default the component comes wrapped in a Page:
 
 ```jsx
 import { MockedProvider } from '@apollo/client/testing'

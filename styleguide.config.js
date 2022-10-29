@@ -1,6 +1,7 @@
 /* global __dirname */
 
 const path = require('path')
+const fs = require('fs')
 
 module.exports = {
   title: 'GlyphWorks',
@@ -52,4 +53,18 @@ module.exports = {
       components: './main/components/**/[A-Z]*.js',
     },
   ],
+  updateExample( props, exampleFilePath ) {
+    const { settings, lang } = props
+    if ( settings && typeof settings.file === 'string' ) {
+      const filepath = path.resolve(exampleFilePath, settings.file)
+      settings.static = true
+      delete settings.file
+      return {
+        content: fs.readFileSync(filepath, 'utf8'),
+        settings,
+        lang
+      }
+    }
+    return props
+  }
 }

@@ -2,7 +2,6 @@
 
 exports[`The Link Component accepts a color attribute 1`] = `
 .c0 {
-  display: inline-block;
   color: #621818;
 }
 
@@ -25,7 +24,6 @@ exports[`The Link Component accepts a color attribute 1`] = `
 
 exports[`The Link Component renders an anchor tag 1`] = `
 .c0 {
-  display: inline-block;
   color: #635a8a;
 }
 

@@ -8,11 +8,11 @@ const Welcome = () => {
   return (
     <Page
       pageTitle={ Strings.home }
-      h1={ Strings.welcome_h1 }
+      h1={ Strings.welcomeH1 }
     >
-      { Strings.welcome_message }
+      { Strings.welcomeMessage }
       <IpaPairedInput />
-      { Strings.quickstart_examples }
+      { Strings.quickstartExamples }
     </Page>
   )
 }

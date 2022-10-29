@@ -44,7 +44,7 @@ Header.propTypes = {
 Header.defaultProps = {
   backColor: 'darkRed',
   foreColor: 'veryLightBrown',
-  mainTitle: Strings.main_title,
+  mainTitle: Strings.mainTitle,
 }
 
 export default Header

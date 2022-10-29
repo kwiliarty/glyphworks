@@ -8,7 +8,7 @@ describe( 'The welcome page', () => {
     render( <Welcome /> )
     const h1 = screen.getByRole( 'heading' )
     expect( h1 ).toBeInTheDocument()
-    expect( h1 ).toHaveTextContent( Strings.welcome_h1 )
+    expect( h1 ).toHaveTextContent( Strings.welcomeH1 )
   })
   it( 'includes an X-SAMPA to IPA converter', () => {
     render( <Welcome /> )

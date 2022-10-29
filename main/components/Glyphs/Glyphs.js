@@ -6,14 +6,19 @@ import GlyphCard from '../GlyphCard'
 import Page from '../../layouts/Page'
 import * as Strings from '../../strings'
 
-const Wrapper = styled.div`
+const Wrapper = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: 1rem;
+  padding: 0;
+`
+
+const Item = styled.li`
+  list-style-type: none;
 `
 
 export const GET_GLYPHS = gql`
-  {
+  query getGlyphs {
     glyphs {
       glyph
       slug
@@ -33,13 +38,14 @@ const List = () => {
       {
         data.glyphs.map(glyph => {
           return (
-            <div key={ glyph.slug }>
+            <Item key={ glyph.slug }>
               <GlyphCard
                 glyph={ glyph.glyph }
                 ipaName={ glyph.ipaName }
                 ipaDefinition={ glyph.ipaDefinition }
+                slug={ glyph.slug }
               />
-            </div>  
+            </Item>  
           )
         })
       }
@@ -50,7 +56,7 @@ const List = () => {
 const Glyphs = () => {
   return (
     <Page
-      pageTitle={ Strings.glyph_list }
+      pageTitle={ Strings.glyphList }
     >
       <List />
     </Page>

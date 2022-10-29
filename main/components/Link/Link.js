@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledLink = styled.a`
-  display: inline-block;
   color: ${ props => props.theme.colors[props.color] };
   &:focus {
     outline: 2px dotted;
