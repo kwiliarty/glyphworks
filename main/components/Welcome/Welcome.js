@@ -9,10 +9,6 @@ const Wrapper = styled.div`
 
 const Welcome = () => {
   useEffect(() => {
-    document.title = 'Home : GlyphWorks'
-  }, [])
-
-  useEffect(() => {
     const wrapper = document.getElementById('app')
     if ( wrapper ) {
       wrapper.focus()

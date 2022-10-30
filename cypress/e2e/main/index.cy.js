@@ -1,10 +1,10 @@
 describe( 'The GlyphWorks index page', () => {
-  it( 'has an appropriate heading', () => {
+  it( 'has an appropriate title and heading', () => {
     cy.visit( '/' )
+    cy.title()
+      .should( 'eq', 'Home : GlyphWorks' )
     cy.get( 'h1' )
-      .should( 'contain.text', 'GlyphWorks' )
-      .click()
-    cy.url().should('eq', Cypress.config().baseUrl + '/')
+      .should( 'contain.text', 'Welcome!' )
   })
 
   it( 'features an IpaPairedInput', () => {

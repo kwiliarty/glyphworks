@@ -1,5 +1,5 @@
 import React from 'react'
-import { render, screen } from 'utils'
+import { render, screen, within } from 'utils'
 import App from './App.js'
 import * as Strings from '../../strings'
 
@@ -13,10 +13,9 @@ describe( 'The App Component', () => {
   it( 'includes a banner and heading', () => {
     render( AppWithRouter() )
     const banner = screen.getByRole( 'banner' )
-    const heading = screen.getByRole( 'heading' )
+    const heading = within(banner).getByRole( 'link' )
     expect( banner ).toContainElement( heading )
     expect( heading ).toHaveTextContent( Strings.main_title )
-    expect( heading ).toHaveTextContent( Strings.ipa_title )
   })
   it( 'includes a <Welcome> component', () => {
     render( AppWithRouter() )

@@ -71,7 +71,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 2em;
+    color: ${ props => props.theme.colors.darkRed };
+    font-size: 2.5rem;
+    font-weight: normal;
     margin: 0.5em 0;
   }
 

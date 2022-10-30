@@ -23,10 +23,6 @@ export const GET_GLYPHS = gql`
 
 const Glyphs = () => {
   useEffect(() => {
-    document.title = 'Glyph List : GlyphWorks'
-  }, [])
-
-  useEffect(() => {
     const wrapper = document.getElementById('app')
     if ( wrapper ) {
       wrapper.focus()

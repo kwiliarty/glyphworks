@@ -9,10 +9,12 @@ import { Routes, Route } from 'react-router-dom'
 import Welcome from '../Welcome'
 import Glyphs from '../Glyphs'
 import ContentBox from '../../layouts/ContentBox'
+import Page from '../../layouts/Page'
 import Header from '../Header'
 import Main from '../Main'
 import MainNav from '../MainNav'
 import Footer from '../Footer'
+import * as Strings from '../../strings'
 
 const Wrapper = styled.div`
   background-color: ${ props => props.theme.colors.parchment };
@@ -30,8 +32,22 @@ const App = props => {
         <ContentBox.Contents>
           <Main>
             <Routes>
-              <Route path='/' element={ <Welcome /> } />
-              <Route path='glyphs' element={ <Glyphs /> } />
+              <Route
+                path='/'
+                element={
+                  <Page pageTitle={ Strings.home } h1={ Strings.welcome_h1 }>
+                    <Welcome />
+                  </Page>
+                }
+              />
+              <Route
+                path='glyphs'
+                element={
+                  <Page pageTitle={ Strings.glyph_list }>
+                    <Glyphs />
+                  </Page>
+                }
+              />
             </Routes>
           </Main>
         </ContentBox.Contents>

@@ -2,7 +2,7 @@ import React from 'react'
 import { render, screen } from 'utils'
 import Welcome from './Welcome.js'
 
-describe( 'The App Component', () => {
+describe( 'The welcome page', () => {
   it( 'includes an X-SAMPA to IPA converter', () => {
     render( <Welcome /> )
     const xSampaLink = screen.getByRole( 'link', { name: 'X-SAMPA'})

@@ -13,6 +13,5 @@ Or customized:
   backColor='darkPurple'
   foreColor='veryLightGreen'
   mainTitle='Custom Title'
-  ipaTitle='[some IPA here]'
 />
 ```

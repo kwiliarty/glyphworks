@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Header component can accept custom colors 1`] = `
-.c1 {
-  font-family: GentiumPlus,serif;
-}
-
 .c0 {
   background-color: pink;
   color: wheat;
   padding: 1rem;
-}
-
-.c0 h1 {
-  margin: 0;
-  font-size: 2rem;
 }
 
 .c0 a,
@@ -21,6 +12,8 @@ exports[`The Header component can accept custom colors 1`] = `
 .c0 a:focus,
 .c0 a:active,
 .c0 a:visited {
+  display: block margin:0;
+  font-size: 2rem;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -37,89 +30,19 @@ exports[`The Header component can accept custom colors 1`] = `
 <header
   class="c0"
 >
-  <h1>
-    <a
-      href="/"
-    >
-      GlyphWorks
-       
-      <span
-        class="c1"
-      >
-        [ɡlɪfwɜ˞ks]
-      </span>
-    </a>
-  </h1>
-</header>
-`;
-
-exports[`The Header component can display a custom title 1`] = `
-.c1 {
-  font-family: GentiumPlus,serif;
-}
-
-.c0 {
-  background-color: #621818;
-  color: #fff7d4;
-  padding: 1rem;
-}
-
-.c0 h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.c0 a,
-.c0 a:hover,
-.c0 a:focus,
-.c0 a:active,
-.c0 a:visited {
-  color: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c0 a:focus,
-.c0 a:hover:focus,
-.c0 a:focus:focus,
-.c0 a:active:focus,
-.c0 a:visited:focus {
-  outline: 2px dotted #fff7d4;
-}
-
-<header
-  class="c0"
->
-  <h1>
-    <a
-      href="/"
-    >
-      Custom Title
-       
-      <span
-        class="c1"
-      >
-        some IPA
-      </span>
-    </a>
-  </h1>
+  <a
+    href="/"
+  >
+    GlyphWorks
+  </a>
 </header>
 `;
 
 exports[`The Header component can display a default title 1`] = `
-.c1 {
-  font-family: GentiumPlus,serif;
-}
-
 .c0 {
   background-color: #621818;
   color: #fff7d4;
   padding: 1rem;
-}
-
-.c0 h1 {
-  margin: 0;
-  font-size: 2rem;
 }
 
 .c0 a,
@@ -127,6 +50,8 @@ exports[`The Header component can display a default title 1`] = `
 .c0 a:focus,
 .c0 a:active,
 .c0 a:visited {
+  display: block margin:0;
+  font-size: 2rem;
   color: inherit;
   -webkit-text-decoration: none;
   text-decoration: none;
@@ -143,18 +68,10 @@ exports[`The Header component can display a default title 1`] = `
 <header
   class="c0"
 >
-  <h1>
-    <a
-      href="/"
-    >
-      GlyphWorks
-       
-      <span
-        class="c1"
-      >
-        [ɡlɪfwɜ˞ks]
-      </span>
-    </a>
-  </h1>
+  <a
+    href="/"
+  >
+    GlyphWorks
+  </a>
 </header>
 `;
