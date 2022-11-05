@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { ThemeProvider } from 'styled-components'
 
 import {
@@ -39,7 +39,10 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 })
 
-ReactDOM.render(
+const container = document.getElementById( 'app' )
+const root = createRoot( container )
+
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ApolloProvider client={ client }>
@@ -48,6 +51,5 @@ ReactDOM.render(
         </ThemeProvider>
       </ApolloProvider>
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('app')
+  </React.StrictMode>
 )
