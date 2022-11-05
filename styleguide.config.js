@@ -23,8 +23,6 @@ module.exports = {
         'styleguidist.dev.test',
         '0.0.0.0',
       ],
-      transportMode: 'ws',
-      sockHost: 'styleguidist.dev.test',
     },
   },
   sections: [
