@@ -9,7 +9,6 @@ globals:
   Atomics: readonly
   SharedArrayBuffer: readonly
   React: readonly
-  ReactDOM: readonly
   describe: readonly
   it: readonly
   test: readonly
