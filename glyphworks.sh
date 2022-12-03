@@ -263,7 +263,7 @@ alias gw-load-glyphs='gw python ./manage.py loaddata glyphs.json'
 alias gw-db='docker-compose exec db psql -U postgres'
 
 ## python aliases
-alias gw-bash='docker-compose run -u root python /bin/bash'
+alias gw-bash='docker-compose run --rm -u root python /bin/bash'
 alias gw-yarn='gw yarn'
 alias gw-node='gw node'
 alias gw-restart-python='docker-compose restart python'

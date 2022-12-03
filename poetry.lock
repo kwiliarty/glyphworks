@@ -297,18 +297,6 @@ python-versions = ">=3.6"
 Django = ">=3.2"
 
 [[package]]
-name = "django-watchfiles"
-version = "0.0.1"
-description = "Use watchfiles in Django’s autoreloader."
-category = "dev"
-optional = false
-python-versions = ">=3.7"
-
-[package.dependencies]
-Django = ">=2.2"
-watchfiles = "*"
-
-[[package]]
 name = "django-webpack-loader"
 version = "1.7.0"
 description = "Transparently use webpack with django"
@@ -1121,7 +1109,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10.7"
-content-hash = "fd20b27979ec7f8570ef8d6933c55be88e383d0e839081441793152ea763aebb"
+content-hash = "994cb8ead332e69ed16144c832344ed26b10424a1fef9094598c1eea6995dcc2"
 
 [metadata.files]
 aniso8601 = [
@@ -1300,10 +1288,6 @@ django-csp = [
 django-extensions = [
     {file = "django-extensions-3.2.1.tar.gz", hash = "sha256:2a4f4d757be2563cd1ff7cfdf2e57468f5f931cc88b23cf82ca75717aae504a4"},
     {file = "django_extensions-3.2.1-py3-none-any.whl", hash = "sha256:421464be390289513f86cb5e18eb43e5dc1de8b4c27ba9faa3b91261b0d67e09"},
-]
-django-watchfiles = [
-    {file = "django-watchfiles-0.0.1.tar.gz", hash = "sha256:8fe4a2cee0a7c50f3505298077773d65bba3c1ec47fc7568d574cddf9c799439"},
-    {file = "django_watchfiles-0.0.1-py3-none-any.whl", hash = "sha256:509f6dc7296865d3b5f5e7e7c192fed7cf706ea840d5a9430e4a2dc34441191c"},
 ]
 django-webpack-loader = [
     {file = "django-webpack-loader-1.7.0.tar.gz", hash = "sha256:6a065382573771baf400754c4d39c0913b0a29a453a941dfb9122eebed21572f"},

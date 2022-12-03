@@ -22,7 +22,6 @@ django-csp = "*"
 [tool.poetry.dev-dependencies]
 pip-audit = "*"
 watchfiles = "*"
-django-watchfiles = "*"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

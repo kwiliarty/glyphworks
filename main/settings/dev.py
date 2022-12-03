@@ -17,7 +17,7 @@ shared.apply(shared.for_all_envs, globals())
 ROOT_URLCONF = 'main.urls.dev'
 
 INSTALLED_APPS = shared.INSTALLED_APPS + [
-    'django_watchfiles',
+    'watchfiles_reloader',
 ]
 
 # Allow react dev tools in dev
