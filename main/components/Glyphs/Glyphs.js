@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 import { useQuery, gql } from '@apollo/client'
 import GlyphCard from '../GlyphCard'
+import Page from '../../layouts/Page'
+import * as Strings from '../../strings'
 
 const Wrapper = styled.div`
   display: grid;
@@ -21,14 +23,7 @@ export const GET_GLYPHS = gql`
   }
 `
 
-const Glyphs = () => {
-  useEffect(() => {
-    const wrapper = document.getElementById('app')
-    if ( wrapper ) {
-      wrapper.focus()
-    }
-  }, [])
-
+const List = () => {
   const { loading, error, data } = useQuery(GET_GLYPHS)
   if (loading) return <p>Loading...</p>
   if (error) return <p>Error :-/</p>
@@ -51,5 +46,16 @@ const Glyphs = () => {
     </Wrapper>
   )
 }
+
+const Glyphs = () => {
+  return (
+    <Page
+      pageTitle={ Strings.glyph_list }
+    >
+      <List />
+    </Page>
+  )
+}
+Glyphs.List = List
 
 export default Glyphs

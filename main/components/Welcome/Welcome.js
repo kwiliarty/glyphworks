@@ -1,26 +1,19 @@
-import React, { useEffect } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 
+import Page from '../../layouts/Page'
 import IpaPairedInput from '../IpaPairedInput'
 import * as Strings from '../../strings'
 
-const Wrapper = styled.div`
-`
-
 const Welcome = () => {
-  useEffect(() => {
-    const wrapper = document.getElementById('app')
-    if ( wrapper ) {
-      wrapper.focus()
-    }
-  }, [])
-
   return (
-    <Wrapper>
+    <Page
+      pageTitle={ Strings.home }
+      h1={ Strings.welcome_h1 }
+    >
       { Strings.welcome_message }
       <IpaPairedInput />
       { Strings.quickstart_examples }
-    </Wrapper>
+    </Page>
   )
 }
 

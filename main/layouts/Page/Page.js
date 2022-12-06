@@ -9,6 +9,13 @@ const Page = props => {
   const h1 = props.h1 || pageTitle
 
   useEffect(() => {
+    const wrapper = document.getElementById('app')
+    if ( wrapper ) {
+      wrapper.focus()
+    }
+  }, [])
+
+  useEffect(() => {
     document.title = `${ pageTitle } : GlyphWorks`
   }, [ pageTitle ])
 

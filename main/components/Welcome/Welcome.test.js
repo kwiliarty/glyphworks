@@ -1,8 +1,15 @@
 import React from 'react'
 import { render, screen } from 'utils'
 import Welcome from './Welcome.js'
+import * as Strings from '../../strings'
 
 describe( 'The welcome page', () => {
+  it( 'includes an h1', () => {
+    render( <Welcome /> )
+    const h1 = screen.getByRole( 'heading' )
+    expect( h1 ).toBeInTheDocument()
+    expect( h1 ).toHaveTextContent( Strings.welcome_h1 )
+  })
   it( 'includes an X-SAMPA to IPA converter', () => {
     render( <Welcome /> )
     const xSampaLink = screen.getByRole( 'link', { name: 'X-SAMPA'})
