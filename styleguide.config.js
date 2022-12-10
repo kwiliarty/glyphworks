@@ -8,6 +8,7 @@ module.exports = {
     Wrapper: path.join( __dirname, './main/themes/ThemeProvider' )
   },
   serverPort: 443,
+  assetsDir: '',
   webpackConfig: {
     module: {
       rules: [
