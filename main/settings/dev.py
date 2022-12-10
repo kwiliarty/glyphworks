@@ -24,6 +24,15 @@ INSTALLED_APPS = shared.INSTALLED_APPS + [
 CSP_SCRIPT_SRC = (
     "'self'",
     "'unsafe-inline'",
+    # graphql explorer
+    'cdn.jsdelivr.net',
+    "'unsafe-eval'",
+)
+
+CSP_STYLE_SRC = (
+    # graphql explorer
+    'cdn.jsdelivr.net',
+    "'unsafe-inline'",
 )
 
 MIDDLEWARE = shared.MIDDLEWARE + [

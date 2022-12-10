@@ -17,6 +17,7 @@ const StyledButton = styled.button`
     height: 0;
     width: 0;
     padding: 0;
+    overflow: hidden;
   }
   :focus-visible, :hover {
     .button-hint {
@@ -38,7 +39,6 @@ const StyledTip = styled.span`
   padding: 4px;
   margin-bottom: 4px;
   border-radius: 0.5em;
-  transition: opacity 0.2s ease;
 `
 
 const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
