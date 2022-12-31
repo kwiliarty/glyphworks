@@ -22,5 +22,8 @@ describe( 'A GlyphCard', () => {
     expect( link ).toBeInTheDocument()
     expect( link ).toHaveTextContent( 'lower-case p' )
     expect( link ).toHaveAttribute( 'href', 'glyphs/lower-case-p' )
+    const button = screen.getByRole( 'button' )
+    expect( button ).toBeInTheDocument()
+    expect( button ).toHaveTextContent( 'Copy p' )
   })
 })

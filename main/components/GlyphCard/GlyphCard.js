@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import GlyphChip from '../GlyphChip'
+import ClipboardCopy from '../ClipboardCopy'
 import Link from '../Link'
 
 const Wrapper = styled.div`
@@ -20,17 +21,22 @@ const Wrapper = styled.div`
 `
 
 const Info = styled.div`
+  flex-grow: 1;
   padding: 0.5rem;
   padding-left: 0;
 `
 
 const Name = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 0.5em;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-left: 1em;
-  text-indent: -1em;
   line-height: 1em;
   a {
+    margin-left: 0.5em;
+    text-indent: -0.5em;
     text-decoration: none;
     :hover {
       outline: none;
@@ -43,6 +49,10 @@ const Name = styled.div`
       bottom: 0;
       left: 0;
     }
+  }
+  button {
+    padding-right: 0;
+    white-space: nowrap;
   }
 `
 
@@ -64,6 +74,10 @@ const GlyphCard = props => {
           <Link href={ `glyphs/${ slug }` } color='darkRed'>
             { ipaName }
           </Link>
+          <ClipboardCopy
+            hint={ `Copy ${glyph}`}
+            text={ glyph.replace(/◌/, '') }
+          />
         </Name>
         <Definition>{ ipaDefinition }</Definition>
       </Info>
