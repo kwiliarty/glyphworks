@@ -11,6 +11,9 @@ const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   color: inherit;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
   position: relative;
   .button-hint {
     opacity: 0;

@@ -15,6 +15,7 @@ const StyledLabel = styled.label`
 const StyledInputLine = styled.div`
   display: flex;
   align-items: center;
+  column-gap: 0.5rem;
 `
 
 const StyledInput = styled.input`

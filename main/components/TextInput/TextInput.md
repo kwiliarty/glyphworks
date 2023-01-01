@@ -13,7 +13,7 @@ You can specify a suffix for the input field:
   labelText='I have a suffix'
 >
   <TextInput.Suffix>
-    <div style={{ paddingLeft: '0.5em' }}>Suffix!</div>
+    <div>Suffix!</div>
   </TextInput.Suffix>
 </TextInput>
 ```
