@@ -17,9 +17,6 @@ const Wrapper = styled.div`
     a:focus {
       outline: none;
     }
-    button {
-      opacity: 1;
-    }
   }
 `
 
@@ -55,7 +52,6 @@ const Name = styled.div`
   }
   button {
     white-space: nowrap;
-    opacity: 0;
   }
 `
 
