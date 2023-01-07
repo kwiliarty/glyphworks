@@ -30,6 +30,7 @@ CSP_SCRIPT_SRC = (
 )
 
 CSP_STYLE_SRC = (
+    "'self'",
     # graphql explorer
     'cdn.jsdelivr.net',
     "'unsafe-inline'",
