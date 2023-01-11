@@ -9,7 +9,7 @@ You will need:
 2. `cp docker/default.env ./override.env`
 3. `source glyphworks.sh`
 4. `gw-build-dev`
-5. Set up [[#nginx-proxy and certs]]
+5. Set up [nginx-proxy and certs](#nginx-proxy-and-certs)
 6. Use `gw-bash` to open shell in the python container, then run `yarn install`
 7. `docker-compose up -d`
 8. `gw-migrate` to perform initial db setup
@@ -32,7 +32,7 @@ You can theoretically set up the application using whatever networking paradigm 
 	::1 styleguidist.dev.test
 	```
 4. `docker network create nginx-proxy`
-5. [[#Make certs]]
+5. [#Make certs](#make-certs)
 6. `docker-compose up [-d]`
 
 #### docker-compose.yml template
