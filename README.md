@@ -20,6 +20,8 @@ You will need:
 
 You can theoretically set up the application using whatever networking paradigm you prefer, but this is what we recommend:
 
+*NOTE: The dirs `docker/nginx` and `docker/certs` are not related to local dev, they are for the production deployment.*
+
 1. `git clone git@github.com:nginx-proxy/nginx-proxy` and `cd nginx-proxy`
 2. Replace the contents of `docker-compose.yml` with the [[#docker-compose.yml template]]
 3. Add the following lines to your `/etc/hosts`  file
