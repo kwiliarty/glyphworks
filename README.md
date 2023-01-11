@@ -23,7 +23,7 @@ You can theoretically set up the application using whatever networking paradigm 
 *NOTE: The dirs `docker/nginx` and `docker/certs` are not related to local dev, they are for the production deployment.*
 
 1. `git clone git@github.com:nginx-proxy/nginx-proxy` and `cd nginx-proxy`
-2. Replace the contents of `docker-compose.yml` with the [[#docker-compose.yml template]]
+2. Replace the contents of `docker-compose.yml` with the [docker-compose.yml template](#docker-composeyml-template)
 3. Add the following lines to your `/etc/hosts`  file
 	```
 	127.0.0.1 glyphworks.dev.test
@@ -32,7 +32,7 @@ You can theoretically set up the application using whatever networking paradigm 
 	::1 styleguidist.dev.test
 	```
 4. `docker network create nginx-proxy`
-5. [#Make certs](#make-certs)
+5. [Make certs](#make-certs)
 6. `docker-compose up [-d]`
 
 #### docker-compose.yml template
