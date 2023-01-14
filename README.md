@@ -63,7 +63,7 @@ As above, you can do certs however you want, but this is the recommended approac
 1. Install [mkcert](https://github.com/FiloSottile/mkcert)
 2. `mkcert -install`
 3.  `cd ~/nginx-proxy/certs && mkcert glyphworks.dev.test styleguidist.dev.test "*.dev.test" dev.test localhost 127.0.0.1 ::1`
-4. Rename the two generated files: 
+4. Rename the two generated files:
 	- `mv glyphworks.dev.test+6-key.pem server.key`
 	- `mv glyphworks.dev.test+6.pem server.crt`
 5. Make some symlinks (to make nginx happy):
@@ -130,7 +130,7 @@ Run `gw-cypress-run` to run Cypress end-to-end tests headlessly in a container.
 
 ### Cypress (local)
 
-This is not necessary, and it can be a bit fussy, but it provides a better
+This is not necessary, and it can be a bit fussy, but it provides the best
 test-writing experience.
 
 1. Outside the application create a `node_modules` and a `yarn_cache` folder,
