@@ -135,11 +135,11 @@ test-writing experience.
 
 1. Outside the application create a `node_modules` and a `yarn_cache` folder,
 for instance:
-  - `/home/<username>/glyphworks/node_modules`
-  - `/home/<username>/glyphworks/yarn_cache`
+    - `/home/<username>/glyphworks/node_modules`
+    - `/home/<username>/glyphworks/yarn_cache`
 1. Based on the paths above, set some variables in `docker/override.env`
-  - `export YARN_MODULES_FOLDER='/home/<username>/glyphworks/node_modules'`
-  - `export YARN_CACHE_FOLDER='/home/<username>/glyphworks/yarn_cache'`
+    - `export YARN_MODULES_FOLDER='/home/<username>/glyphworks/node_modules'`
+    - `export YARN_CACHE_FOLDER='/home/<username>/glyphworks/yarn_cache'`
 1. `gw-local-yarn install` to install the modules for local use
 1. `gw-local-cypress-run` to run the tests locally
 1. `gw-local-cypress-open` to open the rich testing IDE
