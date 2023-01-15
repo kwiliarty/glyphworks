@@ -7,6 +7,32 @@ import styled from 'styled-components'
 import { copyTextToClipboard } from './utils.js'
 
 const StyledButton = styled.button`
+  position:relative;
+  background-color: transparent;
+  background-clip: padding-box;
+  color: ${ props => props.theme.colors.darkRed };
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  height: 2.2em;
+  border: 0.1em solid ${ props => props.theme.colors.darkRed };
+  border-radius: ${ props => props.theme.borderRadius };
+  font-size: 1.3rem;
+  font-family: ${ props => props.theme.bodyFontFamily };
+  padding: 1px 0.5em;
+  :focus-visible {
+    outline: ${ props => props.theme.focusOutline };
+    border: none;
+  }
+  :hover {
+    color: ${ props => props.theme.colors.parchment };
+    background-color: ${ props => props.theme.colors.darkRed };
+  }
+`
+
+const StyledIcon = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -49,7 +75,7 @@ const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
 `
 
 const StyledCheckRoundedIcon = styled( CheckRoundedIcon )`
-  color: ${ props => props.theme.colors.darkGreen };
+  color: inherit;
 `
 
 const ClipboardCopy = props => {
@@ -68,9 +94,11 @@ const ClipboardCopy = props => {
       })
   }
 
+  const WrapperEl = props.button ? StyledButton : StyledIcon
+
   return (
-    <StyledButton onClick={ handleCopyClick }>
-      <StyledTip className='button-hint'>{ props.hint }</StyledTip>
+    <WrapperEl {...props} onClick={ handleCopyClick }>
+      { !props.button && <StyledTip className='button-hint'>{ props.hint }</StyledTip> }
       {
         isCopied
         ?
@@ -78,7 +106,8 @@ const ClipboardCopy = props => {
         :
           <StyledContentCopyRoundedIcon />
       }
-    </StyledButton>
+      { props.button && <span>{ props.hint }</span> }
+    </WrapperEl>
   )
 }
 
@@ -87,11 +116,17 @@ ClipboardCopy.propTypes = {
   hint: PropTypes.string,
   /** The contents to be copied to the clipboard */
   text: PropTypes.string,
+  /** Button or icon */
+  button: PropTypes.bool,
+  /** A text color name */
+  color: PropTypes.string,
 }
 
 ClipboardCopy.defaultProps = {
   hint: 'Copy',
   text: '',
+  button: false,
+  color: 'veryLightBrown',
 }
 
 export default ClipboardCopy

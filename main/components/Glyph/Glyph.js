@@ -6,6 +6,7 @@ import { useQuery, gql } from '@apollo/client'
 
 import Page from '../../layouts/Page'
 import GlyphChip from '../GlyphChip'
+import ClipboardCopy from '../ClipboardCopy'
 import * as Strings from '../../strings'
 
 const Wrapper = styled.div`
@@ -13,6 +14,13 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+`
+
+const Hero = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
 `
 
 const Details = styled.div`
@@ -108,7 +116,14 @@ const Detail = props => {
 
   return (
     <Wrapper data-cy='glyph-wrapper'>
-      <GlyphChip glyph={ data.glyph.glyph } width='10rem' style={{ margin: 0 }} />
+      <Hero>
+        <GlyphChip glyph={ data.glyph.glyph } width='10rem' style={{ margin: 0 }} />
+        <ClipboardCopy
+            hint={ `Copy ${data.glyph.glyph}`}
+            text={ data.glyph.glyph.replace(/◌/, '') }
+            button={ true }
+          />
+      </Hero>
       <Details>
         <table>
           <caption>{ Strings.glyphDetails }</caption>
