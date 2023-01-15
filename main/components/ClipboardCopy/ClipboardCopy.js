@@ -7,19 +7,20 @@ import styled from 'styled-components'
 import { copyTextToClipboard } from './utils.js'
 
 const StyledButton = styled.button`
+  position:relative;
   background-color: ${ props => props.theme.colors[props.bColor] };
   color: ${ props => props.theme.colors[props.color] };
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
+  height: 2.2rem;
   border: none;
   border-radius: calc(${ props => props.theme.borderRadius } * 4);
   width: 100%;
   margin: 1rem 0;
   font-size: 1.3rem;
-  position:relative;
+  font-family: ${ props => props.theme.hintFontFamily };
 `
 
 const StyledIcon = styled.button`
@@ -60,14 +61,19 @@ const StyledTip = styled.span`
   border-radius: 0.5em;
 `
 
-const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
-  color: inherit;
+const StyledIconPosition = `
   position: absolute;
   left: 10px;
 `
 
+const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
+  color: inherit;
+  ${ StyledIconPosition }
+`
+
 const StyledCheckRoundedIcon = styled( CheckRoundedIcon )`
-  color: ${ props => props.theme.colors.darkGreen };
+  color: ${ props => props.theme.colors.lightGreen };
+  ${ StyledIconPosition }
 `
 
 const ClipboardCopy = props => {
