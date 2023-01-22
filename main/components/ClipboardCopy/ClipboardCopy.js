@@ -8,19 +8,28 @@ import { copyTextToClipboard } from './utils.js'
 
 const StyledButton = styled.button`
   position:relative;
-  background-color: ${ props => props.theme.colors[props.bColor] };
-  color: ${ props => props.theme.colors[props.color] };
+  background-color: transparent;
+  background-clip: padding-box;
+  color: ${ props => props.theme.colors.darkRed };
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 0.5rem;
   height: 2.2rem;
-  border: none;
-  border-radius: calc(${ props => props.theme.borderRadius } * 4);
-  width: 100%;
-  margin: 1rem 0;
+  border: 0.1em solid ${ props => props.theme.colors.darkRed };
+  border-radius: ${ props => props.theme.borderRadius };
   font-size: 1.3rem;
-  font-family: ${ props => props.theme.hintFontFamily };
+  font-family: ${ props => props.theme.bodyFontFamily };
+  padding: 1px 0.5em;
+  :focus-visible {
+    outline: ${ props => props.theme.focusOutline };
+    border: none;
+  }
+  :hover {
+    color: ${ props => props.theme.colors.parchment };
+    background-color: ${ props => props.theme.colors.darkRed };
+  }
 `
 
 const StyledIcon = styled.button`
@@ -62,8 +71,6 @@ const StyledTip = styled.span`
 `
 
 const StyledIconPosition = `
-  position: absolute;
-  left: 10px;
 `
 
 const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
@@ -72,7 +79,7 @@ const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
 `
 
 const StyledCheckRoundedIcon = styled( CheckRoundedIcon )`
-  color: ${ props => props.theme.colors.lightGreen };
+  color: inherit;
   ${ StyledIconPosition }
 `
 
@@ -118,17 +125,13 @@ ClipboardCopy.propTypes = {
   /** Button or icon */
   button: PropTypes.bool,
   /** A background color name */
-  bColor: PropTypes.string,
-  /** A foreground color name */
   color: PropTypes.string,
-  
 }
 
 ClipboardCopy.defaultProps = {
   hint: 'Copy',
   text: '',
   button: false,
-  bColor: 'darkRed',
   color: 'veryLightBrown',
 }
 

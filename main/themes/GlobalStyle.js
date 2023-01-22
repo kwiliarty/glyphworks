@@ -82,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
     `.${font} { font-family: ${ fonts[font] };}`
   )}
 
-  :focus {
+  :focus-visible {
     outline: ${ props => props.theme.focusOutline };
   }
 `

@@ -16,6 +16,13 @@ const Wrapper = styled.div`
   justify-content: center;
 `
 
+const Hero = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  align-items: center;
+`
+
 const Details = styled.div`
   flex-grow: 1;
   min-width: 66%;
@@ -109,14 +116,14 @@ const Detail = props => {
 
   return (
     <Wrapper data-cy='glyph-wrapper'>
-      <div>
+      <Hero>
         <GlyphChip glyph={ data.glyph.glyph } width='10rem' style={{ margin: 0 }} />
         <ClipboardCopy
             hint={ `Copy ${data.glyph.glyph}`}
             text={ data.glyph.glyph.replace(/◌/, '') }
             button={ true }
           />
-      </div>
+      </Hero>
       <Details>
         <table>
           <caption>{ Strings.glyphDetails }</caption>
