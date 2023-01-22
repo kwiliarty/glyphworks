@@ -101,7 +101,6 @@ const ClipboardCopy = props => {
 
   const WrapperEl = props.button ? StyledButton : StyledIcon
 
-  console.log(props.theme)
   return (
     <WrapperEl {...props} onClick={ handleCopyClick }>
       { !props.button && <StyledTip className='button-hint'>{ props.hint }</StyledTip> }
