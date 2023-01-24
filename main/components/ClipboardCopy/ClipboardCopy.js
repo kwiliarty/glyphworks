@@ -16,7 +16,7 @@ const StyledButton = styled.button`
   align-items: center;
   justify-content: center;
   column-gap: 0.5rem;
-  height: 2.2rem;
+  height: 2.2em;
   border: 0.1em solid ${ props => props.theme.colors.darkRed };
   border-radius: ${ props => props.theme.borderRadius };
   font-size: 1.3rem;
@@ -70,17 +70,12 @@ const StyledTip = styled.span`
   border-radius: 0.5em;
 `
 
-const StyledIconPosition = `
-`
-
 const StyledContentCopyRoundedIcon = styled( ContentCopyRoundedIcon )`
   color: inherit;
-  ${ StyledIconPosition }
 `
 
 const StyledCheckRoundedIcon = styled( CheckRoundedIcon )`
   color: inherit;
-  ${ StyledIconPosition }
 `
 
 const ClipboardCopy = props => {
@@ -123,7 +118,7 @@ ClipboardCopy.propTypes = {
   text: PropTypes.string,
   /** Button or icon */
   button: PropTypes.bool,
-  /** A background color name */
+  /** A text color name */
   color: PropTypes.string,
 }
 
