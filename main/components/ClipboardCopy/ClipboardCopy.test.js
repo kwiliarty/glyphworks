@@ -10,13 +10,26 @@ describe( 'A ClipboardCopy component', () => {
     const spy = jest.spyOn( utils, 'copyTextToClipboard' )
     render(
       <ClipboardCopy
-        text='Copy Cat!'
-        hint='Click to copy'
+        text='Copy Cat Icon!'
+        hint='Click to copy (icon)'
       />
     )
-    const copyButton = screen.getByText( 'Click to copy' )
-    await user.click( copyButton )
+    const copyIcon = screen.getByText( 'Click to copy (icon)' )
+    render(
+      <ClipboardCopy
+        text='Copy Cat Button!'
+        button={true}
+        hint='Click to copy (button)'
+      />
+    )
+    const copyButton = screen.getByText( 'Click to copy (button)' )
+
+    await user.click( copyIcon )
     expect( spy ).toBeCalledTimes( 1 )
-    expect( spy ).toHaveBeenCalledWith( 'Copy Cat!' )
+    expect( spy ).toHaveBeenCalledWith( 'Copy Cat Icon!' )
+
+    await user.click( copyButton )
+    expect( spy ).toBeCalledTimes( 2 )
+    expect( spy ).toHaveBeenCalledWith( 'Copy Cat Button!' )
   })
 })
