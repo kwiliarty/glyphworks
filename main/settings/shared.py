@@ -45,6 +45,7 @@ default_db = {
 }
 
 for_all_envs = {
+    'AUTH_USER_MODEL': 'users.CustomUser',
     'SECRET_KEY': os.getenv('SECRET_KEY', '@b0-*s6$dm_7s8t6^k5po*ey^yi6-@vu^z2=-w2(cpk_@j0qe@'),
     'ROOT_URLCONF': 'main.urls.shared',
     # 'LANGUAGE_CODE': 'en-us',
@@ -115,6 +116,7 @@ CUSTOM_APPS = [
     # ***.apps.***Config, for instance
     'main',
     'glyphs',
+    'users',
 ]
 
 INSTALLED_APPS = CORE_APPS + THIRD_PARTY_APPS + CUSTOM_APPS
