@@ -15,4 +15,8 @@ class Command(CoreMigrateCommand):
 
         # Load glyphs
         print('Loading glyphs')
-        call_command('loaddata', 'glyphs.json')
+        call_command('loaddata', 'glyphs.yaml', app='glyphs')
+
+        # Load maps
+        print('Loading maps')
+        call_command('loaddata', 'maps.yaml', app='glyphs')

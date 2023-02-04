@@ -43,19 +43,16 @@ class Glyph(models.Model):
         default='',
         unique=True,
         blank=True,
-        null=True,
     )
     ipa_number = models.CharField(
         max_length=5,
         default='',
         blank=True,
-        null=True,
     )
     ipa_name = models.CharField(
         max_length=100,
         default='',
         blank=True,
-        null=True,
     )
     slug = models.CharField(
         max_length=100,
@@ -71,3 +68,22 @@ class Glyph(models.Model):
     def __str__(self):
         '''Custom display string'''
         return f'{self.glyph} ({self.slug}): {self.ipa_definition}'
+
+
+class Map(models.Model):
+    '''An organized system for mapping ASCII characters to IPA glyphs'''
+
+    slug = models.CharField(
+        primary_key=True,
+        max_length=100,
+    )
+    name = models.CharField(
+        max_length=200,
+    )
+    description = models.TextField(
+        blank=True,
+    )
+
+    def __str__(self):
+        '''Custom display string'''
+        return f'{self.name} Map'

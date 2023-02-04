@@ -10,6 +10,7 @@ services:
       - DJANGO_SETTINGS_MODULE=main.settings.dev
       - VIRTUAL_HOST=glyphworks.dev.test
       - VIRTUAL_PORT=8000
+      - IPYTHONDIR=/usr/src/app/.ipython
     ports:
       - "${GW_PYTHON_PORT}:8000"
     expose:

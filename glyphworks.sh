@@ -255,9 +255,13 @@ alias gw-unit-test-deprecated='gw python -Wa ./manage.py test --settings main.se
 alias gw-test-fast='gw-eslint && gw-flake8 && gw-yarn-audit && gw-pip-audit && gw-jest && gw-unit-test'
 alias gw-test-all='gw-test-fast && gw-cypress-run'
 alias gw-shell-plus='gw ./manage.py shell_plus'
+alias gw-makemigrations='gw ./manage.py makemigrations'
+alias gw-showmigrations='gw ./manage.py showmigrations'
 alias gw-migrate='gw python ./manage.py migrate'
-alias gw-dump-glyphs='gw python ./manage.py dumpdata glyphs.Glyph --all --indent 2 --output glyphs/fixtures/glyphs.json'
-alias gw-load-glyphs='gw python ./manage.py loaddata glyphs.json'
+alias gw-dump-glyphs='gw python ./manage.py dumpdata glyphs.Glyph --all --format yaml --output glyphs/fixtures/glyphs.yaml'
+alias gw-load-glyphs='gw python ./manage.py loaddata --app glyphs glyphs.yaml'
+alias gw-dump-maps='gw python ./manage.py dumpdata glyphs.Map --all --format yaml --output glyphs/fixtures/maps.yaml'
+alias gw-load-maps='gw python ./manage.py loaddata --app glyphs maps.yaml'
 
 ## postgres aliases
 alias gw-db='docker-compose exec db psql -U postgres'
