@@ -129,7 +129,7 @@
     ipa_name: beta
     group: PC
 - model: glyphs.glyph
-  pk: bottom-tie-bar
+  pk: tie-bar-below
   fields:
     glyph: ◌͜
     hex_code: 035C
@@ -159,7 +159,7 @@
     ipa_name: bull's eye
     group: NPC
 - model: glyphs.glyph
-  pk: buttom-tie-bar
+  pk: linking
   fields:
     glyph: ‿
     hex_code: 203F
@@ -1109,7 +1109,17 @@
     ipa_name: ram's horns
     group: V
 - model: glyphs.glyph
-  pk: retractinc-sign
+  pk: zero-width-space
+  fields:
+    glyph: ​
+    hex_code: 200B
+    combining: false
+    ipa_definition: ''
+    ipa_number: ''
+    ipa_name: ''
+    group: NOC 
+- model: glyphs.glyph
+  pk: retracting-sign
   fields:
     glyph: ◌̙
     hex_code: 0319
@@ -1619,7 +1629,7 @@
     ipa_name: ''
     group: NOC
 - model: glyphs.glyph
-  pk: syllability-mark
+  pk: syllabicity-mark
   fields:
     glyph: ◌̩
     hex_code: 0329
@@ -1838,6 +1848,36 @@
     ipa_number: '321'
     ipa_name: upsilon
     group: V
+- model: glyphs.glyph
+  pk: dotted-circle
+  fields:
+    glyph: ◌
+    hex_code: 25CC
+    combining: false
+    ipa_definition: ''
+    ipa_number: ''
+    ipa_name: ''
+    group: NOC
+- model: glyphs.glyph
+  pk: barred-undotted-i
+  fields:
+    glyph: ᵻ
+    hex_code: 1D7B
+    combining: false
+    ipa_definition: near-close central unrounded vowel
+    ipa_number: ''
+    ipa_name: ''
+    group: NOC
+- model: glyphs.glyph
+  pk: barred-upsilon
+  fields:
+    glyph: ᵿ
+    hex_code: 1D7F
+    combining: false
+    ipa_definition: near-close central rounded vowel
+    ipa_number: ''
+    ipa_name: ''
+    group: NOC
 - model: glyphs.glyph
   pk: upward-diagonal-arrow
   fields:

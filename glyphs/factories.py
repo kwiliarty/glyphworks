@@ -1,6 +1,6 @@
 import factory
 
-from glyphs.models import Glyph, Map
+from glyphs.models import Glyph, Mapping, Replacement
 
 
 class GlyphFactory(factory.django.DjangoModelFactory):
@@ -8,12 +8,22 @@ class GlyphFactory(factory.django.DjangoModelFactory):
         model = Glyph
 
     glyph = 'Z'
-    slug = 'z'
+    slug = 'upper-case-z'
+    ipa_definition = 'snoring'
 
 
-class MapFactory(factory.django.DjangoModelFactory):
+class MappingFactory(factory.django.DjangoModelFactory):
     class Meta:
-        model = Map
+        model = Mapping
 
     slug = 'test'
-    name = 'Test Map'
+    name = 'Test'
+
+
+class ReplacementFactory(factory.django.DjangoModelFactory):
+    class Meta:
+        model = Replacement
+
+    text = 'Z'
+    mapping = factory.SubFactory(MappingFactory)
+    glyph = factory.SubFactory(GlyphFactory)

@@ -1,7 +1,10 @@
 from django.db import models
+from main.models import NamedForeignKey
 
 
 class GlyphQuerySet(models.QuerySet):
+    '''Custom functions for Glyph.objects'''
+
     def on_chart(self):
         return self.exclude(group=Glyph.Group.NOT_ON_CHART)
 
@@ -41,7 +44,6 @@ class Glyph(models.Model):
     ipa_definition = models.CharField(
         max_length=100,
         default='',
-        unique=True,
         blank=True,
     )
     ipa_number = models.CharField(
@@ -70,8 +72,8 @@ class Glyph(models.Model):
         return f'{self.glyph} ({self.slug}): {self.ipa_definition}'
 
 
-class Map(models.Model):
-    '''An organized system for mapping ASCII characters to IPA glyphs'''
+class Mapping(models.Model):
+    '''An organized system for mapping text to IPA glyphs'''
 
     slug = models.CharField(
         primary_key=True,
@@ -83,7 +85,66 @@ class Map(models.Model):
     description = models.TextField(
         blank=True,
     )
+    glyphs = models.ManyToManyField(
+        Glyph,
+        through='Replacement',
+        related_name='mappings',
+        related_query_name='mapping',
+    )
 
     def __str__(self):
         '''Custom display string'''
-        return f'{self.name} Map'
+        return f'{self.name} Mapping'
+
+
+class ReplacementQuerySet(models.QuerySet):
+    '''Custom functions for Replacement.objects'''
+
+    def longest_first(self):
+        return self.order_by(models.functions.Length('text').desc())
+
+    def get_by_natural_key(self, text, glyph, mapping):
+        return self.get(
+            text=text,
+            glyph=glyph,
+            mapping=mapping,
+        )
+
+
+class Replacement(models.Model):
+    '''A specific text replacement for an IPA Glyph within a given Mapping'''
+
+    class Meta:
+        constraints = [
+            models.UniqueConstraint(
+                'text',
+                'mapping',
+                name='unique_text_glyph_mapping',
+            )
+        ]
+
+    def natural_key(self):
+        return (self.text, self.glyph, self.mapping)
+
+    objects = ReplacementQuerySet.as_manager()
+
+    text = models.CharField(
+        max_length=20,
+    )
+    glyph = NamedForeignKey(
+        'Glyph',
+        on_delete=models.CASCADE,
+        db_column='glyph_slug',
+        id_suffix='slug',
+        related_name='replacements',
+    )
+    mapping = NamedForeignKey(
+        'Mapping',
+        on_delete=models.CASCADE,
+        db_column='mapping_slug',
+        id_suffix='slug',
+        related_name='replacements',
+    )
+
+    def __str__(self):
+        return f'{self.mapping} from {self.text} to {self.glyph}'

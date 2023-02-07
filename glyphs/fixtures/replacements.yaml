@@ -1,0 +1,975 @@
+- model: glyphs.replacement
+  fields:
+    text: _`
+    glyph: diacritic-retroflexion
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: 3`
+    glyph: right-hook-reverse-script-e
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: __h\
+    glyph: superscript-hooktop-h
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: __r
+    glyph: superscritp-r
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: __r\`
+    glyph: superscript-turned-r-right-tail
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: __r\
+    glyph: superscript-turned-r
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: __?
+    glyph: diacritic-glottal-stop
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: p
+    glyph: lower-case-p
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: b
+    glyph: lower-case-b
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: t
+    glyph: lower-case-t
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: d
+    glyph: lower-case-d
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: t`
+    glyph: right-tail-t
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: d`
+    glyph: right-tail-d
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: c
+    glyph: lower-case-c
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: J\
+    glyph: barred-dotless-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: k
+    glyph: lower-case-k
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ɡ
+    glyph: opentail-g
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: q
+    glyph: lower-case-q
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: G\
+    glyph: small-capital-g
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '?'
+    glyph: glottal-stop
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: m
+    glyph: lower-case-m
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: F
+    glyph: left-tail-m-at-right
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: n
+    glyph: lower-case-n
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: n`
+    glyph: right-tail-n
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: J
+    glyph: left-tail-n-at-left
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: N
+    glyph: eng
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: N\
+    glyph: small-capital-n
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: B\
+    glyph: small-capital-b
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: r
+    glyph: lower-case-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: R\
+    glyph: small-capital-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '4'
+    glyph: fish-hook-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: r`
+    glyph: right-tail-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: p\
+    glyph: phi
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: B
+    glyph: beta
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: f
+    glyph: lower-case-f
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: v
+    glyph: lower-case-v
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: T
+    glyph: theta
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: D
+    glyph: eth
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: s
+    glyph: lower-case-s
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: z
+    glyph: lower-case-z
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: S
+    glyph: esh
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: Z
+    glyph: ezh
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: s`
+    glyph: right-tail-s-at-left
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: z`
+    glyph: right-tail-z
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: C
+    glyph: c-cedilla
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: j\
+    glyph: curly-tail-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: x
+    glyph: lower-case-x
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: G
+    glyph: gamma
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: X
+    glyph: chi
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: R
+    glyph: inverted-small-capital-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: X\
+    glyph: barred-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ?\
+    glyph: reversed-glottal-stop
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: h
+    glyph: lower-case-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: h\
+    glyph: hooktop-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: K
+    glyph: belted-l
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: K\
+    glyph: l-ezh-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: P
+    glyph: cursive-v
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: v\
+    glyph: cursive-v
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: r\
+    glyph: turned-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: r\`
+    glyph: turned-r-right-tail
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: j
+    glyph: lower-case-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: M\
+    glyph: turned-m-right-leg
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: l
+    glyph: lower-case-l
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: l`
+    glyph: right-tail-l
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: L
+    glyph: turned-y
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: L\
+    glyph: small-capital-l
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: b_<
+    glyph: hooktop-b
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: d_<
+    glyph: hooktop-d
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: J\_<
+    glyph: hooktop-barred-dotless-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: g_<
+    glyph: hooktop-g
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: G\_<
+    glyph: hooktop-small-capital-g
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: W
+    glyph: turned-w
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: w
+    glyph: lower-case-w
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: H
+    glyph: turned-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: H\
+    glyph: small-capital-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '>\'
+    glyph: barred-glottal-stop
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: <\
+    glyph: barred-reversed-glottal-stop
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: x\
+    glyph: hooktop-heng
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: O\
+    glyph: bulls-eye
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '|\'
+    glyph: pipe
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '!\'
+    glyph: exclamation-point
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: =\
+    glyph: double-barred-pipe
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '|\|\'
+    glyph: double-pipe
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: l\
+    glyph: turned-long-leg-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: s\
+    glyph: curly-tail-c
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: z\
+    glyph: curly-tail-z
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ⱱ
+    glyph: right-hook-v
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '5'
+    glyph: l-with-tilde
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ts
+    glyph: t-s-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: dz
+    glyph: d-z-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: tS
+    glyph: t-esh-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: dZ
+    glyph: d-ezh-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ts\
+    glyph: t-curly-tail-c-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: dz\
+    glyph: d-curly-tail-z-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: i
+    glyph: lower-case-i
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: e
+    glyph: lower-case-e
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: E
+    glyph: epsilon
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: a
+    glyph: lower-case-a
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: A
+    glyph: script-a
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: O
+    glyph: open-o
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: o
+    glyph: lower-case-o
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: u
+    glyph: lower-case-u
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: y
+    glyph: lower-case-y
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '2'
+    glyph: slashed-o
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '9'
+    glyph: lower-case-o-e-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '&'
+    glyph: small-capital-o-e-ligature
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: Q
+    glyph: turned-script-a
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: V
+    glyph: turned-v
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '7'
+    glyph: rams-horns
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: M
+    glyph: turned-m
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: I\
+    glyph: barred-undotted-i
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '1'
+    glyph: barred-i
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '}'
+    glyph: barred-u
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: U\
+    glyph: barred-upsilon
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: I
+    glyph: small-capital-i
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: Y
+    glyph: small-capital-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: U
+    glyph: upsilon
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '8'
+    glyph: barred-o
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '6'
+    glyph: turned-a
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '{'
+    glyph: ash
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '3'
+    glyph: reversed-epsilon
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: 3\
+    glyph: closed-reversed-epsilon
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _>
+    glyph: apostrophe
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _0
+    glyph: under-ring
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '-0'
+    glyph: over-ring
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: _v
+    glyph: subscript-wedge
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _h
+    glyph: superscript-h
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _t
+    glyph: subscript-umlaut
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _k
+    glyph: subscript-tilde
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _N
+    glyph: subscript-seagull
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _d
+    glyph: subscript-bridge
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _a
+    glyph: inverted-subscript-bridge
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _m
+    glyph: subscript-square
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _O
+    glyph: subscript-right-half-ring
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _c
+    glyph: subscript-left-half-ring
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _+
+    glyph: subscript-plus
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _-
+    glyph: under-bar
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _"
+    glyph: umlaut
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _x
+    glyph: over-cross
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _A
+    glyph: advancing-sign
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _q
+    glyph: retracting-sign
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '`'
+    glyph: right-hook
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _w
+    glyph: superscript-w
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ''''
+    glyph: superscript-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _j
+    glyph: superscript-j
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _G
+    glyph: superscript-gamma
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _?\
+    glyph: superscript-reversed-glottal-stop
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '~'
+    glyph: superscript-tilde
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _~
+    glyph: superscript-tilde
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _n
+    glyph: superscript-n
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _l
+    glyph: superscript-l
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _}
+    glyph: corner
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _e
+    glyph: superimposed-tilde
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _r
+    glyph: raising-sign
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _o
+    glyph: lowering-sign
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '='
+    glyph: syllabicity-mark
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _=
+    glyph: syllabicity-mark
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _^
+    glyph: subscript-arch
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _
+    glyph: top-tie-bar
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '"'
+    glyph: vertical-stroke-superior
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '%'
+    glyph: vertical-stroke-inferior
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ':'
+    glyph: length-mark
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: :\
+    glyph: half-length-mark
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _X
+    glyph: breve
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: .
+    glyph: period
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '|'
+    glyph: vertical-line-thick
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '||'
+    glyph: double-vertical-line-thick
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: -\
+    glyph: linking
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: <R>
+    glyph: upward-diagonal-arrow
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: <F>
+    glyph: downward-diagonal-arrow
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _T
+    glyph: double-acute-accent-over
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _H
+    glyph: acute-accent-over
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _M
+    glyph: macron
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _L
+    glyph: grave-accent-over
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _B
+    glyph: double-grave-accent-over
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '!'
+    glyph: down-arrow
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ^
+    glyph: up-arrow
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ˥
+    glyph: extra-high-tone-letter
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: ˦
+    glyph: high-tone-letter
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: ˧
+    glyph: mid-tone-letter
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: ˨
+    glyph: low-tone-letter
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: ˩
+    glyph: extra-low-tone-letter
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: _/
+    glyph: wedge
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _R
+    glyph: wedge
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _\
+    glyph: circumflex
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _F
+    glyph: circumflex
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _H_T
+    glyph: macron-acute-accent
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '0'
+    glyph: dotted-circle
+    mapping: xsampa-plus
+- model: glyphs.replacement
+  fields:
+    text: '-'
+    glyph: zero-width-space
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _B_L
+    glyph: grave-accent-macron
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: _R_F
+    glyph: grave-acute-grave-accent
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: ʶ
+    glyph: superscript-inverted-small-capital-r
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '@'
+    glyph: schwa
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '@`'
+    glyph: right-hook-schwa
+    mapping: xsampa
+- model: glyphs.replacement
+  fields:
+    text: '@\'
+    glyph: reversed-e
+    mapping: xsampa

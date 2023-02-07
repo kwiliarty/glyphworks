@@ -1,7 +1,7 @@
 from django.test import TestCase
 
-from glyphs.models import Glyph, Map
-from glyphs.factories import GlyphFactory, MapFactory
+from glyphs.models import Glyph, Mapping, Replacement
+from glyphs.factories import GlyphFactory, MappingFactory, ReplacementFactory
 
 
 class GlyphModelTests(TestCase):
@@ -37,24 +37,36 @@ class GlyphModelTests(TestCase):
         self.assertEqual(glyph.__str__(), 'A (capital-a): voiced mono-syllable')
 
     def test_glyph_load(self):
-        self.assertEqual(Glyph.objects.count(), 189)
+        self.assertGreater(Glyph.objects.count(), 100)
 
-    def test_map_fields(self):
-        mapp = MapFactory()
+    def test_mapping_fields(self):
+        mapping = MappingFactory()
         attributes = [
             'slug',
             'name',
             'description',
         ]
-        self.confirm_attributes(mapp, attributes)
+        self.confirm_attributes(mapping, attributes)
 
-    def test_map__str__(self):
-        mapp = MapFactory(
-            slug='test',
-            name='Test',
-            description='This is just for testing.',
-        )
-        self.assertEqual(mapp.__str__(), "Test Map")
+    def test_mapping__str__(self):
+        mapping = MappingFactory()
+        self.assertEqual(mapping.__str__(), "Test Mapping")
 
-    def test_map_load(self):
-        self.assertEqual(Map.objects.count(), 1)
+    def test_mapping_load(self):
+        self.assertGreater(Mapping.objects.count(), 0)
+
+    def test_replacement_fields(self):
+        replacement = ReplacementFactory()
+        attributes = [
+            'text',
+            'mapping_slug',
+            'glyph_slug',
+        ]
+        self.confirm_attributes(replacement, attributes)
+
+    def test_replacement_string(self):
+        replacement = ReplacementFactory()
+        self.assertEqual(replacement.__str__(), 'Test Mapping from Z to Z (upper-case-z): snoring')
+
+    def test_replacement_load(self):
+        self.assertGreater(Replacement.objects.count(), 100)

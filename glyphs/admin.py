@@ -1,5 +1,5 @@
 from django.contrib import admin
-from glyphs.models import Glyph, Map
+from glyphs.models import Glyph, Mapping, Replacement
 
 
 class GlyphAdmin(admin.ModelAdmin):
@@ -19,7 +19,7 @@ class GlyphAdmin(admin.ModelAdmin):
     )
 
 
-class MapAdmin(admin.ModelAdmin):
+class MappingAdmin(admin.ModelAdmin):
     list_display = (
         'slug',
         'name',
@@ -30,5 +30,17 @@ class MapAdmin(admin.ModelAdmin):
     )
 
 
+class ReplacementAdmin(admin.ModelAdmin):
+    list_display = (
+        'text',
+        'glyph',
+        'mapping',
+    )
+    ordering = (
+        'text',
+    )
+
+
 admin.site.register(Glyph, GlyphAdmin)
-admin.site.register(Map, MapAdmin)
+admin.site.register(Mapping, MappingAdmin)
+admin.site.register(Replacement, ReplacementAdmin)

@@ -1,0 +1,12 @@
+- model: glyphs.mapping
+  pk: xsampa
+  fields:
+    name: X-SAMPA
+    description: The Extended Speech Assessment Methods Phonetic Alphabet (X-SAMPA) is a variant of SAMPA developed in
+      1995 by John C. Wells, professor of phonetics at University College London. See
+      https://en.wikipedia.org/wiki/X-SAMPA
+- model: glyphs.mapping
+  pk: xsampa-plus
+  fields:
+    name: X-SAMPA+
+    description: Additions to the basic X-SAMPA mapping to accommodate more recent versions of the IPA, such as superscript characters. It also includes some convenience characters such as the dotted circle.
