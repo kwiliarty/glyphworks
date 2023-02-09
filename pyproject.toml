@@ -19,6 +19,7 @@ graphene-django = "*"
 django-csp = "*"
 django = "^4.1.6"
 pyyaml = "^6.0"
+cryptography = "^39.0.1"
 
 [tool.poetry.dev-dependencies]
 pip-audit = "*"
