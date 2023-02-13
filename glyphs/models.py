@@ -103,10 +103,9 @@ class ReplacementQuerySet(models.QuerySet):
     def longest_first(self):
         return self.order_by(models.functions.Length('text').desc())
 
-    def get_by_natural_key(self, text, glyph, mapping):
+    def get_by_natural_key(self, text, mapping):
         return self.get(
             text=text,
-            glyph=glyph,
             mapping=mapping,
         )
 
@@ -124,7 +123,7 @@ class Replacement(models.Model):
         ]
 
     def natural_key(self):
-        return (self.text, self.glyph, self.mapping)
+        return (self.text, self.mapping)
 
     objects = ReplacementQuerySet.as_manager()
 
