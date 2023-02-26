@@ -57,3 +57,6 @@ yarn-error.log
 # ipython
 .ipython/profile_default/history.sqlite
 .ipython/profile_default/startup/
+
+# ERD
+erd.png

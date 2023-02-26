@@ -1,3 +1,5 @@
+import os
+
 from django.core.management import call_command
 from django.core.management.commands.migrate import Command as CoreMigrateCommand
 from glyphs import models
@@ -10,6 +12,16 @@ class Command(CoreMigrateCommand):
         # Do normal migration
         print('Running core migration')
         super().handle(*args, **kwargs)
+
+        # create erd.png if in dev
+        if os.getenv('GW_ENV', '') == 'dev':
+            print('Creating erd.png')
+            call_command(
+                'graph_models',
+                all_applications=True,
+                group_models=True,
+                output='erd.png'
+            )
 
         # After the migration is complete we can do some post-migration tasks
         print('Migration complete, starting post-migration tasks')

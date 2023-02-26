@@ -83,5 +83,9 @@ FROM runtime AS prod
 # Dev
 From runtime AS dev
 
+    RUN apt-get update \
+        && apt-get -y install graphviz \
+        && rm -rf /var/lib/apt/lists/*
+
     # Switch to a new user
     USER appuser

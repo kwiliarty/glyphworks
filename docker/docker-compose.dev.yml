@@ -111,5 +111,5 @@ volumes:
 
 networks:
   nginx:
-    external:
-      name: nginx-proxy
+    name: nginx-proxy
+    external: true
