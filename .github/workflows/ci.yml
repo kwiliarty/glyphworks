@@ -88,4 +88,4 @@ jobs:
           shopt -s expand_aliases
           source ./glyphworks.sh
           gw rm -r main/assets/bundles/
-          docker-compose down --remove-orphans
+          docker compose down --remove-orphans

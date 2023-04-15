@@ -11,7 +11,7 @@ You will need:
 1. `gw-build-dev`
 1. Set up [nginx-proxy and certs](#nginx-proxy-and-certs)
 1. `gw-yarn install` to run `yarn install` in your main application container
-1. `docker-compose up -d`
+1. `docker compose up -d`
 1. `gw-migrate` to perform initial db setup
 1. `gw-collectstatic` to make static assets (fonts and favicon) work in styleguidist
 1. Visit your application at https://glyphworks.dev.test
@@ -34,7 +34,7 @@ You can theoretically set up the application using whatever networking paradigm 
 	```
 1. `docker network create nginx-proxy`
 1. [Make certs](#make-certs)
-1. `docker-compose up -d`
+1. `docker compose up -d`
 
 #### docker-compose.yml template
 

@@ -2,7 +2,7 @@ Certbot things go here.
 
 Here is a command that worked to issue the production certificates:
 
-        docker-compose run --rm certbot certonly --webroot -w /var/www/certbot/ --email kevin.wiliarty@gmail.com --rsa-key-size 4096 --agree-tos
+        docker compose run --rm certbot certonly --webroot -w /var/www/certbot/ --email kevin.wiliarty@gmail.com --rsa-key-size 4096 --agree-tos
 
 I had to make some adjustments, but these instructions were very helpful:
 

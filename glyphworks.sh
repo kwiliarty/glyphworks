@@ -11,7 +11,7 @@ if [ -f "docker/override.env" ]
     then . ./docker/override.env
 fi
 
-# Base file for docker-compose
+# Base file for docker compose
 composefile="${location}/docker/docker-compose.yml"
 
 # For dev
@@ -50,15 +50,15 @@ fi
 
 # Create basic gw command
 gw() {
-    docker-compose exec $DISABLE_TTY -u root python "$@"
+    docker compose exec $DISABLE_TTY -u root python "$@"
 }
 
 # Reset the test database
 gw_reset_db_test() {
-    docker-compose restart python-test
-    docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
-    docker-compose exec $DISABLE_TTY python-test ./manage.py migrate
-    docker-compose restart python-test
+    docker compose restart python-test
+    docker compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
+    docker compose exec $DISABLE_TTY python-test ./manage.py migrate
+    docker compose restart python-test
 }
 
 # Functions to manage image
@@ -99,7 +99,7 @@ gw_pull_prod() {
 gw_deploy() {
     gw_pull_prod ${1-main}
     docker tag kwiliarty/glyphworks:${1-main} kwiliarty/glyphworks:main
-    docker-compose up -d
+    docker compose up -d
     gw ./manage.py migrate
     gw ./manage.py collectstatic --no-input
 }
@@ -119,7 +119,7 @@ gw_mk_env() {
         then
             CS="-e CYPRESS_SERVER=True"
         fi
-        docker-compose run \
+        docker compose run \
             -d \
             --rm \
             --name ${ENV} --no-deps \
@@ -169,7 +169,7 @@ gw_local_cypress_run() {
 
     echo "Running the tests"
         gw_local_cypress run \
-        --config "video=false,baseUrl=http://$(docker-compose port python-test 8000)" \
+        --config "video=false,baseUrl=http://$(docker compose port python-test 8000)" \
         --spec "cypress/e2e/main/*" \
         --browser 'chrome' \
         "$@"
@@ -182,13 +182,13 @@ gw_local_cypress_run() {
 gw_local_cypress_open() {
 
     echo "Resetting the test database"
-        docker-compose restart python-test
-        docker-compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
-        docker-compose exec $DISABLE_TTY python-test ./manage.py migrate
+        docker compose restart python-test
+        docker compose exec $DISABLE_TTY python-test ./manage.py reset_db --noinput -c
+        docker compose exec $DISABLE_TTY python-test ./manage.py migrate
 
     echo "Opening the IDE"
         gw_local_cypress open \
-        --config "video=false,baseUrl=http://$(docker-compose port python-test 8000)" \
+        --config "video=false,baseUrl=http://$(docker compose port python-test 8000)" \
         "$@"
 }
 
@@ -204,7 +204,7 @@ gw_cypress_run() {
     docker cp . glyphworks_cypress_1:/usr/src/app
 
     echo "Running the tests"
-    docker-compose exec \
+    docker compose exec \
         $DISABLE_TTY \
         -e CYPRESS_BASE_URL=http://python-test:8000 \
         cypress npx cypress run \
@@ -226,20 +226,20 @@ alias gw-pull-dev='docker pull kwiliarty/glyphworks:main-dev'
 alias gw-pull-prod='gw_pull_prod'
 alias gw-push-dev='docker push kwiliarty/glyphworks:main-dev'
 alias gw-push-prod='gw_push_prod'
-alias gw-down='docker-compose down'
-alias gw-logs='docker-compose logs'
-alias gw-open='open http://$(docker-compose port python 8000)'
+alias gw-down='docker compose down'
+alias gw-logs='docker compose logs'
+alias gw-open='open http://$(docker compose port python 8000)'
 alias gw-reset-db-test='gw_reset_db_test'
-alias gw-open-test='gw_reset_db_test && open http://$(docker-compose port python-test 8000)'
+alias gw-open-test='gw_reset_db_test && open http://$(docker compose port python-test 8000)'
 alias gw-open-ssl='open https://glyphworks.dev.test/'
 alias gw-mk-env='gw_mk_env'
 alias gw-open-env='gw_open_env'
 alias gw-rm-env='gw_rm_env'
 alias gw-show-urls='gw python manage.py show_urls'
 #alias gw-pdb-docs='open https://docs.python.org/3/library/pdb.html'
-alias gw-up="docker-compose up -d && if [ ${GW_ENV} != 'prod' ]; then gw yarn install --frozen-lockfile; fi"
-alias gw-up-tail='docker-compose up'
-alias gw-status='docker-compose ps'
+alias gw-up="docker compose up -d && if [ ${GW_ENV} != 'prod' ]; then gw yarn install --frozen-lockfile; fi"
+alias gw-up-tail='docker compose up'
+alias gw-status='docker compose ps'
 alias gw-eslint='gw yarn run eslint .'
 alias gw-flake8='echo "running flake8" && gw flake8 .'
 alias gw-yarn-audit='gw yarn audit --groups dependencies'
@@ -270,18 +270,18 @@ alias gw-sync-replacements='gw ./manage.py syncdata glyphs/fixtures/replacements
 alias gw-graphmodels='gw ./manage.py graph_models -a -g -o erd.png'
 
 ## postgres aliases
-alias gw-db='docker-compose exec db psql -U postgres'
+alias gw-db='docker compose exec db psql -U postgres'
 
 ## python aliases
-alias gw-bash='docker-compose run --rm -u root python /bin/bash'
+alias gw-bash='docker compose run --rm -u root python /bin/bash'
 alias gw-yarn='gw yarn'
 alias gw-node='gw node'
-alias gw-restart-python='docker-compose restart python'
+alias gw-restart-python='docker compose restart python'
 alias gw-styleguide-open='open http://0.0.0.0:6060'
 alias gw-collectstatic='gw python manage.py collectstatic --no-input'
 
 ## nginx aliases
-alias gw-nginx='docker-compose exec nginx'
+alias gw-nginx='docker compose exec nginx'
 alias gw-nginx-shell='gw-nginx /bin/sh'
 alias gw-nginx-reload='gw-nginx nginx -s reload'
 
