@@ -80,8 +80,8 @@ class AuditMixin(models.Model):
     class Meta:
         abstract = True
 
-    created_at = models.DateTimeField(default=timezone.now)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True, null=True)
 
 
 class UuidMixin(models.Model):
